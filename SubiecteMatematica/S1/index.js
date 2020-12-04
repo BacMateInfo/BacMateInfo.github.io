@@ -3,8 +3,7 @@ function RESIZE(){
 	
 
 unghi = $('.unghi').val();
-
-console.log(unghi);
+var unghi1 = unghi;
 
 var canvas = document.getElementsByClassName('cercTrigonometric')[0];
 
@@ -45,14 +44,15 @@ cursor.lineTo(parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15, parseF
 cursor.moveTo(parseFloat(window.innerWidth)/2 , parseFloat(window.innerHeight)/2.5);
 
 cursor.fillText("3π/2" , parseFloat(window.innerWidth)/2 - 30 , parseFloat(window.innerHeight)/2.5 + window.innerWidth * 0.15 + 30);
-console.log(unghi);
+
 cursor.lineTo(parseFloat(window.innerWidth)/2, parseFloat(window.innerHeight)/2.5 + window.innerWidth * 0.15);
 
 
 //////////
 cursor.stroke();
 
-unghi = $('.unghi').val();
+	unghi = $('.unghi').val();
+	unghi1 = unghi;
 	cursor.beginPath();
 	cursor.lineWidth = 3;
 	unghi = unghi/57.2958;
@@ -72,13 +72,13 @@ unghi = $('.unghi').val();
 	cursor.font = "25px Times New Roman";
 	
 	var lineLen = window.innerWidth * 0.15 * Math.cos(unghi);
-	
-	cursor.fillText("sin(" + unghi*57.2958 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - lineLen, parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) - 5);
+	if(unghi != 0)
+	cursor.fillText("sin(" + unghi1 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - lineLen, parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) - 5);
 	cursor.lineTo(parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) , parseFloat(window.innerHeight)/2.5);
 	
 	cursor.moveTo(parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi), parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) + 2);
-	
-	cursor.fillText("cos(" + unghi*57.2958 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - 40, parseFloat(window.innerHeight)/2.5 + 22);
+	if(unghi != 0)
+	cursor.fillText("cos(" + unghi1 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - 40, parseFloat(window.innerHeight)/2.5 + 22);
 	cursor.lineTo(parseFloat(window.innerWidth)/2 ,parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) + 2);
 	
 	cursor.stroke();
@@ -123,10 +123,12 @@ cursor.lineTo(parseFloat(window.innerWidth)/2, parseFloat(window.innerHeight)/2.
 cursor.stroke();
 
 	
-	unghi = $('.unghi').val();
+	unghi = $('.unghi').val();	
+	unghi1 = unghi;
 	cursor.beginPath();
 	cursor.lineWidth = 3;
 	unghi = unghi/57.2958;
+
 	cursor.moveTo(parseFloat(window.innerWidth)/2 , parseFloat(window.innerHeight)/2.5);
 	cursor.strokeStyle = '#ff0000';
 	
@@ -143,13 +145,13 @@ cursor.stroke();
 	cursor.font = "25px Times New Roman";
 	
 	var lineLen = window.innerWidth * 0.15 * Math.cos(unghi);
-	
-	cursor.fillText("sin(" + unghi*57.2958 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - lineLen, parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) - 5);
+	if(unghi != 0)
+	cursor.fillText("sin(" + unghi1 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - lineLen, parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) - 5);
 	cursor.lineTo(parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) , parseFloat(window.innerHeight)/2.5);
 	
 	cursor.moveTo(parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi), parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) + 2);
-	
-	cursor.fillText("cos(" + unghi*57.2958 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - 40, parseFloat(window.innerHeight)/2.5 + 22);
+	if(unghi != 0)
+	cursor.fillText("cos(" + unghi1 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - 40, parseFloat(window.innerHeight)/2.5 + 22);
 	cursor.lineTo(parseFloat(window.innerWidth)/2 ,parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) + 2);
 	
 	cursor.stroke();
@@ -172,7 +174,7 @@ $(function(){
 unghi = $('.unghi').val();
 
 console.log(unghi);
-
+var unghi1 = unghi;
 var canvas = document.getElementsByClassName('cercTrigonometric')[0];
 
 canvas.setAttribute("width" , parseFloat(window.innerWidth) * 1 + "px");
@@ -222,6 +224,7 @@ cursor.stroke();
 unghi = $('.unghi').val();
 	cursor.beginPath();
 	cursor.lineWidth = 3;
+	var unghi1 = unghi;
 	unghi = unghi/57.2958;
 	cursor.moveTo(parseFloat(window.innerWidth)/2 , parseFloat(window.innerHeight)/2.5);
 	cursor.strokeStyle = '#ff0000';
@@ -239,13 +242,13 @@ unghi = $('.unghi').val();
 	cursor.font = "25px Times New Roman";
 	
 	var lineLen = window.innerWidth * 0.15 * Math.cos(unghi);
-	
-	cursor.fillText("sin(" + unghi*57.2958 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - lineLen, parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) - 5);
+	if(unghi != 0)
+	cursor.fillText("sin(" + unghi1 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - lineLen, parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) - 5);
 	cursor.lineTo(parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) , parseFloat(window.innerHeight)/2.5);
 	
 	cursor.moveTo(parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi), parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) + 2);
-	
-	cursor.fillText("cos(" + unghi*57.2958 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - 40, parseFloat(window.innerHeight)/2.5 + 22);
+	if(unghi != 0)
+	cursor.fillText("cos(" + unghi1 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - 40, parseFloat(window.innerHeight)/2.5 + 22);
 	cursor.lineTo(parseFloat(window.innerWidth)/2 ,parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) + 2);
 	
 	cursor.stroke();
@@ -291,6 +294,7 @@ cursor.stroke();
 
 	
 	unghi = $('.unghi').val();
+	var unghi1 = unghi;
 	cursor.beginPath();
 	cursor.lineWidth = 3;
 	unghi = unghi/57.2958;
@@ -310,22 +314,22 @@ cursor.stroke();
 	cursor.font = "25px Times New Roman";
 	
 	var lineLen = window.innerWidth * 0.15 * Math.cos(unghi);
-	
-	cursor.fillText("sin(" + unghi*57.2958 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - lineLen, parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) - 5);
+	if(unghi != 0)
+	cursor.fillText("sin(" + unghi1 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - lineLen, parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) - 5);
 	cursor.lineTo(parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) , parseFloat(window.innerHeight)/2.5);
 	
 	cursor.moveTo(parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi), parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) + 2);
-	
-	cursor.fillText("cos(" + unghi*57.2958 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - 40, parseFloat(window.innerHeight)/2.5 + 22);
+	if(unghi != 0)
+	cursor.fillText("cos(" + unghi1 + ")" , parseFloat(window.innerWidth)/2 + window.innerWidth * 0.15 * Math.cos(unghi) - 40, parseFloat(window.innerHeight)/2.5 + 22);
 	cursor.lineTo(parseFloat(window.innerWidth)/2 ,parseFloat(window.innerHeight)/2.5 + -window.innerWidth * 0.15 * Math.sin(unghi) + 2);
 	
 	cursor.stroke();
 	
-	$('.sin').html("sin(" + unghi*57.2958 + ") = " + Math.sin(unghi));
+	$('.sin').html("sin(" + unghi1 + ") = " + Math.sin(unghi));
 	console.log(unghi);
-	$('.cos').html("cos(" + unghi*57.2958 + ") = " + Math.cos(unghi));
-	$('.tg').html("tg(" + unghi*57.2958 + ") = " + Math.tan(unghi));
-	$('.ctg').html("ctg(" + unghi*57.2958 + ") = " + 1/Math.cos(unghi));
+	$('.cos').html("cos(" + unghi1 + ") = " + Math.cos(unghi));
+	$('.tg').html("tg(" + unghi1 + ") = " + Math.tan(unghi));
+	$('.ctg').html("ctg(" + unghi1 + ") = " + 1/Math.cos(unghi));
 
 
 });
