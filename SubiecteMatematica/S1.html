@@ -59,7 +59,7 @@
 			
 			<div class="navbar-form navbar-left">
 			  <div class="input-group">
-				<input type="text" class="form-control" placeholder="Cauta" name="search">
+				<input type="text" class="form-control cautare" placeholder="Cauta" name="search">
 				<div class="input-group-btn">
 				  <button class="btn btn-default" onclick="cauta()">
 					<i class="glyphicon glyphicon-search"></i>
@@ -71,11 +71,59 @@
 		</div>
 	  </div>
 	</nav>
-  
 	
 <div class="container">
+
+	<table class="table table-hover tabelCautare" style="display: none;">
+	
+	  <tr><td>
+		Progresii aritmetice	
+	  </td></tr>
+	  
+	  <tr><td>
+		Progresii geometrice
+	  </tr></td>
+	
+	  <tr><td>
+		Probabilitati
+	  </td></tr>
+	  
+	  <tr><td>
+		Elemente de combinatorica
+	  </tr></td>
+	  <tr><td>
+		Logaritmi
+	  </td></tr>
+	  
+	  <tr><td>
+		Functia de gradul 2
+	  </tr></td>
+	  
+	  <tr><td>
+		Functii
+	  </td></tr>
+	  
+	  <tr><td>
+		Trigonometrie
+	  </td></tr>
+	  
+	  <tr><td>
+		Geometrie
+	  </td></tr>
+	  
+	  <tr><td>
+		Vectori in plan
+	  </td></tr>
+	  
+	  <tr><td>
+		Conditii de existenta
+	  </td></tr>
+	
+	</table>
+  <div class="CONTENT">
   <h1>Subiectul 1</h1>
   <div class="panel-group" class="Subiectul1">
+  
   
     <div class="panel panel-default"> <!-- Progresii Aritmetice -->
 	
@@ -97,9 +145,10 @@
 			medie aritmetica intre <span style="font-weight: bold;">a</span> si <span style="font-weight: bold;">c</span> adica <span style="font-weight: bold;">b = (a + c)/2</span></p>
 			
 		  <p style="font-weight: bold;">a<sub>n</sub>=a<sub>1</sub>+(n - 1)r</p>
-		  <p><span style="font-weight: bold;">S<sub>n</sub>=(n(2a<sub>1</sub> + (n - 1)r))/2</span> unde am notat <spn style="font-weight: bold;">
+		  <p><span style="font-weight: bold;">S<sub>n</sub>=(n(2a<sub>1</sub> + (n - 1)r))/2</span> unde am notat <span style="font-weight: bold;">
 				S<sub>n</sub> = a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + ... + a<sub>n</sub></span></p>
 		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
+		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
 		  
 		  
 		
@@ -117,9 +166,25 @@
       </div>
 	  
       <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="panel-body">
+		
+		  <p><span style="font-weight: bold;">Definitie:</span>  Se numeste progresie geometrica un sir de numere reale in
+			care fiecare termen se obtine din termenul anterior inmultind cu o
+			constanta numita ratie (q). 
+		  </p>
+		  
+		  <p><span style="font-weight: bold;">Proprietate:</span> Trei numere <span style="font-weight: bold;">a , b, c</span> sunt in progresie geometrica cu termeni pozitivi daca <span style="font-weight: bold;">b</span> e 
+			medie geometrica intre <span style="font-weight: bold;">a</span> si <span style="font-weight: bold;">c</span> adica <span style="font-weight: bold;">b = √(ac)</span></p>
+			
+		  <p style="font-weight: bold;">a<sub>n</sub>=a<sub>1</sub>q<sup>n - 1</sup></p>
+		  <p><span style="font-weight: bold;">S<sub>n</sub> = a<sub>1</sub>(q<sup>n</sup>-1)/(q - 1)</span> unde am notat <span style="font-weight: bold;">
+				S<sub>n</sub> = a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + ... + a<sub>n</sub></span></p>
+		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
+		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
+		  
+		  
+		
+		</div>
       </div>
 	  
     </div>
@@ -133,41 +198,61 @@
       </div>
 	  
       <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="panel-body">
+		
+		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
+		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
+		
+		</div>
       </div>
 	  
     </div>
 	
-	<div class="panel panel-default"> <!-- Combinari -->
+	<div class="panel panel-default"> <!-- Combinatorica -->
       
 	  <div class="panel-heading text-center">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse4">Combinari</a>
+          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse4">Elemente de combinatorica</a>
         </h4>
       </div>
 	  
       <div id="collapse4" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      </div>
-	  
-    </div>
-	
-	<div class="panel panel-default"> <!-- Logaritmi -->
-      
-	  <div class="panel-heading text-center">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse5">Logaritmi</a>
-        </h4>
-      </div>
-	  
-      <div id="collapse5" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="panel-body">
+        
+		  <p><span style="font-weight: bold">Permutari de n</span> se noteaza <span style="font-weight: bold;">P<sub>n</sub></span> <br>
+			<span style="font-weight: bold;">P<sub>n</sub>=n!</span> si reprezinta <span style="font-weight: bold;">numarul de multimi ordonate</span> ce se pot forma	
+			cu <span style="font-weight: bold;">n</span> elemente. </p>
+		  
+		  <p>
+		  
+		    <span style="font-weight: bold;">Aranjamente de n luate cate k</span> se noteaza <span style="font-weight: bold;">A<sub>n</sub><sup>k</sup></span>
+			<br>
+			<span style="font-weight: bold;">A<sub>n</sub><sup>k</sup> = n!/(n-k)!</span> reprezinta <span style="font-weight: bold;">numarul de submultimi ordonate</span> de cate <span style="font-weight: bold;">k</span> elemente ce se pot forma dintr-o multime de <span style="font-weight: bold;">n</span> elemente.
+
+		  
+		  </p>
+		  
+		  <p>
+		  
+		    <span style="font-weight: bold;">Combinari de n luate cate k</span> se noteaza <span style="font-weight: bold;">C<sub>n</sub><sup>k</sup></span>
+			<br>
+			<span style="font-weight: bold;">C<sub>n</sub><sup>k</sup> = n!/k!(n-k)!</span>  <span style="font-weight: bold;">reprezinta nr de submultimi neordonate de cate k
+				elemente</span> ce se pot forma dintr-o multime cu <span style="font-weight: bold">n</span> elemente. 
+			<br>
+			<span style="font-weight: bold;">C<sub>n</sub><sup>0</sup> + C<sub>n</sub><sup>1</sup> + C<sub>n</sub><sup>2</sup> + ... + C<sub>n</sub><sup>n</sup> = 2<sup>n</sup></span>
+		  
+		  </p>
+		  
+		  <p><span style="font-weight: bold;">Numarul tuturor sumultimilor unei multimi cu n elemente este 2<sup>n</sup></span>
+		</p>
+		
+		  <p><span style="font-weight: bold;">Numarul submultimilor cu cate k elemente ale unei multimi cu n
+elemente este C<sub>n</sub><sup>k</sup></span></p>
+		
+		<a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
+		<a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
+		
+		</div>
       </div>
 	  
     </div>
@@ -181,9 +266,40 @@
       </div>
 	  
       <div id="collapse6" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="panel-body">
+		
+		  <p>Varful parabolei este: <span style="font-weight: bold;">V(-b/2a , -Δ/4a)</span><br>
+		  - daca <span style="font-weight: bold;">a > 0</span> varful este punct de minim:<br>
+		  -Δ/4a este <b>valoare minima</b> iar -b/2a este <b>punct de minim</b><br>
+		  - daca <b>a < 0 </b>este punct de maxim:<br>
+		  -Δ/4a este <b>valoare maxima</b> iar -b/2a este <b>punct de maxim</b></p>
+		  <p>Graficul functiei de gradul doi e tangent la axa Ox daca are <b>Δ = 0</b></p>
+		  <p>Graficul functiei de gradul doi e situat deasupra axei Ox daca are:<br>
+			<b>Δ < 0<br>
+			a > 0</b></p>
+		  <p><b>Relatiile lui Viette</b><br>
+			Pentru ecuatia de gradul doi cu radacini <b>x<sub>1</sub> , x<sub>2</sub></b> , au loc relatiile:<br>
+			<b>x<sub>1</sub> + x<sub>2</sub> = -b/a<br>
+			x<sub>1</sub> · x<sub>2</sub> = c/a</b>
+			</p>
+			
+		  <p><b>Observatie: x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> = (x<sub>1</sub> + x<sub>2</sub>)<sup>2</sup> - 2x<sub>1</sub>x<sub>2</sub> = (-b/a)<sup>2</sup> - 2c/a</b></p>
+		  
+		  <p><b>Ecuatia cu radacini</b> x<sub>1</sub> , x<sub>2</sub> este <b>x<sup>2</sup> - Sx + P = 0</b> unde <b>S = x<sub>1</sub> + x<sub>2</sub></b> iar <b>P = x<sub>1</sub> · x<sub>2</sub></b></p>
+		  
+		  <p>Conditia ca <b>a<sup>2</sup> + bx + c >= 0</b> , x din R este <b>Δ <= 0 , a > 0</b><br>
+		  Conditia ca <b>a<sup>2</sup> + bx + c <= 0</b> , x din R este <b>Δ <= 0 , a < 0</b><br>
+		  Conditia ca <b>a<sup>2</sup> + bx + c > 0</b> , x din R este <b>Δ < 0 , a > 0</b><br>
+		  Conditia ca <b>a<sup>2</sup> + bx + c < 0</b> , x din R este <b>Δ < 0 , a < 0</b><br></p>
+		  
+		  <p>Conditia ca ecuatia <b>a<sup>2</sup> + bx + c = 0</b> sa aibe doua solutii reale este <b>Δ > 0</b><br>
+		  Conditia ca ecuatia <b>a<sup>2</sup> + bx + c = 0</b> sa aibe doua solutii egale este <b>Δ = 0</b><br>
+		  Conditia ca ecuatia <b>a<sup>2</sup> + bx + c = 0</b> sa nu aibe solutii reale este <b>Δ < 0</b><br></p>
+		
+		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
+		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
+		  
+		</div>
       </div>
 	  
     </div>
@@ -197,9 +313,32 @@
       </div>
 	  
       <div id="collapse7" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="panel-body">
+		
+		  <p>
+		    Punctul <b>A(a , b)</b> se afla pe graficul functiei daca <b>f(a) = b</b>
+		  </p>
+		  
+		  <p>Pentru a afla punctele de intersectie dintre graficele a doua functii f si g se rezolva sistemul:<br>
+		  <b>y = f(x)<br>
+		  y = g(x)</b><br>
+		  Solutiile (x , y) reprezinta coordonatele punctelor de intersectie.</p>
+		  
+		  <p><b>Inversa functiei f:</b> <br>
+		  Daca <b>f(x) = y</b> atunci <b>f<sup>-1</sup>(y) = x</b></p>
+		  
+		  <p><b>Intersectia cu Ox a graficului functiei f:</b><br>
+		  Se rezolva ecuatia <b>f(x) = 0</b><br>
+		  Daca x este o solutie a ecuatiei f(x) = 0 atunci punctul <b>A(x , 0)</b> este un punct de intersectie dintre axa Ox si graficul functiei f.</p>
+		  
+		  <p><b>Intersectia cu Oy a graficului functiei:</b><br>
+		  Se calculeaza <b>f(0)</b> daca 0 e in domeniul de definitie.<br>
+		  Punctul <b>B(0 , f(0))</b> reprezinta intersectia dintre axa Oy si graficul functiei f.<br>
+		  In cazul in care 0 nu se afla in domeniul de definitie al functiei , graficul functiei nu taie axa Oy.</p>
+		
+		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
+		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
+		</div>
       </div>
 	  
     </div>
@@ -213,10 +352,205 @@
       </div>
 	  
       <div id="collapse8" class="panel-collapse collapse">
-        <div class="panel-body">		  
+        <div class="panel-body">		
+
+		  <table class="table table-bordered hidden-xs">
+		  
+		    <tr>
+		    
+			  <td><b>Unghi(grade)</b></td>
+			  <td><b>0°</b></td>
+			  <td><b>30°</b></td>
+			  <td><b>45°</b></td>
+			  <td><b>60°</b></td>
+			  <td><b>90°</b></td>
+			  <td><b>120°</b></td>
+			  <td><b>135°</b></td>
+			  <td><b>150°</b></td>
+			  <td><b>180°</b></td>
+			
+			</tr>
+			
+			<tr>
+			
+			  <td><b>Unghi(radiani)</b></td>
+			  <td><b>0</b></td>
+			  <td><b>π/6</b></td>
+			  <td><b>π/4</b></td>
+			  <td><b>π/3</b></td>
+			  <td><b>π/2</b></td>
+			  <td><b>2π/3</b></td>
+			  <td><b>3π/4</b></td>
+			  <td><b>5π/6</b></td>
+			  <td><b>π</b></td>
+			
+			</tr>
+			
+			<tr>
+			
+			  <td>Sin</td>
+			  <td>0</td>
+			  <td>1/2</td>
+			  <td>√2/2</td>
+			  <td>√3/2</td>
+			  <td>1</td>
+			  <td>√3/2</td>
+			  <td>√2/2</td>
+			  <td>1/2</td>
+			  <td>0</td>
+			
+			</tr>
+			
+			<tr>
+			
+			  <td>Cos</td>
+			  <td>1</td>
+			  <td>√3/2</td>
+			  <td>√2/2</td>
+			  <td>1/2</td>
+			  <td>0</td>
+			  <td>-1/2</td>
+			  <td>-√2/2</td>
+			  <td>-√3/2</td>
+			  <td>-1</td>
+			
+			</tr>
+			
+			<tr>
+			
+			  <td>Tg</td>
+			  <td>0</td>
+			  <td>1/√3</td>
+			  <td>1</td>
+			  <td>√3</td>
+			  <td>-</td>
+			  <td>-√3</td>
+			  <td>-1</td>
+			  <td>-1/√3</td>
+			  <td>0</td>
+			
+			</tr>
+			
+			<tr>
+			
+			  <td>Ctg</td>
+			  <td>-</td>
+			  <td>√3</td>
+			  <td>1</td>
+			  <td>1/√3</td>
+			  <td>0</td>
+			  <td>-1/√3</td>
+			  <td>-1</td>
+			  <td>-√3</td>
+			  <td>-</td>
+			
+			</tr>
+		  
+		  </table>
+		  
+		  <table class="table table-bordered hidden-xs">
+		  
+		    <tr>
+		    
+			  <td><b>Unghi(grade)</b></td>
+			  <td><b>210°</b></td>
+			  <td><b>225°</b></td>
+			  <td><b>240°</b></td>
+			  <td><b>270°</b></td>
+			  <td><b>300°</b></td>
+			  <td><b>315°</b></td>
+			  <td><b>330°</b></td>
+			  <td><b>360°</b></td>
+			
+			</tr>
+			
+			<tr>
+			
+			  <td><b>Unghi(radiani)</b></td>
+			  <td><b>7π/6</b></td>
+			  <td><b>5π/4</b></td>
+			  <td><b>4π/3</b></td>
+			  <td><b>3π/2</b></td>
+			  <td><b>5π/3</b></td>
+			  <td><b>7π/4</b></td>
+			  <td><b>11π/6</b></td>
+			  <td><b>2πv</td>
+			
+			</tr>
+			
+			<tr>
+			
+			  <td>Sin</td>
+			  <td>-1/2</td>
+			  <td>-√2/2</td>
+			  <td>-√3/3</td>
+			  <td>-1</td>
+			  <td>-√3/2</td>
+			  <td>-√2/2</td>
+			  <td>-1/2</td>
+			  <td>0</td>
+			
+			</tr>
+			
+			<tr>
+			
+			  <td>Cos</td>
+			  <td>-√3/2</td>
+			  <td>-√2/2</td>
+			  <td>-1/2</td>
+			  <td>0</td>
+			  <td>1/2</td>
+			  <td>√2/2</td>
+			  <td>√3/2</td>
+			  <td>1</td>
+			
+			</tr>
+			
+			<tr>
+			
+			  <td>Tg</td>
+			  <td>1/√3</td>
+			  <td>1</td>
+			  <td>√3</td>
+			  <td>-</td>
+			  <td>-√3</td>
+			  <td>-1</td>
+			  <td>-1/√3</td>
+			  <td>0</td>
+			
+			</tr>
+			
+			<tr>
+			
+			  <td>Ctg</td>
+			  <td>√3</td>
+			  <td>1</td>
+			  <td>1/√3</td>
+			  <td>0</td>
+			  <td>-1/√3</td>
+			  <td>-1</td>
+			  <td>-√3</td>
+			  <td>-</td>
+			
+			</tr>
+		  
+		  </table>
+		
+		  <p><b>sin(180° - x) = sinx<br>
+		  sin(90° - x) = cosx<br>
+		  cos(180° - x) = -cosx<br>
+		  cos(90° - x) = sinx<br>
+		  sin<sup>2</sup>x + cos<sup>2</sup>x = 1 , oricare x real <br>
+		  tgx = sinx/cosx<br>
+		  ctgx = cosx/sinx = 1/tgx</b></p>
+		
 		  <a class="btn btn-default" style="float: right;" href="S1/Trigonometrie.html">Tool-uri</a>
+		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
 		</div>
-      </div>
+      
+		
+	  
+	  </div>
 	  
     </div>
 	
@@ -228,10 +562,14 @@
         </h4>
       </div>
 	  
-      <div id="collapse9" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      <div id="collapse9" class="panel-collapse collapse in">
+        <div class="panel-body">
+		
+		  <p><b>Ecuatia dreptei AB : </b> <div class="det" style="display: inline-block; font-size: 18px">x  y 1 <br> x<sub>A</sub> y<sub>A</sub> 1<br>x<sub>B</sub> y<sub>B</sub> 1</div></p>
+		
+		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
+		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
+		</div>
       </div>
 	  
     </div>
@@ -240,14 +578,15 @@
       
 	  <div class="panel-heading text-center">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse10">Vectori in plan3</a>
+          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse10">Vectori in plan</a>
         </h4>
       </div>
 	  
       <div id="collapse10" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="panel-body">
+		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
+		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
+		</div>
       </div>
 	  
     </div>
@@ -261,14 +600,85 @@
       </div>
 	  
       <div id="collapse11" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="panel-body">
+		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
+		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
+		</div>
       </div>
 	  
     </div>
 	
-</div> 
+	<div class="panel panel-default"> <!-- Logaritmi -->
+      
+	  <div class="panel-heading text-center">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse5">Logaritmi</a>
+        </h4>
+      </div>
+	  
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">
+		
+		  <p>
+		  <b>log<sub>a</sub><sup>b</sup></b> = puterea la care il ridic pe a astfel incat sa dea pe <b>b</b>.
+		  </p>
+		  
+		  <p>
+		  <b>log<sub>a</sub><sup>b</sup></b> exista doar pentru <b>a>0 , b>0 , a != 1</b>
+		  </p>
+		  
+		  <p>
+		  <b>log<sub>a</sub><sup>a</sup><sup>b</sup> = b </b>(cu ajutorul acestei formule orice numar real poate fi scris ca log in orice baza vreau) 
+		  </p>
+		  
+		  <p>
+		  <b>log<sub>a</sub><sup>b</sup> = c </b>revine la <b>b = a<sup>c</sup></b>
+		  </p>
+		  
+		  <p>
+		  <b>log<sub>a</sub><sup>b</sup> + log<sub>a</sub><sup>c</sup> = log<sub>a</sub>(bc)</b>
+		  </p>
+		  
+		  <p>
+		  <b>log<sub>a</sub><sup>b</sup> - log<sub>a</sub><sup>c</sup> = log<sub>a</sub>(b/c)</b>
+		  </p>
+		  
+		  <p>
+		  <b>log<sub>a</sub><sup>b<sup>p</sup></sup> = p log<sub>a</sub><sup>b</sup></b>
+		  </p>
+		  
+		  <p>
+		  <b>log<sub>a<sup>p</sup></sub><sup>b</sup> = 1/p log<sub>a</sub><sup>b</sup></b>
+		  </p>
+		  
+		  <p>
+		  <b>log<sub>a</sub><sup>b</sup> = 1/log<sub>b</sub><sup>a</sup></b>
+		  </p>
+		  
+		  <p>
+		  <b>a<sup>log<sub>a</sub><sup>b</sup></sup> = b</b>
+		  </p>
+		  
+		  <p>
+		  daca <b>a > 1</b> functia log este crescatoare , <b>log<sub>a</sub><sup>b</sup> > log<sub>a</sub><sup>c</sup> => b > c</b>
+		  </p>
+		  
+		  <p>
+		  daca <b>a < 1</b> functia log este crescatoare , <b>log<sub>a</sub><sup>b</sup> > log<sub>a</sub><sup>c</sup> => b < c</b>
+		  </p>
+		
+		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
+		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
+		
+		</div>
+      </div>
+	  
+    </div>
+	
+	</div> 
+
+  </div>
+
 </div>
 	
   </body>
