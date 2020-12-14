@@ -1,787 +1,633 @@
+
+
 <!DOCTYPE HTML>
 <html>
-
-  <head>
-  
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<script src="index.js"></script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  </head>
-
-  <body>
-  
-    <nav class="navbar navbar-default navbar-fixed-top">
-	  <div class="container-fluid">
-	  
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".baraNavigatie">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>  
-			</button>
-			<li class="navbar-brand" href="#">Bacxvia</li>	
-		</div>
-	  
-		<div class="collapse navbar-collapse baraNavigatie">
-		
-			<ul class="nav navbar-nav">
-			  <li><a href="../index.html">Acasa</a></li>
-			
-			  <li class="dropdown active">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Matematica <span class="caret"></span></a>
-			    <ul class="dropdown-menu">
-				
-				  <li><a href="SubiecteMatematica/S1.html">Subiectul 1</a></li>
-				  <li><a href="SubiecteMatematica/S2.html">Subiectul 2</a></li>
-				  <li><a href="SubiecteMatematica/S3.html">Subiectul 3</a></li>
-				
-				</ul>
-			  </li>
-			  
-			  
-			  <li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Romana <span class="caret"></span></a>
-			    <ul class="dropdown-menu">
-				
-				  <li><a href="SubiecteRomana/S1.html">Subiectul 1</a></li>
-				  <li><a href="SubiecteRomana/S2.html">Subiectul 2</a></li>
-				  <li><a href="SubiecteRomana/S3.html">Subiectul 3</a></li>
-				
-				</ul>
-			  </li>
-			  
-			</ul>
-			
-			<div class="navbar-form navbar-left">
-			  <div class="input-group">
-				<input type="text" class="form-control cautare" placeholder="Cauta" name="search">
-				<div class="input-group-btn">
-				  <button class="btn btn-default" onclick="cauta()">
-					<i class="glyphicon glyphicon-search"></i>
-				  </button>
-				</div>
-			  </div>
-			</div>
-			
-		</div>
-	  </div>
-	</nav>
-	
-<div class="container">
-
-	<table class="table table-hover tabelCautare" style="display: none;">
-	
-	  <tr><td>
-		Progresii aritmetice	
-	  </td></tr>
-	  
-	  <tr><td>
-		Progresii geometrice
-	  </tr></td>
-	
-	  <tr><td>
-		Probabilitati
-	  </td></tr>
-	  
-	  <tr><td>
-		Elemente de combinatorica
-	  </tr></td>
-	  <tr><td>
-		Logaritmi
-	  </td></tr>
-	  
-	  <tr><td>
-		Functia de gradul 2
-	  </tr></td>
-	  
-	  <tr><td>
-		Functii
-	  </td></tr>
-	  
-	  <tr><td>
-		Trigonometrie
-	  </td></tr>
-	  
-	  <tr><td>
-		Geometrie
-	  </td></tr>
-	  
-	  <tr><td>
-		Vectori in plan
-	  </td></tr>
-	  
-	  <tr><td>
-		Conditii de existenta
-	  </td></tr>
-	
-	</table>
-  <div class="CONTENT">
-  <h1>Subiectul 1</h1>
-  <div class="panel-group" class="Subiectul1">
-  
-  
-    <div class="panel panel-default"> <!-- Progresii Aritmetice -->
-	
-      <div class="panel-heading">
-        <h4 class="panel-title text-center">
-          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse1">Progresii aritmetice</a>
-        </h4>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="index.js"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".baraNavigatie">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>  
+               </button>
+               <li class="navbar-brand" href="#">Bacxvia</li>
+            </div>
+            <div class="collapse navbar-collapse baraNavigatie">
+               <ul class="nav navbar-nav">
+                  <li><a href="../index.html">Acasa</a></li>
+                  <li class="dropdown active">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Matematica <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#">Subiectul 1</a></li>
+                        <li><a href="S2.html">Subiectul 2</a></li>
+                        <li><a href="S3.html">Subiectul 3</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Romana <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="../SubiecteRomana/S1.html">Subiectul 1</a></li>
+                        <li><a href="../SubiecteRomana/S2.html">Subiectul 2</a></li>
+                        <li><a href="../SubiecteRomana/S3.html">Subiectul 3</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <div class="navbar-form navbar-left">
+                  <div class="input-group">
+                     <input type="text" class="form-control cautare" placeholder="Cauta" name="search">
+                     <div class="input-group-btn">
+                        <button class="btn btn-default" onclick="cauta()">
+                        <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <div class="container">
+         <table class="table table-hover tabelCautare" style="display: none;">
+            <tr>
+               <td>
+                  Progresii aritmetice	
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Progresii geometrice
+            </tr>
+            </td>
+            <tr>
+               <td>
+                  Probabilitati
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Elemente de combinatorica
+            </tr>
+            </td>
+            <tr>
+               <td>
+                  Logaritmi
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Functia de gradul 2
+            </tr>
+            </td>
+            <tr>
+               <td>
+                  Functii
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Trigonometrie
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Geometrie
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Vectori in plan
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Conditii de existenta
+               </td>
+            </tr>
+         </table>
+         <div class="CONTENT">
+            <h1>Subiectul 1</h1>
+            <div class="panel-group" class="Subiectul1">
+               <div class="panel panel-default">
+                  <!-- Progresii Aritmetice -->
+                  <div class="panel-heading">
+                     <h4 class="panel-title text-center">
+                        <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse1">Progresii aritmetice</a>
+                     </h4>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <p><span style="font-weight: bold;">Definitie:</span> Se numeste progresie aritmetica un sir de numere reale in
+                           care fiecare termen se obtine din termenul anterior adunand o
+                           constanta numita ratie (r)
+                        </p>
+                        <p><span style="font-weight: bold;">Proprietate:</span> Trei numere <span style="font-weight: bold;">a , b, c</span> sunt in progresie aritmetica daca <span style="font-weight: bold;">b</span> e 
+                           medie aritmetica intre <span style="font-weight: bold;">a</span> si <span style="font-weight: bold;">c</span> adica <span style="font-weight: bold;">b = (a + c)/2</span>
+                        </p>
+                        <p style="font-weight: bold;">a<sub>n</sub>=a<sub>1</sub>+(n - 1)r</p>
+                        <p><span style="font-weight: bold;">S<sub>n</sub>=(n(2a<sub>1</sub> + (n - 1)r))/2</span> unde am notat <span style="font-weight: bold;">
+                           S<sub>n</sub> = a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + ... + a<sub>n</sub></span>
+                        </p>
+                        <a class="btn btn-default" style="float: right;" href="S1/ProgresiiAritmetice/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/ProgresiiAritmetice/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default">
+                  <!-- Progresii Geometrice -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse2">Progresii geometrice</a>
+                     </h4>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <p><span style="font-weight: bold;">Definitie:</span>  Se numeste progresie geometrica un sir de numere reale in
+                           care fiecare termen se obtine din termenul anterior inmultind cu o
+                           constanta numita ratie (q). 
+                        </p>
+                        <p><span style="font-weight: bold;">Proprietate:</span> Trei numere <span style="font-weight: bold;">a , b, c</span> sunt in progresie geometrica cu termeni pozitivi daca <span style="font-weight: bold;">b</span> e 
+                           medie geometrica intre <span style="font-weight: bold;">a</span> si <span style="font-weight: bold;">c</span> adica <span style="font-weight: bold;">b = √(ac)</span>
+                        </p>
+                        <p style="font-weight: bold;">a<sub>n</sub>=a<sub>1</sub>q<sup>n - 1</sup></p>
+                        <p><span style="font-weight: bold;">S<sub>n</sub> = a<sub>1</sub>(q<sup>n</sup>-1)/(q - 1)</span> unde am notat <span style="font-weight: bold;">
+                           S<sub>n</sub> = a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + ... + a<sub>n</sub></span>
+                        </p>
+                        <a class="btn btn-default" style="float: right;" href="S1/ProgresiiGeometrice/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/ProgresiiGeometrice/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default">
+                  <!-- Probabilitati -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse3">Probabilitati</a>
+                     </h4>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <p class="lead">Probabilitate = nr.cazurifavorabile/nr.cazuriposibile</p>
+                        <a class="btn btn-default" style="float: right;" href="S1/Probabilitati/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/Probabilitati/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default">
+                  <!-- Combinatorica -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse4">Elemente de combinatorica</a>
+                     </h4>
+                  </div>
+                  <div id="collapse4" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <p><span style="font-weight: bold">Permutari de n</span> se noteaza <span style="font-weight: bold;">P<sub>n</sub></span> <br>
+                           <span style="font-weight: bold;">P<sub>n</sub>=n!</span> si reprezinta <span style="font-weight: bold;">numarul de multimi ordonate</span> ce se pot forma	
+                           cu <span style="font-weight: bold;">n</span> elemente. 
+                        </p>
+                        <p>
+                           <span style="font-weight: bold;">Aranjamente de n luate cate k</span> se noteaza <span style="font-weight: bold;">A<sub>n</sub><sup>k</sup></span>
+                           <br>
+                           <span style="font-weight: bold;">A<sub>n</sub><sup>k</sup> = n!/(n-k)!</span> reprezinta <span style="font-weight: bold;">numarul de submultimi ordonate</span> de cate <span style="font-weight: bold;">k</span> elemente ce se pot forma dintr-o multime de <span style="font-weight: bold;">n</span> elemente.
+                        </p>
+                        <p>
+                           <span style="font-weight: bold;">Combinari de n luate cate k</span> se noteaza <span style="font-weight: bold;">C<sub>n</sub><sup>k</sup></span>
+                           <br>
+                           <span style="font-weight: bold;">C<sub>n</sub><sup>k</sup> = n!/k!(n-k)!</span>  <span style="font-weight: bold;">reprezinta nr de submultimi neordonate de cate k
+                           elemente</span> ce se pot forma dintr-o multime cu <span style="font-weight: bold">n</span> elemente. 
+                           <br>
+                           <span style="font-weight: bold;">C<sub>n</sub><sup>0</sup> + C<sub>n</sub><sup>1</sup> + C<sub>n</sub><sup>2</sup> + ... + C<sub>n</sub><sup>n</sup> = 2<sup>n</sup></span>
+                        </p>
+                        <p><span style="font-weight: bold;">Numarul tuturor sumultimilor unei multimi cu n elemente este 2<sup>n</sup></span>
+                        </p>
+                        <p><span style="font-weight: bold;">Numarul submultimilor cu cate k elemente ale unei multimi cu n
+                           elemente este C<sub>n</sub><sup>k</sup></span>
+                        </p>
+                        <a class="btn btn-default" style="float: right;" href="S1/ElementeDeCombinatorica/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/ElementeDeCombinatorica/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default">
+                  <!-- Functia de gradul 2 -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse6">Functia de gradul 2</a>
+                     </h4>
+                  </div>
+                  <div id="collapse6" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <p>Varful parabolei este: <span style="font-weight: bold;">V(-b/2a , -Δ/4a)</span><br>
+                           - daca <span style="font-weight: bold;">a > 0</span> varful este punct de minim:<br>
+                           -Δ/4a este <b>valoare minima</b> iar -b/2a este <b>punct de minim</b><br>
+                           - daca <b>a < 0 </b>este punct de maxim:<br>
+                           -Δ/4a este <b>valoare maxima</b> iar -b/2a este <b>punct de maxim</b>
+                        </p>
+                        <p>Graficul functiei de gradul doi e tangent la axa Ox daca are <b>Δ = 0</b></p>
+                        <p>Graficul functiei de gradul doi e situat deasupra axei Ox daca are:<br>
+                           <b>Δ < 0<br>
+                           a > 0</b>
+                        </p>
+                        <p><b>Relatiile lui Viette</b><br>
+                           Pentru ecuatia de gradul doi cu radacini <b>x<sub>1</sub> , x<sub>2</sub></b> , au loc relatiile:<br>
+                           <b>x<sub>1</sub> + x<sub>2</sub> = -b/a<br>
+                           x<sub>1</sub> · x<sub>2</sub> = c/a</b>
+                        </p>
+                        <p><b>Observatie: x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> = (x<sub>1</sub> + x<sub>2</sub>)<sup>2</sup> - 2x<sub>1</sub>x<sub>2</sub> = (-b/a)<sup>2</sup> - 2c/a</b></p>
+                        <p><b>Ecuatia cu radacini</b> x<sub>1</sub> , x<sub>2</sub> este <b>x<sup>2</sup> - Sx + P = 0</b> unde <b>S = x<sub>1</sub> + x<sub>2</sub></b> iar <b>P = x<sub>1</sub> · x<sub>2</sub></b></p>
+                        <p>Conditia ca <b>a<sup>2</sup> + bx + c >= 0</b> , x din R este <b>Δ <= 0 , a > 0</b><br>
+                           Conditia ca <b>a<sup>2</sup> + bx + c <= 0</b> , x din R este <b>Δ <= 0 , a < 0</b><br>
+                           Conditia ca <b>a<sup>2</sup> + bx + c > 0</b> , x din R este <b>Δ < 0 , a > 0</b><br>
+                           Conditia ca <b>a<sup>2</sup> + bx + c < 0</b> , x din R este <b>Δ < 0 , a < 0</b><br>
+                        </p>
+                        <p>Conditia ca ecuatia <b>a<sup>2</sup> + bx + c = 0</b> sa aibe doua solutii reale este <b>Δ > 0</b><br>
+                           Conditia ca ecuatia <b>a<sup>2</sup> + bx + c = 0</b> sa aibe doua solutii egale este <b>Δ = 0</b><br>
+                           Conditia ca ecuatia <b>a<sup>2</sup> + bx + c = 0</b> sa nu aibe solutii reale este <b>Δ < 0</b><br>
+                        </p>
+                        <a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default">
+                  <!-- Functii -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse7">Functii</a>
+                     </h4>
+                  </div>
+                  <div id="collapse7" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <p>
+                           Punctul <b>A(a , b)</b> se afla pe graficul functiei daca <b>f(a) = b</b>
+                        </p>
+                        <p>Pentru a afla punctele de intersectie dintre graficele a doua functii f si g se rezolva sistemul:<br>
+                           <b>y = f(x)<br>
+                           y = g(x)</b><br>
+                           Solutiile (x , y) reprezinta coordonatele punctelor de intersectie.
+                        </p>
+                        <p><b>Inversa functiei f:</b> <br>
+                           Daca <b>f(x) = y</b> atunci <b>f<sup>-1</sup>(y) = x</b>
+                        </p>
+                        <p><b>Intersectia cu Ox a graficului functiei f:</b><br>
+                           Se rezolva ecuatia <b>f(x) = 0</b><br>
+                           Daca x este o solutie a ecuatiei f(x) = 0 atunci punctul <b>A(x , 0)</b> este un punct de intersectie dintre axa Ox si graficul functiei f.
+                        </p>
+                        <p><b>Intersectia cu Oy a graficului functiei:</b><br>
+                           Se calculeaza <b>f(0)</b> daca 0 e in domeniul de definitie.<br>
+                           Punctul <b>B(0 , f(0))</b> reprezinta intersectia dintre axa Oy si graficul functiei f.<br>
+                           In cazul in care 0 nu se afla in domeniul de definitie al functiei , graficul functiei nu taie axa Oy.
+                        </p>
+                        <a class="btn btn-default" style="float: right;" href="S1/Functii/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/Functii/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default">
+                  <!-- Trigonometrie -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse8">Trigonometrie</a>
+                     </h4>
+                  </div>
+                  <div id="collapse8" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <table class="table table-bordered hidden-xs">
+                           <tr>
+                              <td><b>Unghi(grade)</b></td>
+                              <td><b>0°</b></td>
+                              <td><b>30°</b></td>
+                              <td><b>45°</b></td>
+                              <td><b>60°</b></td>
+                              <td><b>90°</b></td>
+                              <td><b>120°</b></td>
+                              <td><b>135°</b></td>
+                              <td><b>150°</b></td>
+                              <td><b>180°</b></td>
+                           </tr>
+                           <tr>
+                              <td><b>Unghi(radiani)</b></td>
+                              <td><b>0</b></td>
+                              <td><b>π/6</b></td>
+                              <td><b>π/4</b></td>
+                              <td><b>π/3</b></td>
+                              <td><b>π/2</b></td>
+                              <td><b>2π/3</b></td>
+                              <td><b>3π/4</b></td>
+                              <td><b>5π/6</b></td>
+                              <td><b>π</b></td>
+                           </tr>
+                           <tr>
+                              <td>Sin</td>
+                              <td>0</td>
+                              <td>1/2</td>
+                              <td>√2/2</td>
+                              <td>√3/2</td>
+                              <td>1</td>
+                              <td>√3/2</td>
+                              <td>√2/2</td>
+                              <td>1/2</td>
+                              <td>0</td>
+                           </tr>
+                           <tr>
+                              <td>Cos</td>
+                              <td>1</td>
+                              <td>√3/2</td>
+                              <td>√2/2</td>
+                              <td>1/2</td>
+                              <td>0</td>
+                              <td>-1/2</td>
+                              <td>-√2/2</td>
+                              <td>-√3/2</td>
+                              <td>-1</td>
+                           </tr>
+                           <tr>
+                              <td>Tg</td>
+                              <td>0</td>
+                              <td>1/√3</td>
+                              <td>1</td>
+                              <td>√3</td>
+                              <td>-</td>
+                              <td>-√3</td>
+                              <td>-1</td>
+                              <td>-1/√3</td>
+                              <td>0</td>
+                           </tr>
+                           <tr>
+                              <td>Ctg</td>
+                              <td>-</td>
+                              <td>√3</td>
+                              <td>1</td>
+                              <td>1/√3</td>
+                              <td>0</td>
+                              <td>-1/√3</td>
+                              <td>-1</td>
+                              <td>-√3</td>
+                              <td>-</td>
+                           </tr>
+                        </table>
+                        <table class="table table-bordered hidden-xs">
+                           <tr>
+                              <td><b>Unghi(grade)</b></td>
+                              <td><b>210°</b></td>
+                              <td><b>225°</b></td>
+                              <td><b>240°</b></td>
+                              <td><b>270°</b></td>
+                              <td><b>300°</b></td>
+                              <td><b>315°</b></td>
+                              <td><b>330°</b></td>
+                              <td><b>360°</b></td>
+                           </tr>
+                           <tr>
+                              <td><b>Unghi(radiani)</b></td>
+                              <td><b>7π/6</b></td>
+                              <td><b>5π/4</b></td>
+                              <td><b>4π/3</b></td>
+                              <td><b>3π/2</b></td>
+                              <td><b>5π/3</b></td>
+                              <td><b>7π/4</b></td>
+                              <td><b>11π/6</b></td>
+                              <td><b>2πv</td>
+                           </tr>
+                           <tr>
+                              <td>Sin</td>
+                              <td>-1/2</td>
+                              <td>-√2/2</td>
+                              <td>-√3/3</td>
+                              <td>-1</td>
+                              <td>-√3/2</td>
+                              <td>-√2/2</td>
+                              <td>-1/2</td>
+                              <td>0</td>
+                           </tr>
+                           <tr>
+                              <td>Cos</td>
+                              <td>-√3/2</td>
+                              <td>-√2/2</td>
+                              <td>-1/2</td>
+                              <td>0</td>
+                              <td>1/2</td>
+                              <td>√2/2</td>
+                              <td>√3/2</td>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <td>Tg</td>
+                              <td>1/√3</td>
+                              <td>1</td>
+                              <td>√3</td>
+                              <td>-</td>
+                              <td>-√3</td>
+                              <td>-1</td>
+                              <td>-1/√3</td>
+                              <td>0</td>
+                           </tr>
+                           <tr>
+                              <td>Ctg</td>
+                              <td>√3</td>
+                              <td>1</td>
+                              <td>1/√3</td>
+                              <td>0</td>
+                              <td>-1/√3</td>
+                              <td>-1</td>
+                              <td>-√3</td>
+                              <td>-</td>
+                           </tr>
+                        </table>
+                        <p><b>sin(180° - x) = sinx<br>
+                           sin(90° - x) = cosx<br>
+                           cos(180° - x) = -cosx<br>
+                           cos(90° - x) = sinx<br>
+                           sin<sup>2</sup>x + cos<sup>2</sup>x = 1 , oricare x real <br>
+                           tgx = sinx/cosx<br>
+                           ctgx = cosx/sinx = 1/tgx</b>
+                        </p>
+                        <a class="btn btn-default" style="float: right;" href="S1/Trigonometrie/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/Trigonometrie/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default">
+                  <!-- Geometrie -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse9">Geometrie</a>
+                     </h4>
+                  </div>
+                  <div id="collapse9" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <p><b>Ecuatia dreptei AB : </b> 
+                        <div class="det" style="display: inline-block; font-size: 18px">x  y 1 <br> x<sub>A</sub> y<sub>A</sub> 1<br>x<sub>B</sub> y<sub>B</sub> 1</div>
+                        </p>
+                        <p>
+                           <b>Panta dreptei AB:</b><br>
+                           daca stiu doua puncte panta este <b>m<sub>AB</sub> = (y<sub>A</sub> - y<sub>B</sub>)/(x<sub>A</sub> - x<sub>B</sub>)</b><br>
+                           daca dreapta e data sub forma <b>y = mx + n</b> atunci <b>m</b> este panta<br>
+                           daca ecuatia e sub forma <b>ax + by + c = 0</b> panta este <b>-b/a</b><br>
+                           OBS: dreptele verticale (<b>x = a</b>) nu eu panta
+                        </p>
+                        <p>
+                           Ecuatia unei drepte cand stiu un punct A si panta m este : <b>y - y<sub>A</sub> = m(x - x<sub>A</sub>)</b>
+                        </p>
+                        <p>
+                           Conditia de paralelism a doua drepte <b>d<sub>1</sub> || d<sub>2</sub> <=> m<sub>d<sub>1</sub></sub> = m<sub>d<sub>2</sub></sub></b>
+                        </p>
+                        <p>Distanta dintre doua puncte <b><span class="det">AB</span> = √((x<sub>A</sub> - x<sub>B</sub>)<sup>2</sup> + (y<sub>A</sub> - y<sub>B</sub>)<sup>2</sup>)</b></p>
+                        <p>Mijlocul segmentului <b>AB</b> este <b>M((x<sub>A</sub> + x<sub>B</sub>)/2 , (y<sub>A</sub> + y<sub>B</sub>)/2)</b></p>
+                        <p>Conditia ca trei puncte A,B,C sa fie coliniare: 
+                        <div class="det" style="display: inline-block; font-size: 18px">x<sub>A</sub> y<sub>A</sub> 1<br>x<sub>B</sub> y<sub>B</sub> 1 <br>x<sub>C</sub> y<sub>C</sub> 1</div>
+                        = 0</p>
+                        <p><b>Punctul de intersectie dintre doua drepte</b> se determina rezolvand sistemul facut de ecuatiile lor. </p>
+                        <p><b>Aria triunghiului ABC</b> este S<sub>ABC</sub> = <span class="det">Δ</span> / 2 unde Δ = 
+                        <div class="det" style="display: inline-block; font-size: 18px">x<sub>A</sub> y<sub>A</sub> 1<br>x<sub>B</sub> y<sub>B</sub> 1 <br>x<sub>C</sub> y<sub>C</sub> 1</div>
+                        </p>
+                        <p><b>Aria triunghiului</b> <b>S<sub>ABC</sub> = (baza · inaltimea)/2</b></p>
+                        <p><b>Aria triunghiului echilateral</b> cu latura l este: <b>S = (l<sup>3</sup>√3)/4</b></p>
+                        <p>In triunghiul dreptunghic <b>mediana e jumatate din ipotenuza</b> </p>
+                        <p><b>Aria triunghiului ABC (Heron)</b> <b>S<sub>ABC</sub> = √(p(p-a)(p-b)(p-c)) unde p = (a + b + c)/2</b></p>
+                        <p>
+                           <b>Aria triunghiului</b> ABC = (BC · AC · sinC)/2 = (BC · AB · sinB)/2 = (AB · AC · sinA)/2
+                        </p>
+                        <p><b>Teorema lui Pitagora</b> in triunghiul dreptunghic <b>b<sup>2</sup> + c<sup>2</sup> = a<sup>2</sup></b></p>
+                        <p><b>Teorema cosinusului</b> <br>
+                           BC<sup>2</sup> = AC<sup>2</sup> + AB<sup>2</sup> - 2·AB·AC·cos(A)<br>
+                        </p>
+                        AC<sup>2</sup> = AB<sup>2</sup> + BC<sup>2</sup> - 2·AB·BC·cos(B)<br></p>
+                        AB<sup>2</sup> = AC<sup>2</sup> + BC<sup>2</sup> - 2·BC·AC·cos(C)</p>
+                        <p><b>Teorema sinusurilor</b> BC/sinA = AC/sinB = AB/sinC = 2R unde R raza cercului circumscris triunghiului</p>
+                        <p><b>Prima bisectoarea</b> este bisectoarea cadranului 1 in reperul xOy si are ecuatia y = x. </p>
+                        <p><b>A doua bisectoarea</b> este bisectoarea cadranului 2 in reperul xOy si are ecuatia y=-x.</p>
+                        <p><b>Mediana</b> in trunghi este segmentul ce uneste un varf cu mijlocul laturii opuse </p>
+                        <p><b>Mediatoarea</b> unui segment e perpendiculara pe mijlocul segmentului </p>
+                        <p><b>Inaltimea in triunghi</b> e perpendiculara din varf pe latura opusa </p>
+                        <p><b>Bisectoarea</b> este semidreapta care imparte un unghi in 2 unghiuri congruente. </p>
+                        <p>In trunghiul dreptunghic <b>sin = Cateta_Opusa/ipotenuza , cos = Cateta_Alaturata/ipotenuza</b></p>
+                        <a class="btn btn-default" style="float: right;" href="S1/Geometrie/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/Geometrie/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default">
+                  <!-- Vectori in plan -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse10">Vectori in plan</a>
+                     </h4>
+                  </div>
+                  <div id="collapse10" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <p>
+                           Modulul vectorului: <b>v&#8407 = a · i&#8407 + b · j&#8407 este <span class="det"> v&#8407 </span> = √(a<sup>2</sup> + b<sup>2</sup>)</b>
+                        </p>
+                        <p>
+                           Produsul scalar a doi vectori <b>v&#8407 = a · i&#8407 + b · j&#8407</b> si  <b>w&#8407 = c · i&#8407 + d · j&#8407</b> este <b>v&#8407 + w&#8407 = a · c + b · d</b>
+                        </p>
+                        <p>
+                           Suma a doi vectori <b>v&#8407 = a · i&#8407 + b · j&#8407</b> si  <b>w&#8407 = c · i&#8407 + d · j&#8407</b> este <b>v&#8407 + w&#8407 = (a + c)i&#8407 + (b + d)j&#8407</b>
+                        </p>
+                        <p>
+                           <b>Conditia ca doi vectori sa fie coliniari :</b><br>
+                           Doi vectori <b>v&#8407</b> si <b>u&#8407</b> sunt coliniari daca exista a numar real astfel incat <b>v&#8407 = a · u&#8407</b><br>
+                           Daca vectorii sunt dati sub forma <b>v&#8407 = a · i&#8407 + b · j&#8407 si u&#8407 = c · i&#8407 + d · j&#8407</b> conditia
+                           de coliniaritate revine la <b>a/c = b/d</b>
+                        </p>
+                        <p>
+                           Daca <b>A(x<sub>A</sub> , y<sub>A</sub>)</b> si <b>B(x<sub>B</sub> , y<sub>B</sub>)</b> atunci <b>AB&#8407 = (x<sub>B</sub> - x<sub>A</sub>) · i&#8407 + (y<sub>B</sub> - y<sub>A</sub>) · j&#8407</b>
+                        </p>
+                        <p>
+                           Daca <b>A(x<sub>A</sub> , y<sub>A</sub>)</b> vectorul de pozitie al lui A este <b>OA&#8407 = x<sub>A</sub> · i&#8407 + y<sub>A</sub> · j&#8407</b> se mai noteaza <b>r<sub>A</sub>&#8407</b>
+                        </p>
+                        <a class="btn btn-default" style="float: right;" href="S1/VectoriInPlan/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/VectoriInPlan/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default">
+                  <!-- Conditii de existenta -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse11">Conditii de existenta</a>
+                     </h4>
+                  </div>
+                  <div id="collapse11" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <p><b>√E(x) E(x) >= 0</b></p>
+                        <p><b><sup>3</sup>√E(x)</b> exista oricare ar fi <b>x</b> real deci nu se pun conditii de existenta </p>
+                        <p><b>log<sub>a</sub><sup>E(x)</sup> E(x) > 0 , a > 0 , a != 1</b></p>
+                        <p>daca avem numitor , avem conditia numitor diferit de 0. </p>
+                        <p><b>arcsinE(x) -1 <= E(x) <= 1</b></p>
+                        <p><b>arccosE(x) -1 <= E(x) <= 1</b></p>
+                        <p><b>tgE(x)	E(x)!=π/2 + 2kπ</b></p>
+                        <p>domeniul maxim de definitie se obtine din conditiile de existenta
+                           ale expresiei care da functia. 
+                        </p>
+                        <a class="btn btn-default" style="float: right;" href="S1/ConditiiDeExistenta/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/ConditiiDeExistenta/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default">
+                  <!-- Logaritmi -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse5">Logaritmi</a>
+                     </h4>
+                  </div>
+                  <div id="collapse5" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <p>
+                           <b>log<sub>a</sub><sup>b</sup></b> = puterea la care il ridic pe a astfel incat sa dea pe <b>b</b>.
+                        </p>
+                        <p>
+                           <b>log<sub>a</sub><sup>b</sup></b> exista doar pentru <b>a>0 , b>0 , a != 1</b>
+                        </p>
+                        <p>
+                           <b>log<sub>a</sub><sup>a</sup><sup>b</sup> = b </b>(cu ajutorul acestei formule orice numar real poate fi scris ca log in orice baza vreau) 
+                        </p>
+                        <p>
+                           <b>log<sub>a</sub><sup>b</sup> = c </b>revine la <b>b = a<sup>c</sup></b>
+                        </p>
+                        <p>
+                           <b>log<sub>a</sub><sup>b</sup> + log<sub>a</sub><sup>c</sup> = log<sub>a</sub>(bc)</b>
+                        </p>
+                        <p>
+                           <b>log<sub>a</sub><sup>b</sup> - log<sub>a</sub><sup>c</sup> = log<sub>a</sub>(b/c)</b>
+                        </p>
+                        <p>
+                           <b>log<sub>a</sub><sup>b<sup>p</sup></sup> = p log<sub>a</sub><sup>b</sup></b>
+                        </p>
+                        <p>
+                           <b>log<sub>a<sup>p</sup></sub><sup>b</sup> = 1/p log<sub>a</sub><sup>b</sup></b>
+                        </p>
+                        <p>
+                           <b>log<sub>a</sub><sup>b</sup> = 1/log<sub>b</sub><sup>a</sup></b>
+                        </p>
+                        <p>
+                           <b>a<sup>log<sub>a</sub><sup>b</sup></sup> = b</b>
+                        </p>
+                        <p>
+                           daca <b>a > 1</b> functia log este crescatoare , <b>log<sub>a</sub><sup>b</sup> > log<sub>a</sub><sup>c</sup> => b > c</b>
+                        </p>
+                        <p>
+                           daca <b>a < 1</b> functia log este crescatoare , <b>log<sub>a</sub><sup>b</sup> > log<sub>a</sub><sup>c</sup> => b < c</b>
+                        </p>
+                        <a class="btn btn-default" style="float: right;" href="S1/Logaritmi/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/Logaritmi/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-	  
-      <div id="collapse1" class="panel-collapse collapse">
-        <div class="panel-body">
-		
-		  <p><span style="font-weight: bold;">Definitie:</span> Se numeste progresie aritmetica un sir de numere reale in
-			care fiecare termen se obtine din termenul anterior adunand o
-			constanta numita ratie (r)
-		  </p>
-		  
-		  <p><span style="font-weight: bold;">Proprietate:</span> Trei numere <span style="font-weight: bold;">a , b, c</span> sunt in progresie aritmetica daca <span style="font-weight: bold;">b</span> e 
-			medie aritmetica intre <span style="font-weight: bold;">a</span> si <span style="font-weight: bold;">c</span> adica <span style="font-weight: bold;">b = (a + c)/2</span></p>
-			
-		  <p style="font-weight: bold;">a<sub>n</sub>=a<sub>1</sub>+(n - 1)r</p>
-		  <p><span style="font-weight: bold;">S<sub>n</sub>=(n(2a<sub>1</sub> + (n - 1)r))/2</span> unde am notat <span style="font-weight: bold;">
-				S<sub>n</sub> = a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + ... + a<sub>n</sub></span></p>
-		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
-		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
-		  
-		  
-		
-		</div>
-      </div>
-	  
-    </div>
-	
-    <div class="panel panel-default"> <!-- Progresii Geometrice -->
-	
-      <div class="panel-heading text-center">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse2">Progresii geometrice</a>
-        </h4>
-      </div>
-	  
-      <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">
-		
-		  <p><span style="font-weight: bold;">Definitie:</span>  Se numeste progresie geometrica un sir de numere reale in
-			care fiecare termen se obtine din termenul anterior inmultind cu o
-			constanta numita ratie (q). 
-		  </p>
-		  
-		  <p><span style="font-weight: bold;">Proprietate:</span> Trei numere <span style="font-weight: bold;">a , b, c</span> sunt in progresie geometrica cu termeni pozitivi daca <span style="font-weight: bold;">b</span> e 
-			medie geometrica intre <span style="font-weight: bold;">a</span> si <span style="font-weight: bold;">c</span> adica <span style="font-weight: bold;">b = √(ac)</span></p>
-			
-		  <p style="font-weight: bold;">a<sub>n</sub>=a<sub>1</sub>q<sup>n - 1</sup></p>
-		  <p><span style="font-weight: bold;">S<sub>n</sub> = a<sub>1</sub>(q<sup>n</sup>-1)/(q - 1)</span> unde am notat <span style="font-weight: bold;">
-				S<sub>n</sub> = a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + ... + a<sub>n</sub></span></p>
-		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
-		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
-		  
-		  
-		
-		</div>
-      </div>
-	  
-    </div>
-	
-    <div class="panel panel-default"> <!-- Probabilitati -->
-      
-	  <div class="panel-heading text-center">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse3">Probabilitati</a>
-        </h4>
-      </div>
-	  
-      <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body">
-		
-		  <p class="lead">Probabilitate = nr.cazurifavorabile/nr.cazuriposibile</p>
-		
-		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
-		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
-		
-		</div>
-      </div>
-	  
-    </div>
-	
-	<div class="panel panel-default"> <!-- Combinatorica -->
-      
-	  <div class="panel-heading text-center">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse4">Elemente de combinatorica</a>
-        </h4>
-      </div>
-	  
-      <div id="collapse4" class="panel-collapse collapse">
-        <div class="panel-body">
-        
-		  <p><span style="font-weight: bold">Permutari de n</span> se noteaza <span style="font-weight: bold;">P<sub>n</sub></span> <br>
-			<span style="font-weight: bold;">P<sub>n</sub>=n!</span> si reprezinta <span style="font-weight: bold;">numarul de multimi ordonate</span> ce se pot forma	
-			cu <span style="font-weight: bold;">n</span> elemente. </p>
-		  
-		  <p>
-		  
-		    <span style="font-weight: bold;">Aranjamente de n luate cate k</span> se noteaza <span style="font-weight: bold;">A<sub>n</sub><sup>k</sup></span>
-			<br>
-			<span style="font-weight: bold;">A<sub>n</sub><sup>k</sup> = n!/(n-k)!</span> reprezinta <span style="font-weight: bold;">numarul de submultimi ordonate</span> de cate <span style="font-weight: bold;">k</span> elemente ce se pot forma dintr-o multime de <span style="font-weight: bold;">n</span> elemente.
-
-		  
-		  </p>
-		  
-		  <p>
-		  
-		    <span style="font-weight: bold;">Combinari de n luate cate k</span> se noteaza <span style="font-weight: bold;">C<sub>n</sub><sup>k</sup></span>
-			<br>
-			<span style="font-weight: bold;">C<sub>n</sub><sup>k</sup> = n!/k!(n-k)!</span>  <span style="font-weight: bold;">reprezinta nr de submultimi neordonate de cate k
-				elemente</span> ce se pot forma dintr-o multime cu <span style="font-weight: bold">n</span> elemente. 
-			<br>
-			<span style="font-weight: bold;">C<sub>n</sub><sup>0</sup> + C<sub>n</sub><sup>1</sup> + C<sub>n</sub><sup>2</sup> + ... + C<sub>n</sub><sup>n</sup> = 2<sup>n</sup></span>
-		  
-		  </p>
-		  
-		  <p><span style="font-weight: bold;">Numarul tuturor sumultimilor unei multimi cu n elemente este 2<sup>n</sup></span>
-		</p>
-		
-		  <p><span style="font-weight: bold;">Numarul submultimilor cu cate k elemente ale unei multimi cu n
-elemente este C<sub>n</sub><sup>k</sup></span></p>
-		
-		<a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
-		<a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
-		
-		</div>
-      </div>
-	  
-    </div>
-	
-	<div class="panel panel-default"> <!-- Functia de gradul 2 -->
-      
-	  <div class="panel-heading text-center">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse6">Functia de gradul 2</a>
-        </h4>
-      </div>
-	  
-      <div id="collapse6" class="panel-collapse collapse">
-        <div class="panel-body">
-		
-		  <p>Varful parabolei este: <span style="font-weight: bold;">V(-b/2a , -Δ/4a)</span><br>
-		  - daca <span style="font-weight: bold;">a > 0</span> varful este punct de minim:<br>
-		  -Δ/4a este <b>valoare minima</b> iar -b/2a este <b>punct de minim</b><br>
-		  - daca <b>a < 0 </b>este punct de maxim:<br>
-		  -Δ/4a este <b>valoare maxima</b> iar -b/2a este <b>punct de maxim</b></p>
-		  <p>Graficul functiei de gradul doi e tangent la axa Ox daca are <b>Δ = 0</b></p>
-		  <p>Graficul functiei de gradul doi e situat deasupra axei Ox daca are:<br>
-			<b>Δ < 0<br>
-			a > 0</b></p>
-		  <p><b>Relatiile lui Viette</b><br>
-			Pentru ecuatia de gradul doi cu radacini <b>x<sub>1</sub> , x<sub>2</sub></b> , au loc relatiile:<br>
-			<b>x<sub>1</sub> + x<sub>2</sub> = -b/a<br>
-			x<sub>1</sub> · x<sub>2</sub> = c/a</b>
-			</p>
-			
-		  <p><b>Observatie: x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> = (x<sub>1</sub> + x<sub>2</sub>)<sup>2</sup> - 2x<sub>1</sub>x<sub>2</sub> = (-b/a)<sup>2</sup> - 2c/a</b></p>
-		  
-		  <p><b>Ecuatia cu radacini</b> x<sub>1</sub> , x<sub>2</sub> este <b>x<sup>2</sup> - Sx + P = 0</b> unde <b>S = x<sub>1</sub> + x<sub>2</sub></b> iar <b>P = x<sub>1</sub> · x<sub>2</sub></b></p>
-		  
-		  <p>Conditia ca <b>a<sup>2</sup> + bx + c >= 0</b> , x din R este <b>Δ <= 0 , a > 0</b><br>
-		  Conditia ca <b>a<sup>2</sup> + bx + c <= 0</b> , x din R este <b>Δ <= 0 , a < 0</b><br>
-		  Conditia ca <b>a<sup>2</sup> + bx + c > 0</b> , x din R este <b>Δ < 0 , a > 0</b><br>
-		  Conditia ca <b>a<sup>2</sup> + bx + c < 0</b> , x din R este <b>Δ < 0 , a < 0</b><br></p>
-		  
-		  <p>Conditia ca ecuatia <b>a<sup>2</sup> + bx + c = 0</b> sa aibe doua solutii reale este <b>Δ > 0</b><br>
-		  Conditia ca ecuatia <b>a<sup>2</sup> + bx + c = 0</b> sa aibe doua solutii egale este <b>Δ = 0</b><br>
-		  Conditia ca ecuatia <b>a<sup>2</sup> + bx + c = 0</b> sa nu aibe solutii reale este <b>Δ < 0</b><br></p>
-		
-		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
-		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
-		  
-		</div>
-      </div>
-	  
-    </div>
-	
-	<div class="panel panel-default"> <!-- Functii -->
-      
-	  <div class="panel-heading text-center">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse7">Functii</a>
-        </h4>
-      </div>
-	  
-      <div id="collapse7" class="panel-collapse collapse">
-        <div class="panel-body">
-		
-		  <p>
-		    Punctul <b>A(a , b)</b> se afla pe graficul functiei daca <b>f(a) = b</b>
-		  </p>
-		  
-		  <p>Pentru a afla punctele de intersectie dintre graficele a doua functii f si g se rezolva sistemul:<br>
-		  <b>y = f(x)<br>
-		  y = g(x)</b><br>
-		  Solutiile (x , y) reprezinta coordonatele punctelor de intersectie.</p>
-		  
-		  <p><b>Inversa functiei f:</b> <br>
-		  Daca <b>f(x) = y</b> atunci <b>f<sup>-1</sup>(y) = x</b></p>
-		  
-		  <p><b>Intersectia cu Ox a graficului functiei f:</b><br>
-		  Se rezolva ecuatia <b>f(x) = 0</b><br>
-		  Daca x este o solutie a ecuatiei f(x) = 0 atunci punctul <b>A(x , 0)</b> este un punct de intersectie dintre axa Ox si graficul functiei f.</p>
-		  
-		  <p><b>Intersectia cu Oy a graficului functiei:</b><br>
-		  Se calculeaza <b>f(0)</b> daca 0 e in domeniul de definitie.<br>
-		  Punctul <b>B(0 , f(0))</b> reprezinta intersectia dintre axa Oy si graficul functiei f.<br>
-		  In cazul in care 0 nu se afla in domeniul de definitie al functiei , graficul functiei nu taie axa Oy.</p>
-		
-		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
-		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
-		</div>
-      </div>
-	  
-    </div>
-	
-	<div class="panel panel-default"> <!-- Trigonometrie -->
-      
-	  <div class="panel-heading text-center">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse8">Trigonometrie</a>
-        </h4>
-      </div>
-	  
-      <div id="collapse8" class="panel-collapse collapse">
-        <div class="panel-body">		
-
-		  <table class="table table-bordered hidden-xs">
-		  
-		    <tr>
-		    
-			  <td><b>Unghi(grade)</b></td>
-			  <td><b>0°</b></td>
-			  <td><b>30°</b></td>
-			  <td><b>45°</b></td>
-			  <td><b>60°</b></td>
-			  <td><b>90°</b></td>
-			  <td><b>120°</b></td>
-			  <td><b>135°</b></td>
-			  <td><b>150°</b></td>
-			  <td><b>180°</b></td>
-			
-			</tr>
-			
-			<tr>
-			
-			  <td><b>Unghi(radiani)</b></td>
-			  <td><b>0</b></td>
-			  <td><b>π/6</b></td>
-			  <td><b>π/4</b></td>
-			  <td><b>π/3</b></td>
-			  <td><b>π/2</b></td>
-			  <td><b>2π/3</b></td>
-			  <td><b>3π/4</b></td>
-			  <td><b>5π/6</b></td>
-			  <td><b>π</b></td>
-			
-			</tr>
-			
-			<tr>
-			
-			  <td>Sin</td>
-			  <td>0</td>
-			  <td>1/2</td>
-			  <td>√2/2</td>
-			  <td>√3/2</td>
-			  <td>1</td>
-			  <td>√3/2</td>
-			  <td>√2/2</td>
-			  <td>1/2</td>
-			  <td>0</td>
-			
-			</tr>
-			
-			<tr>
-			
-			  <td>Cos</td>
-			  <td>1</td>
-			  <td>√3/2</td>
-			  <td>√2/2</td>
-			  <td>1/2</td>
-			  <td>0</td>
-			  <td>-1/2</td>
-			  <td>-√2/2</td>
-			  <td>-√3/2</td>
-			  <td>-1</td>
-			
-			</tr>
-			
-			<tr>
-			
-			  <td>Tg</td>
-			  <td>0</td>
-			  <td>1/√3</td>
-			  <td>1</td>
-			  <td>√3</td>
-			  <td>-</td>
-			  <td>-√3</td>
-			  <td>-1</td>
-			  <td>-1/√3</td>
-			  <td>0</td>
-			
-			</tr>
-			
-			<tr>
-			
-			  <td>Ctg</td>
-			  <td>-</td>
-			  <td>√3</td>
-			  <td>1</td>
-			  <td>1/√3</td>
-			  <td>0</td>
-			  <td>-1/√3</td>
-			  <td>-1</td>
-			  <td>-√3</td>
-			  <td>-</td>
-			
-			</tr>
-		  
-		  </table>
-		  
-		  <table class="table table-bordered hidden-xs">
-		  
-		    <tr>
-		    
-			  <td><b>Unghi(grade)</b></td>
-			  <td><b>210°</b></td>
-			  <td><b>225°</b></td>
-			  <td><b>240°</b></td>
-			  <td><b>270°</b></td>
-			  <td><b>300°</b></td>
-			  <td><b>315°</b></td>
-			  <td><b>330°</b></td>
-			  <td><b>360°</b></td>
-			
-			</tr>
-			
-			<tr>
-			
-			  <td><b>Unghi(radiani)</b></td>
-			  <td><b>7π/6</b></td>
-			  <td><b>5π/4</b></td>
-			  <td><b>4π/3</b></td>
-			  <td><b>3π/2</b></td>
-			  <td><b>5π/3</b></td>
-			  <td><b>7π/4</b></td>
-			  <td><b>11π/6</b></td>
-			  <td><b>2πv</td>
-			
-			</tr>
-			
-			<tr>
-			
-			  <td>Sin</td>
-			  <td>-1/2</td>
-			  <td>-√2/2</td>
-			  <td>-√3/3</td>
-			  <td>-1</td>
-			  <td>-√3/2</td>
-			  <td>-√2/2</td>
-			  <td>-1/2</td>
-			  <td>0</td>
-			
-			</tr>
-			
-			<tr>
-			
-			  <td>Cos</td>
-			  <td>-√3/2</td>
-			  <td>-√2/2</td>
-			  <td>-1/2</td>
-			  <td>0</td>
-			  <td>1/2</td>
-			  <td>√2/2</td>
-			  <td>√3/2</td>
-			  <td>1</td>
-			
-			</tr>
-			
-			<tr>
-			
-			  <td>Tg</td>
-			  <td>1/√3</td>
-			  <td>1</td>
-			  <td>√3</td>
-			  <td>-</td>
-			  <td>-√3</td>
-			  <td>-1</td>
-			  <td>-1/√3</td>
-			  <td>0</td>
-			
-			</tr>
-			
-			<tr>
-			
-			  <td>Ctg</td>
-			  <td>√3</td>
-			  <td>1</td>
-			  <td>1/√3</td>
-			  <td>0</td>
-			  <td>-1/√3</td>
-			  <td>-1</td>
-			  <td>-√3</td>
-			  <td>-</td>
-			
-			</tr>
-		  
-		  </table>
-		
-		  <p><b>sin(180° - x) = sinx<br>
-		  sin(90° - x) = cosx<br>
-		  cos(180° - x) = -cosx<br>
-		  cos(90° - x) = sinx<br>
-		  sin<sup>2</sup>x + cos<sup>2</sup>x = 1 , oricare x real <br>
-		  tgx = sinx/cosx<br>
-		  ctgx = cosx/sinx = 1/tgx</b></p>
-		
-		  <a class="btn btn-default" style="float: right;" href="S1/Trigonometrie.html">Tool-uri</a>
-		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
-		</div>
-      
-		
-	  
-	  </div>
-	  
-    </div>
-	
-	<div class="panel panel-default"> <!-- Geometrie -->
-      
-	  <div class="panel-heading text-center">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse9">Geometrie</a>
-        </h4>
-      </div>
-	  
-      <div id="collapse9" class="panel-collapse collapse">
-        <div class="panel-body">
-		
-		  <p><b>Ecuatia dreptei AB : </b> <div class="det" style="display: inline-block; font-size: 18px">x  y 1 <br> x<sub>A</sub> y<sub>A</sub> 1<br>x<sub>B</sub> y<sub>B</sub> 1</div></p>
-		
-		  <p>
-		    <b>Panta dreptei AB:</b><br>
-			daca stiu doua puncte panta este <b>m<sub>AB</sub> = (y<sub>A</sub> - y<sub>B</sub>)/(x<sub>A</sub> - x<sub>B</sub>)</b><br>
-			daca dreapta e data sub forma <b>y = mx + n</b> atunci <b>m</b> este panta<br>
-			daca ecuatia e sub forma <b>ax + by + c = 0</b> panta este <b>-b/a</b><br>
-			OBS: dreptele verticale (<b>x = a</b>) nu eu panta
-		  </p>
-		  
-		  <p>
-		    Ecuatia unei drepte cand stiu un punct A si panta m este : <b>y - y<sub>A</sub> = m(x - x<sub>A</sub>)</b>
-		  </p>
-		  
-		  <p>
-		    Conditia de paralelism a doua drepte <b>d<sub>1</sub> || d<sub>2</sub> <=> m<sub>d<sub>1</sub></sub> = m<sub>d<sub>2</sub></sub></b>
-		  </p>
-		  
-		  <p>Distanta dintre doua puncte <b><span class="det">AB</span> = √((x<sub>A</sub> - x<sub>B</sub>)<sup>2</sup> + (y<sub>A</sub> - y<sub>B</sub>)<sup>2</sup>)</b></p>
-		  
-		  <p>Mijlocul segmentului <b>AB</b> este <b>M((x<sub>A</sub> + x<sub>B</sub>)/2 , (y<sub>A</sub> + y<sub>B</sub>)/2)</b></p>
-		  
-		  <p>Conditia ca trei puncte A,B,C sa fie coliniare: <div class="det" style="display: inline-block; font-size: 18px">x<sub>A</sub> y<sub>A</sub> 1<br>x<sub>B</sub> y<sub>B</sub> 1 <br>x<sub>C</sub> y<sub>C</sub> 1</div> = 0</p>
-		  
-		  <p><b>Punctul de intersectie dintre doua drepte</b> se determina rezolvand sistemul facut de ecuatiile lor. </p>
-		  
-		  <p><b>Aria triunghiului ABC</b> este S<sub>ABC</sub> = <span class="det">Δ</span> / 2 unde Δ = 
-		  <div class="det" style="display: inline-block; font-size: 18px">x<sub>A</sub> y<sub>A</sub> 1<br>x<sub>B</sub> y<sub>B</sub> 1 <br>x<sub>C</sub> y<sub>C</sub> 1</div></p>
-		  
-		  <p><b>Aria triunghiului</b> <b>S<sub>ABC</sub> = (baza · inaltimea)/2</b></p>
-		 
-		  <p><b>Aria triunghiului echilateral</b> cu latura l este: <b>S = (l<sup>3</sup>√3)/4</b></p>
-
-		  <p>In triunghiul dreptunghic <b>mediana e jumatate din ipotenuza</b> </p>
-
-		  <p><b>Aria triunghiului ABC (Heron)</b> <b>S<sub>ABC</sub> = √(p(p-a)(p-b)(p-c)) unde p = (a + b + c)/2</b></p>
-
-		  <p>
-		    <b>Aria triunghiului</b> ABC = (BC · AC · sinC)/2 = (BC · AB · sinB)/2 = (AB · AC · sinA)/2
-		  </p>
-		  
-		  <p><b>Teorema lui Pitagora</b> in triunghiul dreptunghic <b>b<sup>2</sup> + c<sup>2</sup> = a<sup>2</sup></b></p>
-		  
-		  <p><b>Teorema cosinusului</b> <br>
-		  BC<sup>2</sup> = AC<sup>2</sup> + AB<sup>2</sup> - 2·AB·AC·cos(A)<br></p>
-		  AC<sup>2</sup> = AB<sup>2</sup> + BC<sup>2</sup> - 2·AB·BC·cos(B)<br></p>
-		  AB<sup>2</sup> = AC<sup>2</sup> + BC<sup>2</sup> - 2·BC·AC·cos(C)</p>
-		  
-		  <p><b>Teorema sinusurilor</b> BC/sinA = AC/sinB = AB/sinC = 2R unde R raza cercului circumscris triunghiului</p>
-		  
-		  <p><b>Prima bisectoarea</b> este bisectoarea cadranului 1 in reperul xOy si are ecuatia y = x. </p>
-		  
-		  <p><b>A doua bisectoarea</b> este bisectoarea cadranului 2 in reperul xOy si are ecuatia y=-x.</p>
-		  
-		  <p><b>Mediana</b> in trunghi este segmentul ce uneste un varf cu mijlocul laturii opuse </p>
-		  
-		  <p><b>Mediatoarea</b> unui segment e perpendiculara pe mijlocul segmentului </p>
-		  <p><b>Inaltimea in triunghi</b> e perpendiculara din varf pe latura opusa </p>
-		  <p><b>Bisectoarea</b> este semidreapta care imparte un unghi in 2 unghiuri congruente. </p>
-		  <p>In trunghiul dreptunghic <b>sin = Cateta_Opusa/ipotenuza , cos = Cateta_Alaturata/ipotenuza</b></p>
-
-		
-		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
-		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
-		</div>
-      </div>
-	  
-    </div>
-	
-	<div class="panel panel-default"> <!-- Vectori in plan -->
-      
-	  <div class="panel-heading text-center">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse10">Vectori in plan</a>
-        </h4>
-      </div>
-	  
-      <div id="collapse10" class="panel-collapse collapse">
-        <div class="panel-body">
-		
-		  <p>
-		    Modulul vectorului: <b>v&#8407 = a · i&#8407 + b · j&#8407 este <span class="det"> v&#8407 </span> = √(a<sup>2</sup> + b<sup>2</sup>)</b>
-		  </p>
-		  
-		  <p>
-		    Produsul scalar a doi vectori <b>v&#8407 = a · i&#8407 + b · j&#8407</b> si  <b>w&#8407 = c · i&#8407 + d · j&#8407</b> este <b>v&#8407 + w&#8407 = a · c + b · d</b>
-		  </p>
-		  
-		  <p>
-		    Suma a doi vectori <b>v&#8407 = a · i&#8407 + b · j&#8407</b> si  <b>w&#8407 = c · i&#8407 + d · j&#8407</b> este <b>v&#8407 + w&#8407 = (a + c)i&#8407 + (b + d)j&#8407</b>
-		  </p>
-		  
-		  <p>
-		    <b>Conditia ca doi vectori sa fie coliniari :</b><br>
-			Doi vectori <b>v&#8407</b> si <b>u&#8407</b> sunt coliniari daca exista a numar real astfel incat <b>v&#8407 = a · u&#8407</b><br>
-			Daca vectorii sunt dati sub forma <b>v&#8407 = a · i&#8407 + b · j&#8407 si u&#8407 = c · i&#8407 + d · j&#8407</b> conditia
-de coliniaritate revine la <b>a/c = b/d</b>
-		  </p>
-		  
-		  <p>
-		    Daca <b>A(x<sub>A</sub> , y<sub>A</sub>)</b> si <b>B(x<sub>B</sub> , y<sub>B</sub>)</b> atunci <b>AB&#8407 = (x<sub>B</sub> - x<sub>A</sub>) · i&#8407 + (y<sub>B</sub> - y<sub>A</sub>) · j&#8407</b>
-		  </p>
-		  
-		  <p>
-		    Daca <b>A(x<sub>A</sub> , y<sub>A</sub>)</b> vectorul de pozitie al lui A este <b>OA&#8407 = x<sub>A</sub> · i&#8407 + y<sub>A</sub> · j&#8407</b> se mai noteaza <b>r<sub>A</sub>&#8407</b>
-		  </p>
-		
-		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
-		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
-		</div>
-      </div>
-	  
-    </div>
-	
-	<div class="panel panel-default"> <!-- Conditii de existenta -->
-      
-	  <div class="panel-heading text-center">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse11">Conditii de existenta</a>
-        </h4>
-      </div>
-	  
-      <div id="collapse11" class="panel-collapse collapse">
-        <div class="panel-body">
-		
-		  <p><b>√E(x) E(x) >= 0</b></p>
-		  <p><b><sup>3</sup>√E(x)</b> exista oricare ar fi <b>x</b> real deci nu se pun conditii de existenta </p>
-		  <p><b>log<sub>a</sub><sup>E(x)</sup> E(x) > 0 , a > 0 , a != 1</b></p>
-		  <p>daca avem numitor , avem conditia numitor diferit de 0. </p>
-		  <p><b>arcsinE(x) -1 <= E(x) <= 1</b></p>
-		  <p><b>arccosE(x) -1 <= E(x) <= 1</b></p>
-		  <p><b>tgE(x)	E(x)!=π/2 + 2kπ</b></p>
-		  <p>domeniul maxim de definitie se obtine din conditiile de existenta
-ale expresiei care da functia. </p>
-		
-		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
-		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
-		</div>
-      </div>
-	  
-    </div>
-	
-	<div class="panel panel-default"> <!-- Logaritmi -->
-      
-	  <div class="panel-heading text-center">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse5">Logaritmi</a>
-        </h4>
-      </div>
-	  
-      <div id="collapse5" class="panel-collapse collapse">
-        <div class="panel-body">
-		
-		  <p>
-		  <b>log<sub>a</sub><sup>b</sup></b> = puterea la care il ridic pe a astfel incat sa dea pe <b>b</b>.
-		  </p>
-		  
-		  <p>
-		  <b>log<sub>a</sub><sup>b</sup></b> exista doar pentru <b>a>0 , b>0 , a != 1</b>
-		  </p>
-		  
-		  <p>
-		  <b>log<sub>a</sub><sup>a</sup><sup>b</sup> = b </b>(cu ajutorul acestei formule orice numar real poate fi scris ca log in orice baza vreau) 
-		  </p>
-		  
-		  <p>
-		  <b>log<sub>a</sub><sup>b</sup> = c </b>revine la <b>b = a<sup>c</sup></b>
-		  </p>
-		  
-		  <p>
-		  <b>log<sub>a</sub><sup>b</sup> + log<sub>a</sub><sup>c</sup> = log<sub>a</sub>(bc)</b>
-		  </p>
-		  
-		  <p>
-		  <b>log<sub>a</sub><sup>b</sup> - log<sub>a</sub><sup>c</sup> = log<sub>a</sub>(b/c)</b>
-		  </p>
-		  
-		  <p>
-		  <b>log<sub>a</sub><sup>b<sup>p</sup></sup> = p log<sub>a</sub><sup>b</sup></b>
-		  </p>
-		  
-		  <p>
-		  <b>log<sub>a<sup>p</sup></sub><sup>b</sup> = 1/p log<sub>a</sub><sup>b</sup></b>
-		  </p>
-		  
-		  <p>
-		  <b>log<sub>a</sub><sup>b</sup> = 1/log<sub>b</sub><sup>a</sup></b>
-		  </p>
-		  
-		  <p>
-		  <b>a<sup>log<sub>a</sub><sup>b</sup></sup> = b</b>
-		  </p>
-		  
-		  <p>
-		  daca <b>a > 1</b> functia log este crescatoare , <b>log<sub>a</sub><sup>b</sup> > log<sub>a</sub><sup>c</sup> => b > c</b>
-		  </p>
-		  
-		  <p>
-		  daca <b>a < 1</b> functia log este crescatoare , <b>log<sub>a</sub><sup>b</sup> > log<sub>a</sub><sup>c</sup> => b < c</b>
-		  </p>
-		
-		  <a class="btn btn-default" style="float: right;" href="./">Tool-uri</a>
-		  <a class="btn btn-default" style="float: left;" href="./">Exercitii rezolvate</a>
-		
-		</div>
-      </div>
-	  
-    </div>
-	
-	</div> 
-
-  </div>
-
-</div>
-	
-  </body>
-
+   </body>
 </html>
+

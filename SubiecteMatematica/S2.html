@@ -1,34 +1,437 @@
+
+
 <!DOCTYPE HTML>
 <html>
-
-  <head>
-  
-    <link rel="stylesheet" type="text/css" href="style.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="index.js"></script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  </head>
-
-  <body>
-  
-    <div class="inmultire_matrice">
-	
-	  <input value ="3 3" class="dimensiuni" \>
-	  <input value = "0 0 0 0 0 0 0 0 0" class="elemente"\>
-	
-	  <center><div class="matrice">
-	  
-	  
-	  
-	  </div>
-	  </center>
-		
-	  <div class="determinant"></div>
-	
-	</div>
-    
-  </body>
-
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="index.js"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".baraNavigatie">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>  
+               </button>
+               <li class="navbar-brand" href="#">Bacxvia</li>
+            </div>
+            <div class="collapse navbar-collapse baraNavigatie">
+               <ul class="nav navbar-nav">
+                  <li><a href="../index.html">Acasa</a></li>
+                  <li class="dropdown active">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Matematica <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="S1.html">Subiectul 1</a></li>
+                        <li><a href="#">Subiectul 2</a></li>
+                        <li><a href="S3.html">Subiectul 3</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Romana <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="SubiecteRomana/S1.html">Subiectul 1</a></li>
+                        <li><a href="SubiecteRomana/S2.html">Subiectul 2</a></li>
+                        <li><a href="SubiecteRomana/S3.html">Subiectul 3</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <div class="navbar-form navbar-left">
+                  <div class="input-group">
+                     <input type="text" class="form-control cautare" placeholder="Cauta" name="search">
+                     <div class="input-group-btn">
+                        <button class="btn btn-default" onclick="cauta()">
+                        <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!--<div class="inmultire_matrice">
+         <input value ="3 3" class="dimensiuni" \>
+         <input value = "0 0 0 0 0 0 0 0 0" class="elemente"\>
+         
+         <center><div class="matrice">
+         
+         
+         
+         </div>
+         </center>
+         
+         <div class="determinant"></div>
+         
+         
+         </div>-->
+      <div class="container">
+         <table class="table table-hover tabelCautare" style="display: none;"></table>
+         <div class="CONTENT">
+            <h1>Subiectul 2</h1>
+            <div class="panel-group" class="Subiectul2">
+               <div class="panel panel-default">
+                  <!-- Algebra --> 
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".Subiectul2" href="#collapse1">Algebra</a>
+                     </h4>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse in">
+                     <div class="panel-body">
+                        <div class="panel-group" class="Algebra">
+                           <div class="panel panel-default">
+                              <!-- Functia de gradul 2 -->
+                              <div class="panel-heading text-center">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse11">Functia de gradul 2</a>
+                                 </h4>
+                              </div>
+                              <div id="collapse11" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    <p>Varful parabolei este: <span style="font-weight: bold;">V(-b/2a , -Δ/4a)</span><br>
+                                       - daca <span style="font-weight: bold;">a > 0</span> varful este punct de minim:<br>
+                                       -Δ/4a este <b>valoare minima</b> iar -b/2a este <b>punct de minim</b><br>
+                                       - daca <b>a < 0 </b>este punct de maxim:<br>
+                                       -Δ/4a este <b>valoare maxima</b> iar -b/2a este <b>punct de maxim</b>
+                                    </p>
+                                    <p>Graficul functiei de gradul doi e tangent la axa Ox daca are <b>Δ = 0</b></p>
+                                    <p>Graficul functiei de gradul doi e situat deasupra axei Ox daca are:<br>
+                                       <b>Δ < 0<br>
+                                       a > 0</b>
+                                    </p>
+                                    <p><b>Relatiile lui Viette</b><br>
+                                       Pentru ecuatia de gradul doi cu radacini <b>x<sub>1</sub> , x<sub>2</sub></b> , au loc relatiile:<br>
+                                       <b>x<sub>1</sub> + x<sub>2</sub> = -b/a<br>
+                                       x<sub>1</sub> · x<sub>2</sub> = c/a</b>
+                                    </p>
+                                    <p><b>Observatie: x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> = (x<sub>1</sub> + x<sub>2</sub>)<sup>2</sup> - 2x<sub>1</sub>x<sub>2</sub> = (-b/a)<sup>2</sup> - 2c/a</b></p>
+                                    <p><b>Ecuatia cu radacini</b> x<sub>1</sub> , x<sub>2</sub> este <b>x<sup>2</sup> - Sx + P = 0</b> unde <b>S = x<sub>1</sub> + x<sub>2</sub></b> iar <b>P = x<sub>1</sub> · x<sub>2</sub></b></p>
+                                    <p>Conditia ca <b>a<sup>2</sup> + bx + c >= 0</b> , x din R este <b>Δ <= 0 , a > 0</b><br>
+                                       Conditia ca <b>a<sup>2</sup> + bx + c <= 0</b> , x din R este <b>Δ <= 0 , a < 0</b><br>
+                                       Conditia ca <b>a<sup>2</sup> + bx + c > 0</b> , x din R este <b>Δ < 0 , a > 0</b><br>
+                                       Conditia ca <b>a<sup>2</sup> + bx + c < 0</b> , x din R este <b>Δ < 0 , a < 0</b><br>
+                                    </p>
+                                    <p>Conditia ca ecuatia <b>a<sup>2</sup> + bx + c = 0</b> sa aibe doua solutii reale este <b>Δ > 0</b><br>
+                                       Conditia ca ecuatia <b>a<sup>2</sup> + bx + c = 0</b> sa aibe doua solutii egale este <b>Δ = 0</b><br>
+                                       Conditia ca ecuatia <b>a<sup>2</sup> + bx + c = 0</b> sa nu aibe solutii reale este <b>Δ < 0</b><br>
+                                    </p>
+                                    <a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Tool-uri</a>
+                                    <a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="panel panel-default">
+                              <!-- Ecuatia de gradul 2 -->
+                              <div class="panel-heading text-center">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse12">Ecuatia de gradul 2</a>
+                                 </h4>
+                              </div>
+                              <div id="collapse12" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    
+									<p>Ecuatia ax<sup>2</sup> + bx + c = 0. Se calculeaza <b>Δ = b<sup>2</sup> - 4ac</b><br>
+									Daca <b>Δ > 0</b> atunci ecuatia de gradul 2 are doua radacini reale diferite date de formula <b>x<sub>1,2</sub> = (-b ± √Δ)/2a</b><br>
+									Daca <b>Δ = 0</b> atunci ecuatia de gradul 2 are doua radacini reale egale date de formula <b>x<sub>1,2</sub> = -b/2a</b><br>
+									Daca <b>Δ < 0</b> atunci ecuatia de gradul 2 are doua radacini complexe diferite date de formula <b>x<sub>1,2</sub> = (-b ± i√-Δ)/2a</b><br></p>
+									
+									<p><b>ax<sup>2</sup> + bx + c = a(x - x<sub>1</sub>)(x - x<sub>2</sub>)</b></p>
+									
+									<p>Relatiile lui Viete pentru ecuatia de gradul 2<br>
+									<b>S = x<sub>1</sub> + x<sub>2</sub> = -b/a<br>
+									P = x<sub>1</sub> · x<sub>2</sub> = c/a<br>
+									x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> = S<sup>2</sup> - 2P<br>
+									x<sub>1</sub><sup>3</sup> + x<sub>2</sub><sup>3</sup> = S<sup>3</sup> - 2SP</b></p>
+									
+                                    <a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Tool-uri</a>
+                                    <a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="panel panel-default">
+                              <!-- Progresii Aritmetice -->
+                              <div class="panel-heading">
+                                 <h4 class="panel-title text-center">
+                                    <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse13">Progresii aritmetice</a>
+                                 </h4>
+                              </div>
+                              <div id="collapse13" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    <p><span style="font-weight: bold;">Definitie:</span> Se numeste progresie aritmetica un sir de numere reale in
+                                       care fiecare termen se obtine din termenul anterior adunand o
+                                       constanta numita ratie (r)
+                                    </p>
+                                    <p><span style="font-weight: bold;">Proprietate:</span> Trei numere <span style="font-weight: bold;">a , b, c</span> sunt in progresie aritmetica daca <span style="font-weight: bold;">b</span> e 
+                                       medie aritmetica intre <span style="font-weight: bold;">a</span> si <span style="font-weight: bold;">c</span> adica <span style="font-weight: bold;">b = (a + c)/2</span>
+                                    </p>
+                                    <p style="font-weight: bold;">a<sub>n</sub>=a<sub>1</sub>+(n - 1)r</p>
+                                    <p><span style="font-weight: bold;">S<sub>n</sub>=(n(2a<sub>1</sub> + (n - 1)r))/2</span> unde am notat <span style="font-weight: bold;">
+                                       S<sub>n</sub> = a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + ... + a<sub>n</sub></span>
+                                    </p>
+                                    <a class="btn btn-default" style="float: right;" href="S1/ProgresiiAritmetice/Tool-uri.html">Tool-uri</a>
+                                    <a class="btn btn-default" style="float: left;" href="S1/ProgresiiAritmetice/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="panel panel-default">
+                              <!-- Progresii Geometrice -->
+                              <div class="panel-heading text-center">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse14">Progresii geometrice</a>
+                                 </h4>
+                              </div>
+                              <div id="collapse14" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    <p><span style="font-weight: bold;">Definitie:</span>  Se numeste progresie geometrica un sir de numere reale in
+                                       care fiecare termen se obtine din termenul anterior inmultind cu o
+                                       constanta numita ratie (q). 
+                                    </p>
+                                    <p><span style="font-weight: bold;">Proprietate:</span> Trei numere <span style="font-weight: bold;">a , b, c</span> sunt in progresie geometrica cu termeni pozitivi daca <span style="font-weight: bold;">b</span> e 
+                                       medie geometrica intre <span style="font-weight: bold;">a</span> si <span style="font-weight: bold;">c</span> adica <span style="font-weight: bold;">b = √(ac)</span>
+                                    </p>
+                                    <p style="font-weight: bold;">a<sub>n</sub>=a<sub>1</sub>q<sup>n - 1</sup></p>
+                                    <p><span style="font-weight: bold;">S<sub>n</sub> = a<sub>1</sub>(q<sup>n</sup>-1)/(q - 1)</span> unde am notat <span style="font-weight: bold;">
+                                       S<sub>n</sub> = a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + ... + a<sub>n</sub></span>
+                                    </p>
+                                    <a class="btn btn-default" style="float: right;" href="S1/ProgresiiGeometrice/Tool-uri.html">Tool-uri</a>
+                                    <a class="btn btn-default" style="float: left;" href="S1/ProgresiiGeometrice/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="panel panel-default">
+                              <!-- Numere complexe --> 
+                              <div class="panel-heading text-center">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse15">Numere complexe</a>
+                                 </h4>
+                              </div>
+                              <div id="collapse15" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    
+									<p><b>Z = a + bi</b> este forma algebrica a unui numar complex</p>
+									<p><b>Z = r(cosx + isinx)</b> este forma trigonometrica a unui numar complec unde: <br>
+									<b>r = √(a<sup>2</sup> + b<sup>2</sup>)</b><br>
+									<b>x &#x220A; [0 , 2π)</b> este argumentul redus al numarului complex si se scoate din relatia <b>tgx = b/a</b></p>
+									
+									<p><b>i<sup>2</sup> = -1<br>
+									<span class="det">a + bi</span> = √(a<sup>2</sup> + b<sup>2</sup>)<br>
+									z&#8407 = a - bi</b></p>
+									
+									
+                                    <a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Tool-uri</a>
+                                    <a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="panel panel-default">
+                              <!-- Combinatorica -->
+                              <div class="panel-heading text-center">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse16">Elemente de combinatorica</a>
+                                 </h4>
+                              </div>
+                              <div id="collapse16" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    <p><span style="font-weight: bold">Permutari de n</span> se noteaza <span style="font-weight: bold;">P<sub>n</sub></span> <br>
+                                       <span style="font-weight: bold;">P<sub>n</sub>=n!</span> si reprezinta <span style="font-weight: bold;">numarul de multimi ordonate</span> ce se pot forma	
+                                       cu <span style="font-weight: bold;">n</span> elemente. 
+                                    </p>
+                                    <p>
+                                       <span style="font-weight: bold;">Aranjamente de n luate cate k</span> se noteaza <span style="font-weight: bold;">A<sub>n</sub><sup>k</sup></span>
+                                       <br>
+                                       <span style="font-weight: bold;">A<sub>n</sub><sup>k</sup> = n!/(n-k)!</span> reprezinta <span style="font-weight: bold;">numarul de submultimi ordonate</span> de cate <span style="font-weight: bold;">k</span> elemente ce se pot forma dintr-o multime de <span style="font-weight: bold;">n</span> elemente.
+                                    </p>
+                                    <p>
+                                       <span style="font-weight: bold;">Combinari de n luate cate k</span> se noteaza <span style="font-weight: bold;">C<sub>n</sub><sup>k</sup></span>
+                                       <br>
+                                       <span style="font-weight: bold;">C<sub>n</sub><sup>k</sup> = n!/k!(n-k)!</span>  <span style="font-weight: bold;">reprezinta nr de submultimi neordonate de cate k
+                                       elemente</span> ce se pot forma dintr-o multime cu <span style="font-weight: bold">n</span> elemente. 
+                                       <br>
+                                       <span style="font-weight: bold;">C<sub>n</sub><sup>0</sup> + C<sub>n</sub><sup>1</sup> + C<sub>n</sub><sup>2</sup> + ... + C<sub>n</sub><sup>n</sup> = 2<sup>n</sup></span>
+                                    </p>
+                                    <p><span style="font-weight: bold;">Numarul tuturor sumultimilor unei multimi cu n elemente este 2<sup>n</sup></span>
+                                    </p>
+                                    <p><span style="font-weight: bold;">Numarul submultimilor cu cate k elemente ale unei multimi cu n
+                                       elemente este C<sub>n</sub><sup>k</sup></span>
+                                    </p>
+									
+									
+                                    <p>
+									  Binomul lui Newton: <br>
+									  <b>(a + b)<sup>n</sup> = C<sub>n</sub><sup>0</sup>a<sup>n</sup> + C<sub>n</sub><sup>1</sup>a<sup>n-1</sup>b + C<sub>n</sub><sup>2</sup>a<sup>n-2</sup>b<sup>2</sup> + ... + C<sub>n</sub><sup>k</sup>a<sup>n - k</sup>b<sup>k</sup> + ... + C<sub>n</sub><sup>n</sup>b<sup>n</sup></b></p>
+									  
+									<p>Formula termenului general din binomul lui Newton este : <br>
+									<b>T<sub>k+1</sub> = C<sub>n</sub><sup>k</sup>a<sup>n-k</sup>b<sup>k</sup></b></p>
+									
+									
+                                    <a class="btn btn-default" style="float: right;" href="S1/ElementeDeCombinatorica/Tool-uri.html">Tool-uri</a>
+                                    <a class="btn btn-default" style="float: left;" href="S1/ElementeDeCombinatorica/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="panel panel-default">
+                              <!-- Logaritmi -->
+                              <div class="panel-heading text-center">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse17">Logaritmi</a>
+                                 </h4>
+                              </div>
+                              <div id="collapse17" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    <p>
+                                       <b>log<sub>a</sub><sup>b</sup></b> = puterea la care il ridic pe a astfel incat sa dea pe <b>b</b>.
+                                    </p>
+                                    <p>
+                                       <b>log<sub>a</sub><sup>b</sup></b> exista doar pentru <b>a>0 , b>0 , a != 1</b>
+                                    </p>
+                                    <p>
+                                       <b>log<sub>a</sub><sup>a</sup><sup>b</sup> = b </b>(cu ajutorul acestei formule orice numar real poate fi scris ca log in orice baza vreau) 
+                                    </p>
+                                    <p>
+                                       <b>log<sub>a</sub><sup>b</sup> = c </b>revine la <b>b = a<sup>c</sup></b>
+                                    </p>
+                                    <p>
+                                       <b>log<sub>a</sub><sup>b</sup> + log<sub>a</sub><sup>c</sup> = log<sub>a</sub>(bc)</b>
+                                    </p>
+                                    <p>
+                                       <b>log<sub>a</sub><sup>b</sup> - log<sub>a</sub><sup>c</sup> = log<sub>a</sub>(b/c)</b>
+                                    </p>
+                                    <p>
+                                       <b>log<sub>a</sub><sup>b<sup>p</sup></sup> = p log<sub>a</sub><sup>b</sup></b>
+                                    </p>
+                                    <p>
+                                       <b>log<sub>a<sup>p</sup></sub><sup>b</sup> = 1/p log<sub>a</sub><sup>b</sup></b>
+                                    </p>
+                                    <p>
+                                       <b>log<sub>a</sub><sup>b</sup> = 1/log<sub>b</sub><sup>a</sup></b>
+                                    </p>
+                                    <p>
+                                       <b>a<sup>log<sub>a</sub><sup>b</sup></sup> = b</b>
+                                    </p>
+                                    <p>
+                                       daca <b>a > 1</b> functia log este crescatoare , <b>log<sub>a</sub><sup>b</sup> > log<sub>a</sub><sup>c</sup> => b > c</b>
+                                    </p>
+                                    <p>
+                                       daca <b>a < 1</b> functia log este crescatoare , <b>log<sub>a</sub><sup>b</sup> > log<sub>a</sub><sup>c</sup> => b < c</b>
+                                    </p>
+                                    <a class="btn btn-default" style="float: right;" href="S1/Logaritmi/Tool-uri.html">Tool-uri</a>
+                                    <a class="btn btn-default" style="float: left;" href="S1/Logaritmi/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="panel panel-default">
+                              <!-- Legi de compozitie --> 
+                              <div class="panel-heading text-center">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse18">Legi de compozitie</a>
+                                 </h4>
+                              </div>
+                              <div id="collapse18" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    
+									<p>Fie M o multime nevida pe care s-a dat o lege de compozitie notata *.<br>
+									Legea * este <b>asociativa</b> daca <b>(x * y) * z = x * (y * z)</b> &#x2200;x , y , z &#x2208; M<br>
+									Legea * este <b>comutativa</b> daca <b>x * y = y * x</b> &#x2200;x , y &#x2208; M<br>
+									Legea * are <b>element neutru e</b>daca <b>x * e = e * x = x</b> &#x2200;x &#x2208; M<br>
+									Un element x &#x2208; M se numeste <b>simetrizabil</b> daca &#x2203; x' &#x2208; M astfel incat <b>x * x' = x' * x = e</b></p>
+									
+                                    <a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Tool-uri</a>
+                                    <a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="panel panel-default">
+                              <!-- Relatiile lui Viete pentru ecuatia de gradul 3--> 
+                              <div class="panel-heading text-center">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse19">Relatiile lui Viete pentru ecuatia de gradul 3</a>
+                                 </h4>
+                              </div>
+                              <div id="collapse19" class="panel-collapse collapse in">
+                                 <div class="panel-body">
+                                    
+									<p>Daca <b>ax<sup>3</sup> + bx<sup>2</sup> + cx + d = 0</b> are radacinile <b>x<sub>1</sub> , x<sub>2</sub> , x<sub>3</sub></b> atunci avem:<br>
+									<b>x<sub>1</sub> + x<sub>2</sub> + x<sub>3</sub> = -b/a<br>
+									x<sub>1</sub> • x<sub>2</sub> • x<sub>3</sub> = -d/a</b></p>
+									
+                                    <a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Tool-uri</a>
+                                    <a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="panel panel-default">
+                              <!-- Relatiile lui Viete pentru ecuatia de gradul 4 --> 
+                              <div class="panel-heading text-center">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse110">Relatiile lui Viete pentru ecuatia de gradul 4</a>
+                                 </h4>
+                              </div>
+                              <div id="collapse110" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    <!-- Content-->
+                                    <a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Tool-uri</a>
+                                    <a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default">
+                  <!-- Analiza matematica-->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse2">Analiza matematica</a>
+                     </h4>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <!-- Content-->
+                        <a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default">
+                  <!-- Geometrie -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse3">Geometrie</a>
+                     </h4>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <!-- Content-->
+                        <a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default">
+                  <!-- Trigonometrie -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".Subiectul1" href="#collapse4">Trigonometrie</a>
+                     </h4>
+                  </div>
+                  <div id="collapse4" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <!-- Content-->
+                        <a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
+
