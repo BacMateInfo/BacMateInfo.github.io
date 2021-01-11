@@ -1,0 +1,5 @@
+Simboluri
+
+Δ , ± , √ , π ,  •
+
+https://stackoverflow.com/questions/13878772/how-to-display-classic-built-up-fractions-with-an-horizontal-line-in-css-jav

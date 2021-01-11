@@ -137,3 +137,13 @@ a
 	border-left: 1px solid black;
 	border-right: 1px solid black;
 }
+
+.block
+{
+	display: none !important;
+}
+
+p
+{
+	font-size: 20px !important;
+}

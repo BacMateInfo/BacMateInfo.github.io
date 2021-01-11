@@ -2,18 +2,212 @@
 <html>
 
   <head>
-  
-    <link rel="stylesheet" type="text/css" href="style.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="index.js"></script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="index.js"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
   
-    
+   <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".baraNavigatie">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>  
+               </button>
+               <li class="navbar-brand" href="#">Bacxvia</li>
+            </div>
+            <div class="collapse navbar-collapse baraNavigatie">
+               <ul class="nav navbar-nav">
+                  <li><a href="../index.html">Acasa</a></li>
+                  <li class="dropdown">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Matematica <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="../SubiecteMatematica/S1.html">Subiectul 1</a></li>
+                        <li><a href="../SubiecteMatematica/S2.html">Subiectul 2</a></li>
+                        <li><a href="../SubiecteMatematica/S3.html">Subiectul 3</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown active">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Romana <span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="../SubiecteRomana/S1.html">Subiectul 1</a></li>
+                        <li><a href="../SubiecteRomana/S2.html">Subiectul 2</a></li>
+                        <li><a href="../SubiecteRomana/S3.html">Subiectul 3</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <div class="navbar-form navbar-left">
+                  <div class="input-group">
+                     <input type="text" class="form-control cautare" placeholder="Cauta" name="search">
+                     <div class="input-group-btn">
+                        <button class="btn btn-default" onclick="cauta()">
+                        <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+  <div class="container">
+         <div class="CONTENT">
+            <h1>Subiectul 3</h1>
+            <div class="panel-group" id="Subiectul3">
+			
+               <div class="panel panel-default">
+                  <!-- Basme -->
+                  <div class="panel-heading">
+                     <h4 class="panel-title text-center">
+                        <a data-toggle="collapse" data-parent="#Subiectul3" href="#collapse1">Basme</a>
+                     </h4>
+                  </div>
+				  
+                  <div id="collapse1" class="panel-collapse collapse">
+                     <div class="panel-body">
+						
+						  <a class="btn btn-default" style="display: block;">Basmul cult - Povestea lui Harap Alb</a>
+						
+                     </div>
+                  </div>
+               </div>
+			   
+               <div class="panel panel-default">
+                  <!-- Nuvele -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#Subiectul3" href="#collapse2">Nuvele</a>
+                     </h4>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                     <div class="panel-body">
+                       
+					    <a class="btn btn-default" style="display: block;">Nuvela istorica si romantica - Alexandru Lapusneanul</a>
+						
+						<a class="btn btn-default" style="display: block; margin-top: 10px">Nuvela realist-psihologica - Moara cu Noroc</a>
+						
+						<a class="btn btn-default" style="display: block;margin-top: 10px">Nuvela fantastica - La Tiganci</a>
+                     </div>
+                  </div>
+               </div>
+			   
+			   <div class="panel panel-default">
+                  <!-- Romane -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#Subiectul3" href="#collapse3">Romane</a>
+                     </h4>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        
+						<a class="btn btn-default" style="display: block;">Romanul realist - Ciocoii vechi si noi</a>
+						<a class="btn btn-default" style="display: block; margin-top: 10px">Romanul realist - Mara</a>
+						<a class="btn btn-default" style="display: block; margin-top: 10px">Romanul traditional - Baltagul</a>
+						<a class="btn btn-default" style="display: block; margin-top: 10px">Romanul realist-obiectiv - Ion</a>
+						<a class="btn btn-default" style="display: block; margin-top: 10px">Romanul obiectiv , de analiza psihologica - Padurea spanzuratilor</a>
+						<a class="btn btn-default" style="display: block; margin-top: 10px">Romanul modernist subiectiv , de analiza psihologica - Ultima noapte de dragoste , intaia noapte de razboi</a>
+						<a class="btn btn-default" style="display: block; margin-top: 10px">Romanul realist-balzacian - Enigma Otiliei</a>
+						<a class="btn btn-default" style="display: block; margin-top: 10px">Romanul experientei - Maitrey</a>
+						<a class="btn btn-default" style="display: block; margin-top: 10px">Roman postbelic - Morometii</a>
+                     </div>
+                  </div>
+               </div>
+			   
+			   <div class="panel panel-default">
+                  <!-- Poezii -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#Subiectul3" href="#collapse4">Poezii</a>
+                     </h4>
+                  </div>
+                  <div id="collapse4" class="panel-collapse collapse">
+                     <div class="panel-body">
+                       <div class="panel-group" id="curente">
+					   
+					    <div class="panel panel-default">
+						  <div class="panel-heading text-center">
+						    <h4 class="panel-title">
+							  <a data-toggle="collapse" data-parent="#curente" href="#romantismul1">Poezii romantice</a>
+							</h4>
+						  </div>
+						  <div id="romantismul1" class="panel-collapse collapse">
+						    <div class="panel-body">
+								<a class="btn btn-default" style="display: block;">Poezia romantica - Epigonii</a>
+								<a class="btn btn-default" style="display: block; margin-top: 10px">Poezia romantica - Luceafarul</a>
+								<a class="btn btn-default" style="display: block; margin-top: 10px">Poezia romantica - Oda </a>
+							</div>
+						  </div>
+						</div>
+					   
+					    <div class="panel panel-default">
+						  <div class="panel-heading text-center">
+						    <h4 class="panel-title">
+							  <a data-toggle="collapse" data-parent="#curente" href="#simbolismul1">Poezii simboliste</a>
+							</h4>
+						  </div>
+						  <div id="simbolismul1" class="panel-collapse collapse">
+						    <div class="panel-body">
+								<a class="btn btn-default" style="display: block;">Poezia simbolista - Plumb</a>
+								<a class="btn btn-default" style="display: block; margin-top: 10px">Poezia simbolista - Sonet</a>
+							</div>
+						  </div>
+						</div>
+						
+						<div class="panel panel-default">
+						  <div class="panel-heading text-center">
+						    <h4 class="panel-title">
+							  <a data-toggle="collapse" data-parent="#curente" href="#modernismul1">Poezii moderniste</a>
+							</h4>
+						  </div>
+						  <div id="modernismul1" class="panel-collapse collapse">
+						    <div class="panel-body">
+								<a class="btn btn-default" style="display: block;">Poezia modernista - Eu nu strivesc corola de minuni a lumii</a>
+								<a class="btn btn-default" style="display: block; margin-top: 10px">Poezia modernista - Dati-mi un trup, voi muntilor</a>
+								<a class="btn btn-default" style="display: block; margin-top: 10px">Poezia modernista - Testament</a>
+								<a class="btn btn-default" style="display: block; margin-top: 10px">Poezia modernista - Psalm</a>
+								<a class="btn btn-default" style="display: block; margin-top: 10px">Poezia modernista - Riga Crypto si lapona Enigel</a>
+								<a class="btn btn-default" style="display: block; margin-top: 10px">Poezia modernista - Joc Secund</a>
+							</div>
+						  </div>
+						</div>
+						
+					   <a class="btn btn-default" style="display: block; margin: 10px 0">Prelungire a romantismului - De demult...</a>
+					   <a class="btn btn-default" style="display: block; margin: 10px 0">Poezia traditionalista - Aci sosi pe vremuri</a>
+					   <a class="btn btn-default" style="display: block; margin: 10px 0">Poezia neomodernista - Catre Galateea</a>
+					   <a class="btn btn-default" style="display: block; margin: 10px 0">Poezia neomodernista - Alta matematica</a>
+					   <a class="btn btn-default" style="display: block; margin: 10px 0">Poezia postmoderna - Poema chiuvetei</a>
+					   
+					   </div>
+						
+					   
+                     </div>
+                  </div>
+               </div>
+			   
+			   <div class="panel panel-default">
+                  <!-- Dramaturgie -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#Subiectul3" href="#collapse5">Dramaturgie</a>
+                     </h4>
+                  </div>
+                  <div id="collapse5" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <a class="btn btn-default" style="display: block; margin: 10px 0">Comedia - O scrisoare pierduta</a>
+                        <a class="btn btn-default" style="display: block; margin: 10px 0">Mesterul Manole</a>
+                        <a class="btn btn-default" style="display: block; margin: 10px 0">Iona</a>
+                     </div>
+                  </div>
+               </div>
+  </div>
+	
   </body>
 
 </html>

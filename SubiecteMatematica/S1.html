@@ -10,6 +10,8 @@
       <script src="index.js"></script>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
    </head>
    <body>
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -116,6 +118,7 @@
          <div class="CONTENT">
             <h1>Subiectul 1</h1>
             <div class="panel-group" id="Subiectul1">
+			
                <div class="panel panel-default">
                   <!-- Progresii Aritmetice -->
                   <div class="panel-heading">
@@ -123,24 +126,27 @@
                         <a data-toggle="collapse" data-parent="#Subiectul1" href="#collapse1">Progresii aritmetice</a>
                      </h4>
                   </div>
+				  
                   <div id="collapse1" class="panel-collapse collapse">
                      <div class="panel-body">
+					 
                         <p><span style="font-weight: bold;">Definitie:</span> Se numeste progresie aritmetica un sir de numere reale in
                            care fiecare termen se obtine din termenul anterior adunand o
                            constanta numita ratie (r)
                         </p>
                         <p><span style="font-weight: bold;">Proprietate:</span> Trei numere <span style="font-weight: bold;">a , b, c</span> sunt in progresie aritmetica daca <span style="font-weight: bold;">b</span> e 
-                           medie aritmetica intre <span style="font-weight: bold;">a</span> si <span style="font-weight: bold;">c</span> adica <span style="font-weight: bold;">b = (a + c)/2</span>
+                           medie aritmetica intre <span style="font-weight: bold;">a</span> si <span style="font-weight: bold;">c</span> adica <span style="font-weight: bold;">$$b = {a + c \over 2} $$</span>
                         </p>
-                        <p style="font-weight: bold;">a<sub>n</sub>=a<sub>1</sub>+(n - 1)r</p>
-                        <p><span style="font-weight: bold;">S<sub>n</sub>=(n(2a<sub>1</sub> + (n - 1)r))/2</span> unde am notat <span style="font-weight: bold;">
-                           S<sub>n</sub> = a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + ... + a<sub>n</sub></span>
+                        <p style="font-weight: bold;">$$a_n=a_1+(n - 1)r$$</p>
+                        <p><span style="font-weight: bold;">$$S_n = \frac{n(2a_1 + (n - 1)r)}{2}$$</span> <span style="font-weight: bold;">
+                           $$S_n = {a_1 + a_2 + a_3 + ... + a_n}$$</span>
                         </p>
                         <a class="btn btn-default" style="float: right;" href="S1/ProgresiiAritmetice/Tool-uri.html">Tool-uri</a>
                         <a class="btn btn-default" style="float: left;" href="S1/ProgresiiAritmetice/ExercitiiRezolvate.html">Exercitii rezolvate</a>
                      </div>
                   </div>
                </div>
+			   
                <div class="panel panel-default">
                   <!-- Progresii Geometrice -->
                   <div class="panel-heading text-center">
@@ -155,11 +161,11 @@
                            constanta numita ratie (q). 
                         </p>
                         <p><span style="font-weight: bold;">Proprietate:</span> Trei numere <span style="font-weight: bold;">a , b, c</span> sunt in progresie geometrica cu termeni pozitivi daca <span style="font-weight: bold;">b</span> e 
-                           medie geometrica intre <span style="font-weight: bold;">a</span> si <span style="font-weight: bold;">c</span> adica <span style="font-weight: bold;">b = √(ac)</span>
+                           medie geometrica intre <span style="font-weight: bold;">a</span> si <span style="font-weight: bold;">c</span> adica \(b = \sqrt{ac}\)
                         </p>
-                        <p style="font-weight: bold;">a<sub>n</sub>=a<sub>1</sub>q<sup>n - 1</sup></p>
-                        <p><span style="font-weight: bold;">S<sub>n</sub> = a<sub>1</sub>(q<sup>n</sup>-1)/(q - 1)</span> unde am notat <span style="font-weight: bold;">
-                           S<sub>n</sub> = a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + ... + a<sub>n</sub></span>
+                        <p>$$a_n=a_1q^n - 1$$</p>
+                        <p>$$S_n = \frac{a_1(q^n-1)}{q - 1}$$ 
+                           $$S_n = a_1 + a_2 + a_3 + ... + a_n$$
                         </p>
                         <a class="btn btn-default" style="float: right;" href="S1/ProgresiiGeometrice/Tool-uri.html">Tool-uri</a>
                         <a class="btn btn-default" style="float: left;" href="S1/ProgresiiGeometrice/ExercitiiRezolvate.html">Exercitii rezolvate</a>
@@ -175,7 +181,7 @@
                   </div>
                   <div id="collapse3" class="panel-collapse collapse">
                      <div class="panel-body">
-                        <p class="lead">Probabilitate = nr.cazurifavorabile/nr.cazuriposibile</p>
+                        <p class="lead">$$p = \frac{nr.cazurifavorabile}{nr.cazuriposibile}$$</p>
                         <a class="btn btn-default" style="float: right;" href="S1/Probabilitati/Tool-uri.html">Tool-uri</a>
                         <a class="btn btn-default" style="float: left;" href="S1/Probabilitati/ExercitiiRezolvate.html">Exercitii rezolvate</a>
                      </div>
@@ -190,27 +196,27 @@
                   </div>
                   <div id="collapse4" class="panel-collapse collapse">
                      <div class="panel-body">
-                        <p><span style="font-weight: bold">Permutari de n</span> se noteaza <span style="font-weight: bold;">P<sub>n</sub></span> <br>
-                           <span style="font-weight: bold;">P<sub>n</sub>=n!</span> si reprezinta <span style="font-weight: bold;">numarul de multimi ordonate</span> ce se pot forma	
+                        <p><span style="font-weight: bold">Permutari de n</span> se noteaza \(P_n\)<br>
+                           <span style="font-weight: bold;">\(P_n=n!\)</span> si reprezinta <span style="font-weight: bold;">numarul de multimi ordonate</span> ce se pot forma	
                            cu <span style="font-weight: bold;">n</span> elemente. 
                         </p>
                         <p>
-                           <span style="font-weight: bold;">Aranjamente de n luate cate k</span> se noteaza <span style="font-weight: bold;">A<sub>n</sub><sup>k</sup></span>
+                           <span style="font-weight: bold;">Aranjamente de n luate cate k</span> se noteaza \(A_n^k\)
                            <br>
-                           <span style="font-weight: bold;">A<sub>n</sub><sup>k</sup> = n!/(n-k)!</span> reprezinta <span style="font-weight: bold;">numarul de submultimi ordonate</span> de cate <span style="font-weight: bold;">k</span> elemente ce se pot forma dintr-o multime de <span style="font-weight: bold;">n</span> elemente.
+                           <span style="font-weight: bold;">\(A_n^k = \frac{n!}{(n-k)!}\)</span> reprezinta <span style="font-weight: bold;">numarul de submultimi ordonate</span> de cate <span style="font-weight: bold;">k</span> elemente ce se pot forma dintr-o multime de <span style="font-weight: bold;">n</span> elemente.
                         </p>
                         <p>
-                           <span style="font-weight: bold;">Combinari de n luate cate k</span> se noteaza <span style="font-weight: bold;">C<sub>n</sub><sup>k</sup></span>
+                           <span style="font-weight: bold;">Combinari de n luate cate k</span> se noteaza \(C_n^k\)
                            <br>
-                           <span style="font-weight: bold;">C<sub>n</sub><sup>k</sup> = n!/k!(n-k)!</span>  <span style="font-weight: bold;">reprezinta nr de submultimi neordonate de cate k
+                           <span style="font-weight: bold;">\(C_n^k = \frac{n!}{k!(n-k)!}\)</span>  <span style="font-weight: bold;">reprezinta nr de submultimi neordonate de cate k
                            elemente</span> ce se pot forma dintr-o multime cu <span style="font-weight: bold">n</span> elemente. 
                            <br>
-                           <span style="font-weight: bold;">C<sub>n</sub><sup>0</sup> + C<sub>n</sub><sup>1</sup> + C<sub>n</sub><sup>2</sup> + ... + C<sub>n</sub><sup>n</sup> = 2<sup>n</sup></span>
+                           <span style="font-weight: bold;">$$C_n^0 + C_n^1 + C_n^2 + ... + C_n^n = 2^n$$</span>
                         </p>
-                        <p><span style="font-weight: bold;">Numarul tuturor sumultimilor unei multimi cu n elemente este 2<sup>n</sup></span>
+                        <p><span style="font-weight: bold;">Numarul tuturor sumultimilor unei multimi cu n elemente este \(2^n\)</span>
                         </p>
                         <p><span style="font-weight: bold;">Numarul submultimilor cu cate k elemente ale unei multimi cu n
-                           elemente este C<sub>n</sub><sup>k</sup></span>
+                           elemente este \(C_n^k\)</span>
                         </p>
                         <a class="btn btn-default" style="float: right;" href="S1/ElementeDeCombinatorica/Tool-uri.html">Tool-uri</a>
                         <a class="btn btn-default" style="float: left;" href="S1/ElementeDeCombinatorica/ExercitiiRezolvate.html">Exercitii rezolvate</a>
@@ -226,11 +232,11 @@
                   </div>
                   <div id="collapse6" class="panel-collapse collapse">
                      <div class="panel-body">
-                        <p>Varful parabolei este: <span style="font-weight: bold;">V(-b/2a , -Δ/4a)</span><br>
+                        <p>Varful parabolei este: <span style="font-weight: bold;">\(V(\frac{-b}{2a} , \frac{-Δ}{4a})\)</span><br>
                            - daca <span style="font-weight: bold;">a > 0</span> varful este punct de minim:<br>
-                           -Δ/4a este <b>valoare minima</b> iar -b/2a este <b>punct de minim</b><br>
+                           -\(\frac{Δ}{4a}\) este <b>valoare minima</b> iar \(\frac{-b}{2a}\) este <b>punct de minim</b><br>
                            - daca <b>a < 0 </b>este punct de maxim:<br>
-                           -Δ/4a este <b>valoare maxima</b> iar -b/2a este <b>punct de maxim</b>
+                           -\(\frac{Δ}{4a}\) este <b>valoare maxima</b> iar \(\frac{-b}{2a}\) este <b>punct de maxim</b>
                         </p>
                         <p>Graficul functiei de gradul doi e tangent la axa Ox daca are <b>Δ = 0</b></p>
                         <p>Graficul functiei de gradul doi e situat deasupra axei Ox daca are:<br>
@@ -238,20 +244,20 @@
                            a > 0</b>
                         </p>
                         <p><b>Relatiile lui Viette</b><br>
-                           Pentru ecuatia de gradul doi cu radacini <b>x<sub>1</sub> , x<sub>2</sub></b> , au loc relatiile:<br>
-                           <b>x<sub>1</sub> + x<sub>2</sub> = -b/a<br>
-                           x<sub>1</sub> · x<sub>2</sub> = c/a</b>
+                           Pentru ecuatia de gradul doi cu radacini <b>\(x_1 , x_2\)</b> , au loc relatiile:<br>
+                           <b>\(x_1 + x_2 = \frac{-b}{a}\)<br>
+                           \(x_1 · x_2 = \frac{c}{a}\)</b>
                         </p>
-                        <p><b>Observatie: x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> = (x<sub>1</sub> + x<sub>2</sub>)<sup>2</sup> - 2x<sub>1</sub>x<sub>2</sub> = (-b/a)<sup>2</sup> - 2c/a</b></p>
-                        <p><b>Ecuatia cu radacini</b> x<sub>1</sub> , x<sub>2</sub> este <b>x<sup>2</sup> - Sx + P = 0</b> unde <b>S = x<sub>1</sub> + x<sub>2</sub></b> iar <b>P = x<sub>1</sub> · x<sub>2</sub></b></p>
-                        <p>Conditia ca <b>a<sup>2</sup> + bx + c >= 0</b> , x din R este <b>Δ <= 0 , a > 0</b><br>
-                           Conditia ca <b>a<sup>2</sup> + bx + c <= 0</b> , x din R este <b>Δ <= 0 , a < 0</b><br>
-                           Conditia ca <b>a<sup>2</sup> + bx + c > 0</b> , x din R este <b>Δ < 0 , a > 0</b><br>
-                           Conditia ca <b>a<sup>2</sup> + bx + c < 0</b> , x din R este <b>Δ < 0 , a < 0</b><br>
+                        <p><b>Observatie: \(x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1x_2 = (\frac{-b}{a})^2 - \frac{2c}{a}\)</b></p>
+                        <p><b>Ecuatia cu radacini</b> \(x_1 , x_2\) este <b>\(x^2 - Sx + P = 0\)</b> unde <b>\(S = x_1 + x_2\)</b> iar <b>\(P = x_1 · x_2\)</b></p>
+                        <p>Conditia ca <b>\(a^2 + bx + c >= 0\)</b> , x din R este <b>Δ <= 0 , a > 0</b><br>
+                           Conditia ca <b>\(a^2 + bx + c <= 0\)</b> , x din R este <b>Δ <= 0 , a < 0</b><br>
+                           Conditia ca <b>\(a^2 + bx + c > 0\)</b> , x din R este <b>Δ < 0 , a > 0</b><br>
+                           Conditia ca <b>\(a^2 + bx + c < 0\)</b> , x din R este <b>Δ < 0 , a < 0</b><br>
                         </p>
-                        <p>Conditia ca ecuatia <b>a<sup>2</sup> + bx + c = 0</b> sa aibe doua solutii reale este <b>Δ > 0</b><br>
-                           Conditia ca ecuatia <b>a<sup>2</sup> + bx + c = 0</b> sa aibe doua solutii egale este <b>Δ = 0</b><br>
-                           Conditia ca ecuatia <b>a<sup>2</sup> + bx + c = 0</b> sa nu aibe solutii reale este <b>Δ < 0</b><br>
+                        <p>Conditia ca ecuatia <b>\(a^2 + bx + c = 0\)</b> sa aibe doua solutii reale este <b>Δ > 0</b><br>
+                           Conditia ca ecuatia <b>\(a^2 + bx + c = 0\)</b> sa aibe doua solutii egale este <b>Δ = 0</b><br>
+                           Conditia ca ecuatia <b>\(a^2 + bx + c = 0\)</b> sa nu aibe solutii reale este <b>Δ < 0</b><br>
                         </p>
                         <a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Tool-uri</a>
                         <a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>
@@ -276,7 +282,7 @@
                            Solutiile (x , y) reprezinta coordonatele punctelor de intersectie.
                         </p>
                         <p><b>Inversa functiei f:</b> <br>
-                           Daca <b>f(x) = y</b> atunci <b>f<sup>-1</sup>(y) = x</b>
+                           Daca <b>f(x) = y</b> atunci <b>f^-1(y) = x</b>
                         </p>
                         <p><b>Intersectia cu Ox a graficului functiei f:</b><br>
                            Se rezolva ecuatia <b>f(x) = 0</b><br>
@@ -447,7 +453,7 @@
                            sin(90° - x) = cosx<br>
                            cos(180° - x) = -cosx<br>
                            cos(90° - x) = sinx<br>
-                           sin<sup>2</sup>x + cos<sup>2</sup>x = 1 , oricare x real <br>
+                           sin^2x + cos^2x = 1 , oricare x real <br>
                            tgx = sinx/cosx<br>
                            ctgx = cosx/sinx = 1/tgx</b>
                         </p>
@@ -466,43 +472,43 @@
                   <div id="collapse9" class="panel-collapse collapse">
                      <div class="panel-body">
                         <p><b>Ecuatia dreptei AB : </b> 
-                        <div class="det" style="display: inline-block; font-size: 18px">x  y 1 <br> x<sub>A</sub> y<sub>A</sub> 1<br>x<sub>B</sub> y<sub>B</sub> 1</div>
+                        <div class="det" style="display: inline-block; font-size: 18px">x  y 1 <br> x_A y_A 1<br>x_B y_B 1</div>
                         </p>
                         <p>
                            <b>Panta dreptei AB:</b><br>
-                           daca stiu doua puncte panta este <b>m<sub>AB</sub> = (y<sub>A</sub> - y<sub>B</sub>)/(x<sub>A</sub> - x<sub>B</sub>)</b><br>
+                           daca stiu doua puncte panta este <b>m_AB = (y_A - y_B)/(x_A - x_B)</b><br>
                            daca dreapta e data sub forma <b>y = mx + n</b> atunci <b>m</b> este panta<br>
                            daca ecuatia e sub forma <b>ax + by + c = 0</b> panta este <b>-b/a</b><br>
                            OBS: dreptele verticale (<b>x = a</b>) nu eu panta
                         </p>
                         <p>
-                           Ecuatia unei drepte cand stiu un punct A si panta m este : <b>y - y<sub>A</sub> = m(x - x<sub>A</sub>)</b>
+                           Ecuatia unei drepte cand stiu un punct A si panta m este : <b>y - y_A = m(x - x_A)</b>
                         </p>
                         <p>
-                           Conditia de paralelism a doua drepte <b>d<sub>1</sub> || d<sub>2</sub> <=> m<sub>d<sub>1</sub></sub> = m<sub>d<sub>2</sub></sub></b>
+                           Conditia de paralelism a doua drepte <b>d_1 || d_2 <=> m_d_1 = m_d_2</b>
                         </p>
-                        <p>Distanta dintre doua puncte <b><span class="det">AB</span> = √((x<sub>A</sub> - x<sub>B</sub>)<sup>2</sup> + (y<sub>A</sub> - y<sub>B</sub>)<sup>2</sup>)</b></p>
-                        <p>Mijlocul segmentului <b>AB</b> este <b>M((x<sub>A</sub> + x<sub>B</sub>)/2 , (y<sub>A</sub> + y<sub>B</sub>)/2)</b></p>
+                        <p>Distanta dintre doua puncte <b><span class="det">AB</span> = √((x_A - x_B)^2 + (y_A - y_B)^2)</b></p>
+                        <p>Mijlocul segmentului <b>AB</b> este <b>M((x_A + x_B)/2 , (y_A + y_B)/2)</b></p>
                         <p>Conditia ca trei puncte A,B,C sa fie coliniare: 
-                        <div class="det" style="display: inline-block; font-size: 18px">x<sub>A</sub> y<sub>A</sub> 1<br>x<sub>B</sub> y<sub>B</sub> 1 <br>x<sub>C</sub> y<sub>C</sub> 1</div>
+                        <div class="det" style="display: inline-block; font-size: 18px">x_A y_A 1<br>x_B y_B 1 <br>x_C y_C 1</div>
                         = 0</p>
                         <p><b>Punctul de intersectie dintre doua drepte</b> se determina rezolvand sistemul facut de ecuatiile lor. </p>
-                        <p><b>Aria triunghiului ABC</b> este S<sub>ABC</sub> = <span class="det">Δ</span> / 2 unde Δ = 
-                        <div class="det" style="display: inline-block; font-size: 18px">x<sub>A</sub> y<sub>A</sub> 1<br>x<sub>B</sub> y<sub>B</sub> 1 <br>x<sub>C</sub> y<sub>C</sub> 1</div>
+                        <p><b>Aria triunghiului ABC</b> este S_ABC = <span class="det">Δ</span> / 2 unde Δ = 
+                        <div class="det" style="display: inline-block; font-size: 18px">x_A y_A 1<br>x_B y_B 1 <br>x_C y_C 1</div>
                         </p>
-                        <p><b>Aria triunghiului</b> <b>S<sub>ABC</sub> = (baza · inaltimea)/2</b></p>
-                        <p><b>Aria triunghiului echilateral</b> cu latura l este: <b>S = (l<sup>3</sup>√3)/4</b></p>
+                        <p><b>Aria triunghiului</b> <b>S_ABC = (baza · inaltimea)/2</b></p>
+                        <p><b>Aria triunghiului echilateral</b> cu latura l este: <b>S = (l^3√3)/4</b></p>
                         <p>In triunghiul dreptunghic <b>mediana e jumatate din ipotenuza</b> </p>
-                        <p><b>Aria triunghiului ABC (Heron)</b> <b>S<sub>ABC</sub> = √(p(p-a)(p-b)(p-c)) unde p = (a + b + c)/2</b></p>
+                        <p><b>Aria triunghiului ABC (Heron)</b> <b>S_ABC = √(p(p-a)(p-b)(p-c)) unde p = (a + b + c)/2</b></p>
                         <p>
                            <b>Aria triunghiului</b> ABC = (BC · AC · sinC)/2 = (BC · AB · sinB)/2 = (AB · AC · sinA)/2
                         </p>
-                        <p><b>Teorema lui Pitagora</b> in triunghiul dreptunghic <b>b<sup>2</sup> + c<sup>2</sup> = a<sup>2</sup></b></p>
+                        <p><b>Teorema lui Pitagora</b> in triunghiul dreptunghic <b>b^2 + c^2 = a^2</b></p>
                         <p><b>Teorema cosinusului</b> <br>
-                           BC<sup>2</sup> = AC<sup>2</sup> + AB<sup>2</sup> - 2·AB·AC·cos(A)<br>
+                           BC^2 = AC^2 + AB^2 - 2·AB·AC·cos(A)<br>
                         </p>
-                        AC<sup>2</sup> = AB<sup>2</sup> + BC<sup>2</sup> - 2·AB·BC·cos(B)<br></p>
-                        AB<sup>2</sup> = AC<sup>2</sup> + BC<sup>2</sup> - 2·BC·AC·cos(C)</p>
+                        AC^2 = AB^2 + BC^2 - 2·AB·BC·cos(B)<br></p>
+                        AB^2 = AC^2 + BC^2 - 2·BC·AC·cos(C)</p>
                         <p><b>Teorema sinusurilor</b> BC/sinA = AC/sinB = AB/sinC = 2R unde R raza cercului circumscris triunghiului</p>
                         <p><b>Prima bisectoarea</b> este bisectoarea cadranului 1 in reperul xOy si are ecuatia y = x. </p>
                         <p><b>A doua bisectoarea</b> este bisectoarea cadranului 2 in reperul xOy si are ecuatia y=-x.</p>
@@ -526,7 +532,7 @@
                   <div id="collapse10" class="panel-collapse collapse">
                      <div class="panel-body">
                         <p>
-                           Modulul vectorului: <b>v&#8407 = a · i&#8407 + b · j&#8407 este <span class="det"> v&#8407 </span> = √(a<sup>2</sup> + b<sup>2</sup>)</b>
+                           Modulul vectorului: <b>v&#8407 = a · i&#8407 + b · j&#8407 este <span class="det"> v&#8407 </span> = √(a^2 + b^2)</b>
                         </p>
                         <p>
                            Produsul scalar a doi vectori <b>v&#8407 = a · i&#8407 + b · j&#8407</b> si  <b>w&#8407 = c · i&#8407 + d · j&#8407</b> este <b>v&#8407 + w&#8407 = a · c + b · d</b>
@@ -541,10 +547,10 @@
                            de coliniaritate revine la <b>a/c = b/d</b>
                         </p>
                         <p>
-                           Daca <b>A(x<sub>A</sub> , y<sub>A</sub>)</b> si <b>B(x<sub>B</sub> , y<sub>B</sub>)</b> atunci <b>AB&#8407 = (x<sub>B</sub> - x<sub>A</sub>) · i&#8407 + (y<sub>B</sub> - y<sub>A</sub>) · j&#8407</b>
+                           Daca <b>A(x_A , y_A)</b> si <b>B(x_B , y_B)</b> atunci <b>AB&#8407 = (x_B - x_A) · i&#8407 + (y_B - y_A) · j&#8407</b>
                         </p>
                         <p>
-                           Daca <b>A(x<sub>A</sub> , y<sub>A</sub>)</b> vectorul de pozitie al lui A este <b>OA&#8407 = x<sub>A</sub> · i&#8407 + y<sub>A</sub> · j&#8407</b> se mai noteaza <b>r<sub>A</sub>&#8407</b>
+                           Daca <b>A(x_A , y_A)</b> vectorul de pozitie al lui A este <b>OA&#8407 = x_A · i&#8407 + y_A · j&#8407</b> se mai noteaza <b>r_A&#8407</b>
                         </p>
                         <a class="btn btn-default" style="float: right;" href="S1/VectoriInPlan/Tool-uri.html">Tool-uri</a>
                         <a class="btn btn-default" style="float: left;" href="S1/VectoriInPlan/ExercitiiRezolvate.html">Exercitii rezolvate</a>
@@ -561,8 +567,8 @@
                   <div id="collapse11" class="panel-collapse collapse">
                      <div class="panel-body">
                         <p><b>√E(x) E(x) >= 0</b></p>
-                        <p><b><sup>3</sup>√E(x)</b> exista oricare ar fi <b>x</b> real deci nu se pun conditii de existenta </p>
-                        <p><b>log<sub>a</sub><sup>E(x)</sup> E(x) > 0 , a > 0 , a != 1</b></p>
+                        <p><b>^3√E(x)</b> exista oricare ar fi <b>x</b> real deci nu se pun conditii de existenta </p>
+                        <p><b>log_a^E(x) E(x) > 0 , a > 0 , a != 1</b></p>
                         <p>daca avem numitor , avem conditia numitor diferit de 0. </p>
                         <p><b>arcsinE(x) -1 <= E(x) <= 1</b></p>
                         <p><b>arccosE(x) -1 <= E(x) <= 1</b></p>
@@ -585,40 +591,40 @@
                   <div id="collapse5" class="panel-collapse collapse">
                      <div class="panel-body">
                         <p>
-                           <b>log<sub>a</sub><sup>b</sup></b> = puterea la care il ridic pe a astfel incat sa dea pe <b>b</b>.
+                           <b>log_a^b</b> = puterea la care il ridic pe a astfel incat sa dea pe <b>b</b>.
                         </p>
                         <p>
-                           <b>log<sub>a</sub><sup>b</sup></b> exista doar pentru <b>a>0 , b>0 , a != 1</b>
+                           <b>log_a^b</b> exista doar pentru <b>a>0 , b>0 , a != 1</b>
                         </p>
                         <p>
-                           <b>log<sub>a</sub><sup>a</sup><sup>b</sup> = b </b>(cu ajutorul acestei formule orice numar real poate fi scris ca log in orice baza vreau) 
+                           <b>log_a^a^b = b </b>(cu ajutorul acestei formule orice numar real poate fi scris ca log in orice baza vreau) 
                         </p>
                         <p>
-                           <b>log<sub>a</sub><sup>b</sup> = c </b>revine la <b>b = a<sup>c</sup></b>
+                           <b>log_a^b = c </b>revine la <b>b = a^c</b>
                         </p>
                         <p>
-                           <b>log<sub>a</sub><sup>b</sup> + log<sub>a</sub><sup>c</sup> = log<sub>a</sub>(bc)</b>
+                           <b>log_a^b + log_a^c = log_a(bc)</b>
                         </p>
                         <p>
-                           <b>log<sub>a</sub><sup>b</sup> - log<sub>a</sub><sup>c</sup> = log<sub>a</sub>(b/c)</b>
+                           <b>log_a^b - log_a^c = log_a(b/c)</b>
                         </p>
                         <p>
-                           <b>log<sub>a</sub><sup>b<sup>p</sup></sup> = p log<sub>a</sub><sup>b</sup></b>
+                           <b>log_a^b^p = p log_a^b</b>
                         </p>
                         <p>
-                           <b>log<sub>a<sup>p</sup></sub><sup>b</sup> = 1/p log<sub>a</sub><sup>b</sup></b>
+                           <b>log_a^p^b = 1/p log_a^b</b>
                         </p>
                         <p>
-                           <b>log<sub>a</sub><sup>b</sup> = 1/log<sub>b</sub><sup>a</sup></b>
+                           <b>log_a^b = 1/log_b^a</b>
                         </p>
                         <p>
-                           <b>a<sup>log<sub>a</sub><sup>b</sup></sup> = b</b>
+                           <b>a^log_a^b = b</b>
                         </p>
                         <p>
-                           daca <b>a > 1</b> functia log este crescatoare , <b>log<sub>a</sub><sup>b</sup> > log<sub>a</sub><sup>c</sup> => b > c</b>
+                           daca <b>a > 1</b> functia log este crescatoare , <b>log_a^b > log_a^c => b > c</b>
                         </p>
                         <p>
-                           daca <b>a < 1</b> functia log este crescatoare , <b>log<sub>a</sub><sup>b</sup> > log<sub>a</sub><sup>c</sup> => b < c</b>
+                           daca <b>a < 1</b> functia log este crescatoare , <b>log_a^b > log_a^c => b < c</b>
                         </p>
                         <a class="btn btn-default" style="float: right;" href="S1/Logaritmi/Tool-uri.html">Tool-uri</a>
                         <a class="btn btn-default" style="float: left;" href="S1/Logaritmi/ExercitiiRezolvate.html">Exercitii rezolvate</a>
