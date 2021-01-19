@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE HTML>
 <html>
    <head>
@@ -400,7 +398,7 @@
                         <a data-toggle="collapse" data-parent="#Subiectul2" href="#collapse2">Analiza matematica</a>
                      </h4>
                   </div>
-                  <div id="collapse2" class="panel-collapse collapse in">
+                  <div id="collapse2" class="panel-collapse collapse">
                      <div class="panel-body">
                         <div class="panel-group" id="Analiza">
 						  <div class="panel panel-default">
@@ -444,7 +442,7 @@
 									<a data-toggle="collapse" data-parent="#Analiza" href="#collapse22">Derivate</a>
 								 </h4>
 							  </div>
-							  <div id="collapse22" class="panel-collapse collapse in">
+							  <div id="collapse22" class="panel-collapse collapse">
 								 <div class="panel-body">
 									
 									<p>Derivata unei functii intr-un punct: <b>\(f'(x_{0}) = \cfrac{lim_{x->x_0}(f(x) - f(x_{0}))}{x - x_{0}}\)</b></p>
@@ -462,6 +460,8 @@
 									<h3>Derivatele unor functii uzuale</h3>
 									
 									<b><table class="table">
+									
+										<style>tr{font-size: 20px;}</style>
 									
 										<tr>
 										  <td>\(c' = 0\)</td>
@@ -515,43 +515,43 @@
 									<b><table class="table">
 									
 									  <tr>
-									    <td>(u^{n})' = n \cdot u^{n-1} \cdot u'</td>
-									    <td>(lnu)' = u'/u</td>
+									    <td>\((u^{n})' = n \cdot u^{n-1} \cdot u'\)</td>
+									    <td>\((ln u)' = \cfrac{u'}{u}\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td>(1/u)' = -u^{2}/u</td>
-									    <td>(log_{a}u)' = u'/u \cdot lna</td>
+									    <td>\((\cfrac{1}{u})' = \cfrac{-u^{2}}{u}\)</td>
+									    <td>\((log_{a}u)' = \cfrac{u'}{u} \cdot lna\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td>(\sqrt{u)' = u'/2\sqrt{u</td>
-									    <td>(\sinu)' = \cosu \cdot u'</td>
+									    <td>\((\sqrt{u})' = \cfrac{u'}{2\sqrt{u}}\)</td>
+									    <td>\((\sin u)' = \cos u \cdot u'\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td>(e^{u})' = e^{u} \cdot u'</td>
-									    <td>(\cosu)' = -\sinu \cdot u'</td>
+									    <td>\((e^{u})' = e^{u} \cdot u'\)</td>
+									    <td>\((\cos u)' = -\sin u \cdot u'\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td>(e^{-u})' = -e^{-u} \cdot u'</td>
-									    <td>(tgu)' = u'/cons^{2}u</td>
+									    <td>\((e^{-u})' = -e^{-u} \cdot u'\)</td>
+									    <td>\((tg u)' = u'/cons^{2}u\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td>(a^{u})' = a^{u} \cdot lna \cdot u'</td>
-									    <td>(ctgu)' = -u'/\sin^{2}u</td>
+									    <td>\((a^{u})' = a^{u} \cdot lna \cdot u'\)</td>
+									    <td>\((ctg u)' = \cfrac{-u'}{\sin^{2}u}\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td>(arc\sinu)' = u'/\sqrt{(1-u^{2})</td>
-									    <td>(arc\cosu)' = -u'/\sqrt{(1 - u^{2})</td>
+									    <td>\((arcsin u)' = \cfrac{u'}{\sqrt{1-u^{2}}}\)</td>
+									    <td>\((arccos u)' = \cfrac{-u'}{\sqrt{1 - u^{2}}}\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td>(arctgu)' = u'/(1 + u^{2})</td>
-									    <td>(arcctgu)' = -u'/(1 + u^{2})</td>
+									    <td>\((arctg u)' = \cfrac{u'}{(1 + u^{2})}\)</td>
+									    <td>\((arcctg u)' = \cfrac{-u'}{1 + u^{2}}\)</td>
 									  </tr>
 									
 									</table></b>
@@ -576,95 +576,95 @@
 									<b><table class="table">
 									
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>1 dx = x + C</td>
-									    <td><span style="font-size: 30px">&#x222B;</span>\sinx dx = -\cosx + C</td>
+									    <td>\(\int 1 dx = x + C\)</td>
+									    <td>\(\int \sin x dx = -\cos x + C\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>x dx = x^{2}/2 + C</td>
-									    <td><span style="font-size: 30px">&#x222B;</span>cox dx = \sinx + C</td>
+									    <td>\(\int x dx = \cfrac{x^{2}}{2} + C\)</td>
+									    <td>\(\int cox dx = \sin x + C\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>x^{n} dx = x^{n + 1}/(n + 1) + C</td>
-									    <td><span style="font-size: 30px">&#x222B;</span>1/\cos^{2}x dx = tgx + C</td>
+									    <td>\(\int x^{n} dx = \cfrac{x^{n + 1}}{n + 1} + C\)</td>
+									    <td>\(\int \cfrac{1}{\cos^{2}x}dx = tgx + C\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>1/x dx = ln|x| + C</td>
-									    <td><span style="font-size: 30px">&#x222B;</span>1/\sin^{2}x dx = -ctgx + C</td>
+									    <td>\(\int \cfrac{1}{x} dx = ln|x| + C\)</td>
+									    <td>\(\int \cfrac{1}{\sin^{2}x} dx = -ctgx + C\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>e^{x} dx = e^{x} + C</td>
-									    <td><span style="font-size: 30px">&#x222B;</span>1/(x^{2} + a^{2}) dx = 1/a \cdot arctg(x/a) + C</td>
+									    <td>\(\int e^{x} dx = e^{x} + C\)</td>
+									    <td>\(\int \cfrac{1}{x^{2} + a^{2}} dx = 1/a \cdot arctg(\cfrac{x}{a}) + C\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>e^{-x} = -e^{-x} + C</td>
-									    <td><span style="font-size: 30px">&#x222B;</span>1/(x^{2} - a^{2}) dx = 1/2a \cdot ln|(x - a)/(x + a)| + C</td>
+									    <td>\(\int e^{-x} = -e^{-x} + C\)</td>
+									    <td>\(\int \cfrac{1}{x^{2} - a^{2}} dx = \cfrac{1}{2a} \cdot ln|\cfrac{x - a}{x + a}| + C\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>a^{x} dx = a^{x}/lna + C</td>
-									    <td><span style="font-size: 30px">&#x222B;</span>1/\sqrt{(x^{2} + a^{2}) dx = ln(x + \sqrt{(x^{2} + a^{2})) + C</td>
+									    <td>\(\int a^{x} dx = \cfrac{a^{x}}{ln a} + C\)</td>
+									    <td>\(\int \cfrac{1}{\sqrt{x^{2} + a^{2}}} dx = ln(x + \sqrt{x^{2} + a^{2}}) + C\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>1/\sqrt{(x^{2} - a^{2}) dx = ln|x + \sqrt{(x^{2} - a^{2})| + C</td>
-									    <td><span style="font-size: 30px">&#x222B;</span>1/\sqrt{(a^{2} - x^{2}) dx = arc\sin(x/a) + C</td>
+									    <td>\(\int \cfrac{1}{\sqrt{x^{2} - a^{2}}} dx = ln|x + \sqrt{x^{2} - a^{2}}| + C\)</td>
+									    <td>\(\int \cfrac{1}{\sqrt{a^{2} - x^{2}}} dx = arcsin(\cfrac{x}{a}) + C\)</td>
 									  </tr>
-									
+										
 									</table></b>
 									
 									<b><table class="table">
 									
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>u'(x) dx = u(x) + C</td>
-									    <td><span style="font-size: 30px">&#x222B;</span>\sinu(x) \cdot u'(x) dx = -\cosu(x) + C</td>
+									    <td>\(\int u'(x) dx = u(x) + C\)</td>
+									    <td>\(\int \sin u(x) \cdot u'(x) dx = -\cos u(x) + C\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>u^{n}(x) \cdot u'(x) dx = u^{n + 1}(x)/(n + 1) + C</td>
-									    <td><span style="font-size: 30px">&#x222B;</span>\cosu(x) \cdot u'(x) dx = \sinu(x) + C</td>
+									    <td>\(\int u^{n}(x) \cdot u'(x) dx = \cfrac{u^{n + 1}(x)}{n + 1} + C\)</td>
+									    <td>\(\int \cos u(x) \cdot u'(x) dx = \sin u(x) + C\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>u'(x)/u(x) dx = ln|u(x)| + C</td>
-									    <td><span style="font-size: 30px">&#x222B;</span>u'(x)/\cos^{2}u(x) dx = tgu(x) + C</td>
+									    <td>\(\int \cfrac{u'(x)}{u(x)} dx = ln|u(x)| + C\)</td>
+									    <td>\(\int \cfrac{u'(x)}{\cos^{2}u(x)} dx = tg u(x) + C\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>e^{u(x)}u'(x) dx = e^{u(x)} + C</td>
-									    <td><span style="font-size: 30px">&#x222B;</span>u'(x)/\sin^{2}u(x) dx = -ctgu(x) + C</td>
+									    <td>\(\int e^{u(x)}u'(x) dx = e^{u(x)} + C\)</td>
+									    <td>\(\int \cfrac{u'(x)}{\sin^{2}u(x)} dx = -ctgu(x) + C\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>e^{-u(x)}u'(x) dx = -e^{-u(x)} + C</td>
-									    <td><span style="font-size: 30px">&#x222B;</span>u'(x)/(u^{2}(x) + a^{2}) dx = 1/a \cdot arctg(u(x)/a) + C</td>
+									    <td>\(\int e^{-u(x)}u'(x) dx = -e^{-u(x)} + C\)</td>
+									    <td>\(\int \cfrac{u'(x)}{u^{2}(x) + a^{2}} dx = \cfrac{1}{a} \cdot arctg(\cfrac{u(x)}{a}) + C\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>a^{u(x)}u'(x) dx = a^{u(x)}/lna + C</td>
-									    <td><span style="font-size: 30px">&#x222B;</span>u'(x)/(u^{2} - a^{2}) dx = 1/2a \cdot ln|(u(x) - a)/(u(x) + a)| + C</td>
+									    <td>\(\int a^{u(x)}u'(x) dx = \cfrac{a^{u(x)}}{lna} + C\)</td>
+									    <td>\(\int \cfrac{u'(x)}{u^{2} - a^{2}} dx = \cfrac{1}{2a} \cdot ln|\cfrac{u(x) - a}{u(x) + a}| + C\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>u'(x)/\sqrt{(u^{2} + a^{2}) dx = ln(u(x) + \sqrt{(u^{2}(x) + a^{2})) + C</td>
-									    <td><span style="font-size: 30px">&#x222B;</span>u'(x)/\sqrt{(u^{2} - a^{2}) dx = ln|u(x) + \sqrt{(u^{2}(x) - a^{2})| + C</td>
+									    <td>\(\int \cfrac{u'(x)}{\sqrt{u^{2} + a^{2}}} dx = ln(u(x) + \sqrt{u^{2}(x) + a^{2}} + C\)</td>
+									    <td>\(\int \cfrac{u'(x)}{\sqrt{u^{2} - a^{2}}} dx = ln|u(x) + \sqrt{u^{2}(x) - a^{2}}| + C\)</td>
 									  </tr>
 									  
 									  <tr>
-									    <td><span style="font-size: 30px">&#x222B;</span>u'(x)/\sqrt{(a^{2} - u^{2}(x)) dx = arc\sin(u(x)/a) + C</td>
+									    <td>\(\int \cfrac{u'(x)}{\sqrt{a^{2} - u^{2}(x)}} dx = arcsin(\cfrac{u(x)}{a}) + C\)</td>
 									  </tr>
 									
 									</table></b>
 									
 									<p>Formula de integrare prin parti pentru integrale nedefinite este: <br>
-									<b><span style="font-size: 30px">&#x222B;</span>f(x)g'(x)dx = f(x)g(x) - <span style="font-size: 30px">&#x222B;</span>f'(x)g(x)</b></p>
+									<b>$$\int f(x)g'(x)dx = f(x)g(x) - \int f'(x)g(x)$$</b></p>
 									
 									<p>Formula de integrare prin parti pentru integrale nedefinite este: <br>
-									<b><span style="font-size: 30px">&#x222B;</span>_{a}^{b}f(x)g'(x)dx = f(x)g(x)|_{a}^{b} - <span style="font-size: 30px">&#x222B;</span>_{a}^{b}f'(x)g(x)</b></p>
+									<b>$$\int_{a}^{b}f(x)g'(x)dx = f(x)g(x)|_{a}^{b} - \int_{a}^{b}f'(x)g(x)$$</b></p>
 									
 									<a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Tool-uri</a>
 									<a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>
@@ -688,69 +688,69 @@
                         
 						<h3>Teorema lui Pitagora</h3>
 						<p>Intr-un triunghi dreptunghic are loc relatia:<br>
-						cateta^{2} + cateta^{2} = ipotenuza^{2}</p>
+						\(cateta^{2} + cateta^{2} = ipotenuza^{2}\)</p>
 						<h3>Teorema lui Pitagora generalizata(teorema co\sinusului)</h3>
 						<p>Intr-un triunghi oarecare ABC are loc relatia:<br>
-						BC^{2} = AB^{2} + AC^{2} - 2 \cdot AB \cdot AC \cdot \cosA</p>
+						\(BC^{2} = AB^{2} + AC^{2} - 2 \cdot AB \cdot AC \cdot \cos A\)</p>
 						<h3>Aria unui triunghi echilateral de latura l este:<br></h3>
-						<p>Aria = l^{2}\sqrt{3/4</p>
+						<p>\(Aria = l^{2}\sqrt{\cfrac{3}{4}}\)</p>
 						<h3>Aria unui triunghi oarecare</h3>
-						<p>Aria = AB \cdot AC \cdot \sinA/2</p>
+						<p>\(Aria = AB \cdot AC \cdot \sin A/2\)</p>
 						<h3>Formula lui Heron</h3>
-						<p>S = \sqrt{(p(p-a)(p-b)(p-c)) , p = (a + b + c)/2</p>
+						<p>\(S = \sqrt{p(p-a)(p-b)(p-c)} , p = \cfrac{a + b + c}{2}\)</p>
 						<h3>Aria triunghiului dreptunghic</h3>
-						<p>Aria = cateta \cdot cateta / 2</p>
-						<h3>Teoria \sinusurilor</h3>
+						<p>\(Aria = \cfrac{cateta1 \cdot cateta2}{2}\)</p>
+						<h3>Teoria sinusurilor</h3>
 						<p>Intr-un triunghi oarecare ABC are loc relatia:<br>
-						a/\sinA = b/\sinB = c/\sinC<br>
-						unde a , b , c sunt laturile triunghiului<br>
-						A , B , C sunt unghiurile triunghiului<br>
-						R este raza cercului circumscris triunghiului</p>
+						\(\cfrac{a}{\sin A} = \cfrac{b}{\sin B} = \cfrac{c}{\sin C}\)<br>
+						unde \(a , b , c\) sunt laturile triunghiului<br>
+						\(A , B , C\) sunt unghiurile triunghiului<br>
+						\(R\) este raza cercului circumscris triunghiului</p>
 						<h3>Distanta dintre doua puncte</h3>
-						<p>Daca A(x_{1} , y_{1}) si B(x_{2} , y_{2}) sunt doua puncte in plan atunci mijlocul segmentului AB este<br>
-						M((x_{1} + x_{2})/2 , (y_{1} + y_{2})/2)</p>
+						<p>\(Daca A(x_{1} , y_{1})\) si \(B(x_{2} , y_{2})\) sunt doua puncte in plan atunci mijlocul segmentului \(AB\) este<br>
+						\(M((x_{1} + x_{2})/2 , (y_{1} + y_{2})/2)\)</p>
 						<h3>Vectorul de pozitie al unui punct</h3>
-						<p>Daca A(x , y) atunci OA&#8407; = x \cdot i&#8407; + y \cdot j&#8407;<br>
-						Daca A(x_{1} , y_{1}) si B(x_{2} , y_{2}) sunt doua puncte in plan atunci vector AB&#8407; este dat de formula:<br>
-						AB&#8407; = (x_{2} - x_{1})i&#8407; + (y_{2} - y_{1})j&#8407;</p>
+						<p>Daca \(A(x , y)\) atunci \(\overrightarrow{OA} = x \cdot \overrightarrow i + y \cdot \overrightarrow j\)<br>
+						Daca \(A(x_{1} , y_{1})\) si \(B(x_{2} , y_{2})\) sunt doua puncte in plan atunci vector \(\overrightarrow{AB}\) este dat de formula:<br>
+						\(\overrightarrow{AB} = (x_{2} - x_{1})\overrightarrow i + (y_{2} - y_{1})\overrightarrow j\)</p>
 						<h3>Ecuatia unei drepte care trece prin doua puncte date</h3>
-						<p>Daca A(x_{1} , y_{1}) si B(x_{2} , y_{2}) sunt doua puncte in plan atunci ecuatia dreptei AB se poate afla cu formula:<br>
-						(x - x_{1})/(x_{2} - x_{1}) = (y - y_{1})/(y_{2} - y_{1}) sau cu formula:<br>
-						<div class="det" style="width: 50px; display: inline-block;">x y 1<br>x_{1} y_{1} 1<br>x_{2} y_{2} 1<br></div> = 0</p>
-						<h3>Ecuatia unei drepte care trece prin punctul A(x_{0} , y_{0}) si are panta data m</h3>
-						<p>Este data de formula y - y_{0} = m(x - x_{0})</p>
+						<p>\(Daca A(x_{1} , y_{1}) si B(x_{2} , y_{2})\) sunt doua puncte in plan atunci ecuatia dreptei \(AB\) se poate afla cu formula:<br>
+						\(\cfrac{x - x_{1}}{x_{2} - x_{1}} = \cfrac{y - y_{1}}{y_{2} - y_{1}}\) sau cu formula:<br>
+						$$\begin{vmatrix}x & y & 1 \\ x_{1} & y_{1} & 1 \\ x_{2} & y_{2} & 1\end{vmatrix} = 0$$</p>
+						<h3>Ecuatia unei drepte care trece prin punctul \(A(x_{0} , y_{0})\) si are panta data \(m\)</h3>
+						<p>Este data de formula \(y - y_{0} = m(x - x_{0})\)</p>
 						<h3>Conditia de coliniaritate a trei puncte in plan</h3>
-						<p>Fie A(x_{1} , y_{1}) , B(x_{2} , y_{2}) , C(x_{3} , y_{3}) trei puncte in plan.<br>
-						Punctele A , B , C sunt coliniare daca si numai daca <br>
-						<div class="det" style="width: 50px; display: inline-block;">x_{1} y_{1} 1<br>x_{2} y_{2} 1<br>x_{3} y_{3} 1</div> = 0</p>
+						<p>Fie \(A(x_{1} , y_{1}) , B(x_{2} , y_{2}) , C(x_{3} , y_{3})\) trei puncte in plan.<br>
+						Punctele \(A , B , C\) sunt coliniare daca si numai daca <br>
+						$$\begin{vmatrix}x_{1} & y_{1} & 1 \\ x_{2} & y_{2} & 1 \\ x_{3} & y_{3} & 1\end{vmatrix} = 0$$</p>
 						</p>
 						<h3>Aria unui triunghi</h3>
-						<p>Fie A(x_{1} , y_{1}) , B(x_{2} , y_{2}) , C(x_{3} , y_{3}) trei puncte in plan.<br>
+						<p>Fie \(A(x_{1} , y_{1}) , B(x_{2} , y_{2}) , C(x_{3} , y_{3})\) trei puncte in plan.<br>
 						Aria triunghiului ABC este data de formula<br>
-						A_{△ABC} = 1/x \cdot |Δ|<br>
-						unde Δ este urmatorul determinant:<br>
-						<div class="det" style="width: 50px; display: inline-block;">x_{1} y_{1} 1<br>x_{2} y_{2} 1<br>x_{3} y_{3} 1</div>
+						\(A_{△ABC} = \cfrac{1}{x} \cdot |Δ|\)<br>
+						unde \(Δ\) este urmatorul determinant:<br>
+						$$\begin{vmatrix}x_{1} & y_{1} & 1 \\ x_{2} & y_{2} & 1 \\ x_{3} & y_{3} & 1\end{vmatrix}$$
 						</p>
 						<h3>Distanta de la un punct la o dreapta</h3>
-						<p>Daca A(x_{0} , y_{0}) este un punct si d: ax + by + x = 0 este o dreapta in plan atunci distanta de la punctul A la dreapta d este data de formula:<br>
-						dist(A , d) = |ax_{0} + by_{0} + c|/\sqrt{(a^{2} + b^{2})</p>
+						<p>Daca \(A(x_{0} , y_{0})\) este un punct si \(d: ax + by + x = 0\) este o dreapta in plan atunci distanta de la punctul \(A\) la dreapta \(d\) este data de formula:<br>
+						\(dist(A , d) = \cfrac{|ax_{0} + by_{0} + c|}{\sqrt{{a^{2} + b^{2}}}}\)</p>
 						<h3>Panta unei drepte</h3>
-						<p>Daca A(x_{1} , y_{1}) si B(x_{2} , y_{2}) sunt doua puncte in plan atunci panta dreptei AB este data de formula:<br>
-						m = (y_{2} - y_{1})/(x_{2} - x_{1})</p>
+						<p>Daca \(A(x_{1} , y_{1})\) si \(B(x_{2} , y_{2})\) sunt doua puncte in plan atunci panta dreptei \(AB\) este data de formula:<br>
+						$$m = \cfrac{y_{2} - y_{1}}{x_{2} - x_{1}}$$</p>
 						<h3>Conditia de coliniaritate a doi vectori in plan</h3>
-						<p>Fie v&#8407; = a_{1}i&#8407; + b_{1}j&#8407; si v_{2} = a_{2}i&#8407; + b_{2}j&#8407; doi vectori in plan. Conditia de coliniaritate a vectorilor v_{1}&#8407; , v_{2}&#8407; este: <br>
-						a_{1}/a_{2} = b_{1}/b_{2}</p>
+						<p>Fie \(\overrightarrow v = a_{1}\overrightarrow i + b_{1}\overrightarrow j\) si \(v_{2} = a_{2}\overrightarrow i + b_{2}\overrightarrow j\) doi vectori in plan. Conditia de coliniaritate a vectorilor \(\overrightarrow v_{1} , \overrightarrow v_{2}\) este: <br>
+						$$\cfrac{a_{1}}{a_{2}} = \cfrac{b_{1}}{b_{2}}$$</p>
 						<h3>Conditia de perpendicularitate a doi vectori in plan</h3>
-						<p>Fie v&#8407; = a_{1}i&#8407; + b_{1}j&#8407; si v_{2} = a_{2}i&#8407; + b_{2}j&#8407; doi vectori in plan. Avem:<br>
-						v_{1}&#8407 &#x22A5; v_{2}&#8407 &#x3c;=> a_{1} \cdot a_{2} + b_{1} \cdot b_{2} = 0 (produsul scalar este 0)</p>
+						<p>Fie \(\overrightarrow v = a_{1}\overrightarrow i + b_{1}\overrightarrow j\) si \(v_{2} = a_{2}\overrightarrow i + b_{2}\overrightarrow j\) doi vectori in plan. Avem:<br>
+						$$\overrightarrow v_{1} &#x22A5; \overrightarrow v_{2} &#x3c;=> a_{1} \cdot a_{2} + b_{1} \cdot b_{2} = 0$$ (produsul scalar este 0)</p>
 						<h3>Conditia de paralelism a doua drepte in plan</h3>
-						<p>Doua d_{1} si d_{2} sunt paralele daca si numai daca au aceeasi panta adica:<br>
-						d_{1} || d_{2} &#x3c;=> m_{d_{1}} = m_{d_{2}}<br>
-						Altfel, daca dreptele sunt date prin ecuatia generala: d_{1}: a_{1}x + b_{1}y + c_{1} = 0 si d_{2}: a_{2}x + b_{2}y + c = 0<br>
-						atunci dreptele sunt paralele daca a_{1}/a_{2} = b_{1}/b_{2}</p>
+						<p>Doua \(d_{1}\) si \(d_{2}\) sunt paralele daca si numai daca au aceeasi panta adica:<br>
+						\(d_{1} || d_{2} &#x3c;=> m_{d_{1}} = m_{d_{2}}\)<br>
+						Altfel, daca dreptele sunt date prin ecuatia generala: \(d_{1}: a_{1}x + b_{1}y + c_{1} = 0 si d_{2}: a_{2}x + b_{2}y + c = 0\)<br>
+						atunci dreptele sunt paralele daca \(\cfrac{a_{1}}{a_{2}} = \cfrac{b_{1}}{b_{2}}\)</p>
 						<h3>Conditia de perpendicularitate a doua drepte in plan</h3>
-						<p>Doua drepte d_{1} si d_{2} sunt perpendiculare daca si numai daca produsul pantelor este egal cu -1 adica:<br>
-						d_{1} &#x22A5; d_{2} &#x3c;=> m_{d_{1}} \cdot m_{d_{1}} = -1</p>
+						<p>Doua drepte \(d_{1}\) si \(d_{2}\) sunt perpendiculare daca si numai daca produsul pantelor este egal cu -1 adica:<br>
+						\(d_{1} &#x22A5; d_{2} &#x3c;=> m_{d_{1}} \cdot m_{d_{1}} = -1\)</p>
                         <a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Tool-uri</a>
                         <a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>
                      </div>
@@ -763,120 +763,126 @@
                         <a data-toggle="collapse" data-parent="#Subiectul2" href="#collapse26">Trigonometrie</a>
                      </h4>
                   </div>
-                  <div id="collapse26" class="panel-collapse collapse">
+                  <div id="collapse26" class="panel-collapse collapse in">
                      <div class="panel-body">
                         <b><table class="table">
 						<tr>
-						<td>\sin^{2}x + \cos^{2}x = 1<br></td>
-						<td>\sin(-x) = -\sin(x)<br></td>
+						<td>\(\sin^{2}x + \cos^{2}x = 1\)<br></td>
+						<td>\(\sin(-x) = -\sin(x)\)<br></td>
 						</tr>
 						<tr>
-						<td>\cos(-x) = \cosx<br></td>
-						<td>\sin(π/2 - x) = \cosx<br></td>
+						<td>\(\cos(-x) = \cos x\)<br></td>
+						<td>\(\sin(\cfrac{π}{2} - x) = \cos x\)<br></td>
 						</tr>
 						<tr>
-						<td>\cos(π/2 - x) = \sinx<br></td>
-						<td>tg(-x) = -tgx<br></td>
+						<td>\(\cos(\cfrac{π}{2} - x) = \sin x\)<br></td>
+						<td>\(tg(-x) = -tg x\)<br></td>
 						</tr>
 						<tr>
-						<td>ctg(-x) = -ctgx<br></td>
-						<td>\sin2x = 2\sinx\cosx<br></td>
+						<td>\(ctg(-x) = -ctg x\)<br></td>
+						<td>\(\sin 2x = 2\sin x\cos x\)<br></td>
 						</tr>
 						<tr>
-						<td>\sinx = 2\sinx/2\cosx/2<br></td>
-						<td>\cos2x = \cos^{2}x - \sin^{2}x<br></td>
+						<td>\(\sin x = 2\sin \cfrac{x}{2}\cos \cfrac{x}{2}\)<br></td>
+						<td>\(\cos 2x = \cos^{2}x - \sin^{2}x\)<br></td>
 						</tr>
 						<tr>
-						<td>\cos2x = 2\cos^{2}x - 1<br></td>
-						<td>\cos^{2}x = (1+ 2\cos2x) / 2<br></td>
+						<td>\(\cos 2x = 2\cos^{2}x - 1\)<br></td>
+						<td>\(\cos^{2}x = \cfrac{1+ 2\cos 2x}{2}\)<br></td>
 						</tr>
 						<tr>
-						<td>\cos2x = 1 - 2\sin^{2}x<br></td>
-						<td>\sin^{2} = (1 - \cos2x)/2<br></td>
+						<td>\(\cos 2x = 1 - 2\sin^{2}x\)<br></td>
+						<td>\(\sin^{2} = \cfrac{1 - \cos 2x}{2}\)<br></td>
 						</tr>
 						<tr>
-						<td>\sin3x = \sinx(3 - 4\sin^{2}x)<br></td>
-						<td>\cos3x = \cosx(4\cos^{2}x - 3)<br></td>
-						</tr>
-						
-						
-						<tr>
-						 <td> \sin(a + b) = \sina\cosb + \sinb\cosa<br></td>
-						 <td> \sin(a - b) = \sina\cosb - \sinb\cosa<br></td>
-						</tr>
-						<tr>
-						 <td> \cos(a + b) = \cosa\cosb - \sina\sinb<br></td>
-						<td>  \cos(a - b) = \cosa\cosb + \sina\sinb<br></td>
+						<td>\(\sin3x = \sin x(3 - 4\sin^{2}x)\)<br></td>
+						<td>\(\cos3x = \cos x(4\cos^{2}x - 3)\)<br></td>
 						</tr>
 						
+						
 						<tr>
-						 <td> tg(a + b) = (tga + tgb)/(1 - tga \cdot tgb)<br></td>
-						<td>  tg(a - b) = (tga - tgb)/(1 + tga \cdot tgb)<br></td>
+						 <td> \(\sin(a + b) = \sin a\cos b + \sin b\cos a\)<br></td>
+						 <td> \(\sin(a - b) = \sin a\cos b - \sin b\cos a\)<br></td>
 						</tr>
 						<tr>
-						<td>  tgx = \sinx/\cosx<br></td>
-						<td>  ctgx = \cosx/\sinx<br></td>
+						 <td> \(\cos(a + b) = \cos a\cos b - \sin a\sin b\)<br></td>
+						<td>  \(\cos(a - b) = \cos a\cos b + \sin a\sin b\)<br></td>
+						</tr>
+						
+						<tr>
+						 <td>\( tg(a + b) = \cfrac{tg a + tg b}{1 - tg a \cdot tg b}\)<br></td>
+						<td>  \(tg(a - b) = \cfrac{tg a - tg b}{1 + tg a \cdot tg b}\)<br></td>
 						</tr>
 						<tr>
-						  <td>tg3x = (3tgx - tg^{3}x)/(1 - 3tg^{2}x)<br></td>
-						  <td>ctg3x = (ctg^{3}x - 3ctgx)/(3ctg^{2}x - 1)<br></td>
+						<td> \( tgx = \cfrac{\sin x}{\cos x}\)<br></td>
+						<td> \( ctgx = \cfrac{\cos x}{\sin x}\)<br></td>
+						</tr>
+						<tr>
+						  <td>\(tg3x = \cfrac{3tgx - tg^{3}x}{1 - 3tg^{2}x}\)<br></td>
+						  <td>\(ctg3x = \cfrac{ctg^{3}x - 3ctgx}{3ctg^{2}x - 1}\)<br></td>
 						</tr>
 						
 						
 						</table></b>
 						
-						<h4 class="text-center">t = tg(x/2)</h4>
+						<hr>
+						
+						<p class="text-center">$$t = tg(\cfrac{x}{2})$$</p>
 						
 						<p class="text-center">
 						
 						
-						<b>\sinx = 2t/(1 + t)<br>
-						\cosx = (1 - t^{2})/(1 + t^{2})<br>
-						tgx = 2t/(1 - t^{2})<br>
-						ctgx = (1 - t^{2})/2t</b>
+						<b>$$\sin x = \cfrac{2t}{1 + t}$$
+						$$\cos x = \cfrac{1 - t^{2}}{1 + t^{2}}$$
+						$$tg x = \cfrac{2t}{1 - t^{2}}$$
+						$$ctg x = \cfrac{1 - t^{2}}{2t}$$</b>
 						
 						</p>
+						
+						<hr>
 						
 						<p class="text-center">
 						
-						  <b>\sin2x = 2tgx/(1 + tg^{2}x)<br>
-						  \cos2x = (1 - tg^{2}x)/(1 + tg^{2}x)<br>
-						  tg2x = 2tgx/(1 - tg^{2}x)<br>
-						  ctg2x = (1 - tg^{2}x)/2tgx</b>
+						  <b>$$\sin2x = \cfrac{2tg x}{1 + tg^{2}x}$$
+						  $$\cos2x = \cfrac{1 - tg^{2}x}{1 + tg^{2}x}$$
+						  $$tg2x = \cfrac{2tgx}{1 - tg^{2}x}$$
+						  $$ctg2x = \cfrac{1 - tg^{2}x}{2tg x}$$</b>
 						
 						</p>
+						
+						<hr>
 						
 						<h3>Ecuatii trigonometrice fundamentale</h3>
 						<p>
-						  Ecutia <b>\sinx = a</b> are solutii daca si numai daca a &#x2208; [-1 , 1]<br>
-						  In acest caz solutiile sunt : <b>x &#x2208; {(-1)^{k}arc\sina + kπ / k &#x2208; N}</b>
+						  Ecutia <b>\(\sin x = a\)</b> are solutii daca si numai daca \(a &#x2208; [-1 , 1]\)<br>
+						  In acest caz solutiile sunt : <b>\(x &#x2208; {(-1)^{k}arcsin a + kπ / k &#x2208; N}\)</b>
 						</p>
 						<p>
-  						 Ecutia <b>\cosx = b</b> are solutii daca si numai daca b &#x2208; [-1 , 1]<br>
-						  In acest caz solutiile sunt : <b>x &#x2208; {±arc\cosb + 2kπ / k &#x2208; N}</b>
-						</p>
-						
-						<p>
-						  Ecutia <b>tgx = c</b> are solutii ∀ c &#x2208; R<br>
-						  In acest caz solutiile sunt : <b>x &#x2208; {arctgc + kπ / k &#x2208; N}</b>
+  						 Ecutia <b>\(\cos x = b\)</b> are solutii daca si numai daca \(b &#x2208; [-1 , 1]\)<br>
+						  In acest caz solutiile sunt : <b>\(x &#x2208; {±arccos b + 2kπ / k &#x2208; N}\)</b>
 						</p>
 						
 						<p>
-						  Ecutia <b>ctgx = d</b> are solutii ∀ d &#x2208; R<br>
-						  In acest caz solutiile sunt : <b>x &#x2208; {arcctgd + kπ / k &#x2208; N}</b>
+						  Ecutia <b>\(tgx = c\)</b> are solutii \(∀ c &#x2208; R\)<br>
+						  In acest caz solutiile sunt : <b>\(x &#x2208; {arctgc + kπ / k &#x2208; N}\)</b>
+						</p>
+						
+						<p>
+						  Ecutia <b>\(ctgx = d\)</b> are solutii \(∀ d &#x2208; R\)<br>
+						  In acest caz solutiile sunt : <b>\(x &#x2208; {arcctgd + kπ / k &#x2208; N}\)</b>
 						</p>
 						  
 						<p>
-						  <b>\sin(arc\sinx) = x<br>
-						  \sin(arc\cosc) = \sqrt{(1 - x^{2})<br>
-						  \cos(arc\cosx) = x<br>
-						  \cos(arc\sinx) = \sqrt{(1 - x^{2})<br></b>
+						 $$\sin(arcsin x) = x$$
+						$$ \sin(arccos c) = \sqrt{1 - x^{2}}$$
+						 $$ \cos(arccos x) = x$$
+						 $$ \cos(arcsin x) = \sqrt{1 - x^{2}}$$
 						</p>
 						  
 						
 						
 						
-                        <a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: right;" href="./S1/Trigonometrie/Tool-uri.html">Tool-uri</a>
                         <a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>
                      </div>
                   </div>
