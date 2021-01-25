@@ -74,6 +74,13 @@
 	
 	<div class="container">
 	
+	<div class="butoane">
+		<button class="btn btn-default " onclick="ShowSuma()">Calculeaza suma sau elementul n</button><br><br>
+		<button class="btn btn-default " onclick="ShowMediaAritmetica()">Calculeaza media aritmetica</button><br>
+	</div>
+	
+	<div class="suma" style="display: none;">
+	
 	  <div class="col-xs-12">
 	  
 		<div class="input-group">
@@ -93,6 +100,24 @@
 	  <div class="col-xs-12 pAritmetica">
 	    
       </div>
+	  
+	</div>
+	
+	<div class="mediaAritmetica" style="display: none;">
+	
+		<div class="input-group">
+		  <span class="input-group-addon">a<sub>n-1</sub></span>
+		  <input type="text" class="form-control pElement1" placeholder="Introduceti primul element">
+		</div>
+		<br>
+		<div class="input-group">
+		  <span class="input-group-addon">a<sub>n+1</sub></span>
+		  <input type="text" class="form-control pElement3" placeholder="Introduceti primul element">
+		</div>
+	
+		<h2 class="pElement2"></h2>
+	
+	</div>
 	
 	  
 	

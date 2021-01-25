@@ -1,3 +1,20 @@
+function hideButtons()
+{
+	$(".butoane").css("display" , "none");
+}
+
+function ShowMediaAritmetica()
+{
+	$(".mediaAritmetica").css("display" , "block");
+	hideButtons();
+}
+
+function ShowSuma()
+{
+	$(".suma").css("display" , "block");
+	hideButtons();
+}
+
 function inputCreate(clas , placeholder , functie)
 {
 	var content1 = "";
@@ -40,6 +57,12 @@ function CalculeazaNElement()
 
 
 $(function(){
+	
+	$(".pElement3").change(function(){
+			var content = "a<sub>n</sub> = " + (parseFloat($('.pElement1').val()) + parseFloat($('.pElement3').val()))/2;
+			$('.pElement2').html(content);
+			console.log(content);
+		});
 	
 	$('.RAZA').change(function(){
 		content = "";

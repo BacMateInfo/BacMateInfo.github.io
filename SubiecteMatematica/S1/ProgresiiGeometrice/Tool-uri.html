@@ -30,15 +30,15 @@
 		<div class="collapse navbar-collapse baraNavigatie">
 		
 			<ul class="nav navbar-nav">
-			  <li><a href="../index.html">Acasa</a></li>
+			  <li><a href="../../../index.html">Acasa</a></li>
 			
 			  <li class="dropdown active">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Matematica <span class="caret"></span></a>
 			    <ul class="dropdown-menu">
 				
-				  <li><a href="SubiecteMatematica/S1.html">Subiectul 1</a></li>
-				  <li><a href="SubiecteMatematica/S2.html">Subiectul 2</a></li>
-				  <li><a href="SubiecteMatematica/S3.html">Subiectul 3</a></li>
+				  <li><a href="../../S1.html">Subiectul 1</a></li>
+				  <li><a href="../../S2.html">Subiectul 2</a></li>
+				  <li><a href="../../S3.html">Subiectul 3</a></li>
 				
 				</ul>
 			  </li>
@@ -71,6 +71,58 @@
 		</div>
 	  </div>
 	</nav>
+	
+	<div class="container">
+	
+	<div class="butoane">
+		<button class="btn btn-default " onclick="ShowSuma()">Calculeaza suma sau elementul n</button><br><br>
+		<button class="btn btn-default " onclick="ShowMediaAritmetica()">Calculeaza media aritmetica</button><br>
+	</div>
+	
+	<div class="suma" style="display: none;">
+	
+	  <div class="col-xs-12">
+	  
+		<div class="input-group">
+		  <span class="input-group-addon">a<sub>1</sub></span>
+		  <input type="text" class="form-control pElement" placeholder="Introduceti primul element">
+		</div>
+	    <br>
+	    <div class="input-group">
+			<span class="input-group-addon">r</span>
+			
+			<input type="text" class="form-control RAZA" placeholder="Introduceti raza">
+		</div>
+	  
+	  </div>
+	
+	
+	  <div class="col-xs-12 pAritmetica">
+	    
+      </div>
+	  
+	</div>
+	
+	<div class="mediaAritmetica" style="display: none;">
+	
+		<div class="input-group">
+		  <span class="input-group-addon">a<sub>n-1</sub></span>
+		  <input type="text" class="form-control pElement1" placeholder="Introduceti primul element">
+		</div>
+		<br>
+		<div class="input-group">
+		  <span class="input-group-addon">a<sub>n+1</sub></span>
+		  <input type="text" class="form-control pElement3" placeholder="Introduceti primul element">
+		</div>
+	
+		<h2 class="pElement2"></h2>
+	
+	</div>
+	
+	  
+	
+	
+	</div>
 	
   </body>
 
