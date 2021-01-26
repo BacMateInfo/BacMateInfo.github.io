@@ -148,3 +148,35 @@ object
 	width: 100%;
 	height: 90vh;
 }
+
+.Swapper
+{
+	transition: 1s;
+}
+
+.Comentariu
+{
+	border: 1px solid black;
+	padding: 30px;
+	box-shadow: 0 0 2px black;
+}
+
+.Comentariu h1
+{
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+	text-decoration: underline;
+}
+
+.Comentariu p
+{
+	padding: 10px;
+	text-indent: 30px;
+}
+
+.Comentariu h2
+{
+	font-weight: bold;
+	text-decoration: underline;
+}
