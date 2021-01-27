@@ -180,3 +180,10 @@ object
 	font-weight: bold;
 	text-decoration: underline;
 }
+
+ @media only screen and (max-width: 800px) {
+	.Comentariu p
+	{
+		font-size: 15px;
+	}
+ }
