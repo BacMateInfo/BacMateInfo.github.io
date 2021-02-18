@@ -15,7 +15,35 @@
   </head>
 	
   <body>
-   <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="loader">
+		<h1 class="fullyCentered" style="opacity: 1;">Se incarca</h1>
+	  </div>
+	  <style>
+		.fullyCentered
+		{
+			position: absolute;
+			z-index: 10001;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50% , -50%);
+			transition: 1s;
+		}
+		.loader
+		{
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden;
+			background-color: white;
+			position: fixed;
+			z-index: 10000;
+		}
+	  </style>
+	  <script>
+			
+		$(document).ready(function() {$('.loader').css("display" , "none");});
+	 
+	 </script>
+    <nav class="navbar navbar-default navbar-fixed-top">
          <div class="container-fluid">
             <div class="navbar-header">
                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".baraNavigatie">
@@ -23,46 +51,40 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>  
                </button>
-               <li class="navbar-brand" href="#">Bacxvia</li>
+               <li class="navbar-brand Logo" href="#">Bacxvia</li>
+			   <style>.Logo:hover{cursor:default;}</style>
             </div>
             <div class="collapse navbar-collapse baraNavigatie">
                <ul class="nav navbar-nav">
                   <li><a href="../index.html">Acasa</a></li>
-                  <li class="dropdown">
-                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Matematica <span class="caret"></span></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="../SubiecteMatematica/S1.html">Subiectul 1</a></li>
-                        <li><a href="../SubiecteMatematica/S2.html">Subiectul 2</a></li>
-                        <li><a href="../SubiecteMatematica/S3.html">Subiectul 3</a></li>
-                     </ul>
-                  </li>
-                  <li class="dropdown active">
-                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Romana <span class="caret"></span></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="../SubiecteRomana/S1.html">Subiectul 1</a></li>
-                        <li><a href="../SubiecteRomana/S2.html">Subiectul 2</a></li>
-                        <li><a href="../SubiecteRomana/S3.html">Subiectul 3</a></li>
-                     </ul>
-                  </li>
+				  
+               <li >
+				<a href="../SubiecteMatematica/Matematica.html">Matematica</a>
+			  </li>
+			  
+			  
+			  <li class="active">
+				<a  href="../SubiecteRomana/Romana.html">Romana</a>
+			  </li>
+				  
                </ul>
-               <div class="navbar-form navbar-left">
-                  <div class="input-group">
-                     <input type="text" class="form-control cautare" placeholder="Cauta" name="search">
-                     <div class="input-group-btn">
-                        <button class="btn btn-default" onclick="cauta()">
-                        <i class="glyphicon glyphicon-search"></i>
-                        </button>
-                     </div>
-                  </div>
-               </div>
             </div>
          </div>
       </nav>
   <div class="container">
-         <div class="Butoane">
-            <h1>Subiectul 3</h1>
+		<center><button class="switch btn btn-info" onclick="switchButtons()" style="margin: 10px; padding: 5px 20px;">Afisati/Ascundeti</button></center>
+         
+		 <div class="panel-group" id="romana">
+		 <div id="Butoane" class="panel panel-default">
+			<div class="panel-heading">
+                     <h4 class="panel-title text-center">
+                        <a data-toggle="collapse" data-parent="#Subiectul3" href="#collapse100">Comentarii subiectul 3</a>
+                     </h4>
+                  </div>
+			<div id="collapse100" class="panel-collapse collapse">
+                     <div class="panel-body">
+		 
             <div class="panel-group" id="Subiectul3">
-			
                <div class="panel panel-default">
                   <!-- Basme -->
                   <div class="panel-heading">
@@ -160,8 +182,26 @@
                </div>
 		</div>
 	</div>
+	</div>
+    </div>
+	</div>
 		 <div class="Swapper"></div>
 		 <script type="text/babel">
+			
+			var p = 1;
+		 
+			function switchButtons()
+			{
+				if(p == 1)
+				{
+					document.getElementById("Butoane").style.display = "none";
+					p = 0;
+				}
+				else {
+				document.getElementById("Butoane").style.display = "block";
+				p = 1;}
+
+			}
 		 
 			const baltagul = (
 				<div class="Comentariu">

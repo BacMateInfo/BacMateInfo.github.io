@@ -11,6 +11,34 @@
 	  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
    </head>
    <body>
+	  <div class="loader">
+		<h1 class="fullyCentered" style="opacity: 1;">Se incarca</h1>
+	  </div>
+	  <style>
+		.fullyCentered
+		{
+			position: absolute;
+			z-index: 10001;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50% , -50%);
+			transition: 1s;
+		}
+		.loader
+		{
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden;
+			background-color: white;
+			position: fixed;
+			z-index: 10000;
+		}
+	  </style>
+	  <script>
+			
+		$(document).ready(function() {$('.loader').css("display" , "none");});
+	 
+	 </script>
       <nav class="navbar navbar-default navbar-fixed-top">
          <div class="container-fluid">
             <div class="navbar-header">
@@ -19,60 +47,29 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>  
                </button>
-               <li class="navbar-brand" href="#">Bacxvia</li>
+               <li class="navbar-brand Logo" href="#">Bacxvia</li>
+			   <style>.Logo:hover{cursor:default;}</style>
             </div>
             <div class="collapse navbar-collapse baraNavigatie">
                <ul class="nav navbar-nav">
                   <li><a href="../index.html">Acasa</a></li>
-                  <li class="dropdown active">
-                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Matematica <span class="caret"></span></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="S1.html">Subiectul 1</a></li>
-                        <li><a href="#">Subiectul 2</a></li>
-                        <li><a href="S3.html">Subiectul 3</a></li>
-                     </ul>
-                  </li>
-                  <li class="dropdown">
-                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Romana <span class="caret"></span></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="../SubiecteRomana/S1.html">Subiectul 1</a></li>
-                        <li><a href="../SubiecteRomana/S2.html">Subiectul 2</a></li>
-                        <li><a href="../SubiecteRomana/S3.html">Subiectul 3</a></li>
-                     </ul>
-                  </li>
+				  
+               <li class="active">
+				<a href="../SubiecteMatematica/Matematica.html">Matematica</a>
+			  </li>
+			  
+			  
+			  <li>
+				<a  href="../SubiecteRomana/Romana.html">Romana</a>
+			  </li>
+				  
                </ul>
-               <div class="navbar-form navbar-left">
-                  <div class="input-group">
-                     <input type="text" class="form-control cautare" placeholder="Cauta" name="search">
-                     <div class="input-group-btn">
-                        <button class="btn btn-default" onclick="cauta()">
-                        <i class="glyphicon glyphicon-search"></i>
-                        </button>
-                     </div>
-                  </div>
-               </div>
             </div>
          </div>
       </nav>
-      <!--<div class="inmultire_matrice">
-         <input value ="3 3" class="dimensiuni" \>
-         <input value = "0 0 0 0 0 0 0 0 0" class="elemente"\>
-         
-         <center><div class="matrice">
-         
-         
-         
-         </div>
-         </center>
-         
-         <div class="determinant"></div>
-         
-         
-         </div>-->
       <div class="container">
          <table class="table table-hover tabelCautare" style="display: none;"></table>
          <div class="CONTENT">
-            <h1>Subiectul 2</h1>
             <div class="panel-group" id="Subiectul2">
                <div class="panel panel-default">
                   <!-- Algebra --> 
@@ -84,6 +81,44 @@
                   <div id="collapse1" class="panel-collapse collapse">
                      <div class="panel-body">
                         <div class="panel-group" id="Algebra">
+							
+							 <div class="panel panel-default">
+                  <!-- Functii -->
+                  <div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#Algebra" href="#collapse10">Functii</a>
+                     </h4>
+                  </div>
+                  <div id="collapse10" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <p>
+                           Punctul <b>\(A(a , b)\)</b> se afla pe graficul functiei daca <b>\(f(a) = b\)</b>
+                        </p>
+                        <p>Pentru a afla punctele de intersectie dintre graficele a doua functii f si g se rezolva sistemul:<br>
+                           $$\begin{cases}
+						   y = f(x) \\
+                           y = g(x)
+						   \end{cases}$$
+                           Solutiile (x , y) reprezinta coordonatele punctelor de intersectie.
+                        </p>
+                        <p><b>Inversa functiei f:</b> <br>
+                           Daca <b>\(f(x) = y\)</b> atunci <b>\(f^{-1}(y) = x\)</b>
+                        </p>
+                        <p><b>Intersectia cu Ox a graficului functiei f:</b><br>
+                           Se rezolva ecuatia <b>\(f(x) = 0\)</b><br>
+                           Daca x este o solutie a ecuatiei \(f(x) = 0\) atunci punctul <b>\(A(x , 0)\)</b> este un punct de intersectie dintre axa Ox si graficul functiei f.
+                        </p>
+                        <p><b>Intersectia cu Oy a graficului functiei:</b><br>
+                           Se calculeaza \(f(0)\) daca 0 e in domeniul de definitie.<br>
+                           Punctul \(B(0 , f(0))\) reprezinta intersectia dintre axa Oy si graficul functiei f.<br>
+                           In cazul in care 0 nu se afla in domeniul de definitie al functiei , graficul functiei nu taie axa Oy.
+                        </p>
+                        <a class="btn btn-default" style="float: right;" href="S1/Functii/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/Functii/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
+							
                            <div class="panel panel-default">
                               <!-- Functia de gradul 2 -->
                               <div class="panel-heading text-center">
@@ -386,6 +421,30 @@
                                  </div>
                               </div>
                            </div>
+						   <div class="panel panel-default">
+					<!-- Conditii de existenta -->
+					<div class="panel-heading text-center">
+                     <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#Algebra" href="#collapse111">Conditii de existenta</a>
+                     </h4>
+                  </div>
+                  <div id="collapse111" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <p><b>\(\sqrt{E(x)} , E(x) >= 0\)</b></p>
+                        <p>\(\sqrt[3]{E(x)}\) exista oricare ar fi <b>x</b> real deci nu se pun conditii de existenta </p>
+                        <p><b>\(\log_a^E(x) , E(x) > 0 , a > 0 , a \not = 1\)</b></p>
+                        <p>daca avem numitor , avem conditia numitor diferit de 0. </p>
+                        <p><b>\(\arcsin {E(x)} -1 <= E(x) <= 1\)</b></p>
+                        <p><b>\(\arccos {E(x)} -1 <= E(x) <= 1\)</b></p>
+                        <p><b>\(tg {E(x)} ,	E(x) \not = \cfrac{\pi}{2} + 2k\pi\)</b></p>
+                        <p>domeniul maxim de definitie se obtine din conditiile de existenta
+                           ale expresiei care da functia. 
+                        </p>
+                        <a class="btn btn-default" style="float: right;" href="S1/ConditiiDeExistenta/Tool-uri.html">Tool-uri</a>
+                        <a class="btn btn-default" style="float: left;" href="S1/ConditiiDeExistenta/ExercitiiRezolvate.html">Exercitii rezolvate</a>
+                     </div>
+                  </div>
+               </div>
                         </div>
                      </div>
                   </div>
@@ -751,6 +810,27 @@
 						<h3>Conditia de perpendicularitate a doua drepte in plan</h3>
 						<p>Doua drepte \(d_{1}\) si \(d_{2}\) sunt perpendiculare daca si numai daca produsul pantelor este egal cu -1 adica:<br>
 						\(d_{1} &#x22A5; d_{2} &#x3c;=> m_{d_{1}} \cdot m_{d_{1}} = -1\)</p>
+						<p>
+                           Modulul vectorului: <b>\(|\overrightarrow{v}| = \sqrt{a^2 + b^2}\)</b>
+                        </p>
+                        <p>
+                           Produsul scalar a doi vectori <b>\(\overrightarrow v = a · \overrightarrow i + b · \overrightarrow j\)</b> si  <b>\(\overrightarrow w = c · \overrightarrow i + d · \overrightarrow j\)</b> este <b>\(\overrightarrow v + \overrightarrow w = a · c + b · d\)</b>
+                        </p>
+                        <p>
+                           Suma a doi vectori <b>\(\overrightarrow v = a · \overrightarrow i + b · \overrightarrow j\)</b> si  <b>\(\overrightarrow w = c · \overrightarrow i + d · \overrightarrow j\)</b> este <b>\(\overrightarrow v + \overrightarrow w = (a + c)\overrightarrow i + (b + d)\overrightarrow j\)</b>
+                        </p>
+                        <p>
+                           <b>Conditia ca doi vectori sa fie coliniari :</b><br>
+                           Doi vectori <b>\(\overrightarrow v\)</b> si <b>\(\overrightarrow u\)</b> sunt coliniari daca exista a numar real astfel incat <b>\(\overrightarrow v = a · \overrightarrow u\)</b><br>
+                           Daca vectorii sunt dati sub forma <b>\(\overrightarrow{v} = a · \overrightarrow i + b · \overrightarrow j\) si \(\overrightarrow u = c · \overrightarrow i + d · \overrightarrow j\)</b> conditia
+                           de coliniaritate revine la <b>\(\cfrac{a}{c} = \cfrac{b}{d}\)</b>
+                        </p>
+                        <p>
+                           Daca <b>\(A(x_A , y_A)\)</b> si <b>\(B(x_B , y_B)\)</b> atunci <b>\(\overrightarrow{AB} = (x_B - x_A) · \overrightarrow i + (y_B - y_A) · \overrightarrow j\)</b>
+                        </p>
+                        <p>
+                           Daca <b>\(A(x_A , y_A)\)</b> vectorul de pozitie al lui A este <b>\(\overrightarrow{OA} = x_A · \overrightarrow i + y_A · \overrightarrow j\)</b> se mai noteaza <b>\(\overrightarrow r_A\) 	</b>
+                        </p>
                         <a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Tool-uri</a>
                         <a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>
                      </div>
@@ -765,6 +845,159 @@
                   </div>
                   <div id="collapse26" class="panel-collapse collapse">
                      <div class="panel-body">
+					 
+						<table class="table table-bordered hidden-xs">
+						<style>tr{font-size: 20px;}</style>
+                           <tr>
+                              <td><b>Unghi(grade)</b></td>
+                              <td><b>$$0°$$</b></td>
+                              <td><b>$$30°$$</b></td>
+                              <td><b>$$45°$$</b></td>
+                              <td><b>$$60°$$</b></td>
+                              <td><b>$$90°$$</b></td>
+                              <td><b>$$120°$$</b></td>
+                              <td><b>$$135°$$</b></td>
+                              <td><b>$$150°$$</b></td>
+                              <td><b>$$180°$$</b></td>
+                           </tr>
+                           <tr>
+                              <td><b>Unghi(radiani)</b></td>
+                              <td><b>$$0$$</b></td>
+                              <td><b>$$\pi/6$$</b></td>
+                              <td><b>$$\pi/4$$</b></td>
+                              <td><b>$$\pi/3$$</b></td>
+                              <td><b>$$\pi/2$$</b></td>
+                              <td><b>$$2\pi/3$$</b></td>
+                              <td><b>$$3\pi/4$$</b></td>
+                              <td><b>$$5\pi/6$$</b></td>
+                              <td><b>$$\pi$$</b></td>
+                           </tr>
+                           <tr>
+                              <td>Sin</td>
+                              <td>$$0$$</td>
+                              <td>$$1/2$$</td>
+                              <td>$$√2/2$$</td>
+                              <td>$$√3/2$$</td>
+                              <td>$$1$$</td>
+                              <td>$$√3/2$$</td>
+                              <td>$$√2/2$$</td>
+                              <td>$$1/2$$</td>
+                              <td>$$0$$</td>
+                           </tr>
+                           <tr>
+                              <td>Cos</td>
+                              <td>$$1$$</td>
+                              <td>$$√3/2$$</td>
+                              <td>$$√2/2$$</td>
+                              <td>$$1/2$$</td>
+                              <td>$$0$$</td>
+                              <td>$$-1/2$$</td>
+                              <td>$$-√2/2$$</td>
+                              <td>$$-√3/2$$</td>
+                              <td>$$-1$$</td>
+                           </tr>
+                           <tr>
+                              <td>Tg</td>
+                              <td>$$0$$</td>
+                              <td>$$1/√3$$</td>
+                              <td>$$1$$</td>
+                              <td>$$√3$$</td>
+                              <td>$$-$$</td>
+                              <td>$$-√3$$</td>
+                              <td>$$-1$$</td>
+                              <td>$$-1/√3$$</td>
+                              <td>$$0$$</td>
+                           </tr>
+                           <tr>
+                              <td>Ctg</td>
+                              <td>$$-$$</td>
+                              <td>$$√3$$</td>
+                              <td>$$1$$</td>
+                              <td>$$1/√3$$</td>
+                              <td>$$0$$</td>
+                              <td>$$-1/√3$$</td>
+                              <td>$$-1$$</td>
+                              <td>$$-√3$$</td>
+                              <td>$$-$$</td>
+                           </tr>
+                        </table>
+                        <table class="table table-bordered hidden-xs">
+                           <tr>
+                              <td><b>Unghi(grade)</b></td>
+                              <td><b>$$210°$$</b></td>
+                              <td><b>$$225°$$</b></td>
+                              <td><b>$$240°$$</b></td>
+                              <td><b>$$270°$$</b></td>
+                              <td><b>$$300°$$</b></td>
+                              <td><b>$$315°$$</b></td>
+                              <td><b>$$330°$$</b></td>
+                              <td><b>$$360°$$</b></td>
+                           </tr>
+                           <tr>
+                              <td><b>Unghi(radiani)</b></td>
+                              <td><b>$$7\pi/6$$</b></td>
+                              <td><b>$$5\pi/4$$</b></td>
+                              <td><b>$$4\pi/3$$</b></td>
+                              <td><b>$$3\pi/2$$</b></td>
+                              <td><b>$$5\pi/3$$</b></td>
+                              <td><b>$$7\pi/4$$</b></td>
+                              <td><b>$$11\pi/6$$</b></td>
+                              <td><b>$$2\pi$$</td>
+                           </tr>
+                           <tr>
+                              <td>Sin</td>
+                              <td>$$-1/2$$</td>
+                              <td>$$-√2/2$$</td>
+                              <td>$$-√3/3$$</td>
+                              <td>$$-1$$</td>
+                              <td>$$-√3/2$$</td>
+                              <td>$$-√2/2$$</td>
+                              <td>$$-1/2$$</td>
+                              <td>$$0$$</td>
+                           </tr>
+                           <tr>
+                              <td>Cos</td>
+                              <td>$$-√3/2$$</td>
+                              <td>$$-√2/2$$</td>
+                              <td>$$-1/2$$</td>
+                              <td>$$0$$</td>
+                              <td>$$1/2$$</td>
+                              <td>$$√2/2$$</td>
+                              <td>$$√3/2$$</td>
+                              <td>$$1$$</td>
+                           </tr>
+                           <tr>
+                              <td>Tg</td>
+                              <td>$$1/√3$$</td>
+                              <td>$$1$$</td>
+                              <td>$$√3$$</td>
+                              <td>$$-$$</td>
+                              <td>$$-√3$$</td>
+                              <td>$$-1$$</td>
+                              <td>$$-1/√3$$</td>
+                              <td>$$0$$</td>
+                           </tr>
+                           <tr>
+                              <td>Ctg</td>
+                              <td>$$√3$$</td>
+                              <td>$$1$$</td>
+                              <td>$$1/√3$$</td>
+                              <td>$$0$$</td>
+                              <td>$$-1/√3$$</td>
+                              <td>$$-1$$</td>
+                              <td>$$-√3$$</td>
+                              <td>$$-$$</td>
+                           </tr>
+                        </table>
+                        <p><b>\(\sin(180° - x) = \sin x\)<br>
+                           \(\sin(90° - x) = \cos x\)<br>
+                           \(\cos(180° - x) = -\cos x\)<br>
+                           \(\cos(90° - x) = \sin x\)<br>
+                           \(\sin^2x + \cos^2x = 1\) , oricare x real <br>
+                           \(tgx = \sin x/\cos x\)<br>
+                           \(ctgx = \cos x/\sin x = \cfrac{1}{tg x}\)</b>
+                        </p>
+					 
                         <b><table class="table">
 						<tr>
 						<td>\(\sin^{2}x + \cos^{2}x = 1\)<br></td>

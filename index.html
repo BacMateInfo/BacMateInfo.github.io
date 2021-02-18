@@ -14,7 +14,34 @@
   </head>
 
   <body>
-  
+	<div class="loader">
+		<h1 class="fullyCentered" style="opacity: 1;">Se incarca</h1>
+	  </div>
+	  <style>
+		.fullyCentered
+		{
+			position: absolute;
+			z-index: 10001;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50% , -50%);
+			transition: 1s;
+		}
+		.loader
+		{
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden;
+			background-color: white;
+			position: fixed;
+			z-index: 10000;
+		}
+	  </style>
+	  <script>
+			
+		$(document).ready(function() {$('.loader').css("display" , "none");});
+	 
+	 </script>
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
 	  
@@ -24,7 +51,8 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>  
 			</button>
-			<li class="navbar-brand" href="#">Bacxvia</li>	
+			<li class="navbar-brand Logo" href="#">Bacxvia</li>	
+			<style>.Logo:hover{cursor:default;}</style>
 		</div>
 	  
 		<div class="collapse navbar-collapse baraNavigatie">
@@ -32,41 +60,16 @@
 			<ul class="nav navbar-nav">
 			  <li class="active"><a href="#">Acasa</a></li>
 			
-			  <li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Matematica <span class="caret"></span></a>
-			    <ul class="dropdown-menu">
-				
-				  <li><a href="SubiecteMatematica/S1.html">Subiectul 1</a></li>
-				  <li><a href="SubiecteMatematica/S2.html">Subiectul 2</a></li>
-				  <li><a href="SubiecteMatematica/S3.html">Subiectul 3</a></li>
-				
-				</ul>
+			  <li>
+				<a href="SubiecteMatematica/Matematica.html">Matematica</a>
 			  </li>
 			  
 			  
-			  <li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Romana <span class="caret"></span></a>
-			    <ul class="dropdown-menu">
-				
-				  <li><a href="SubiecteRomana/S1.html">Subiectul 1</a></li>
-				  <li><a href="SubiecteRomana/S2.html">Subiectul 2</a></li>
-				  <li><a href="SubiecteRomana/S3.html">Subiectul 3</a></li>
-				
-				</ul>
+			  <li>
+				<a  href="SubiecteRomana/Romana.html">Romana</a>
 			  </li>
 			  
 			</ul>
-			
-			<div class="navbar-form navbar-left">
-			  <div class="input-group">
-				<input type="text" class="form-control cautare" placeholder="Cauta" name="search">
-				<div class="input-group-btn">
-				  <button class="btn btn-default" onclick="cauta()">
-					<i class="glyphicon glyphicon-search"></i>
-				  </button>
-				</div>
-			  </div>
-			</div>
 			
 		</div>
 	  </div>
@@ -127,7 +130,7 @@
     <p>Un tool pentru pregatire de bac.</p>
 	</div>
 	
-	  <p class="lead">Site-ul este structurat in doua categorii , matematica si romana. La randul lor acestea au cate trei subcategorii corespunzatoare fiecarui subiect de la bac continand toata materia de bac pentru acel subiect. Website-ul este structurat pe programa scolara a filierii teoretice,  profil real , specializare matematica-informatica. Materia poate fi accesata din bara de navigatie.</p>
+	  <p class="lead">Site-ul este structurat in doua categorii , matematica si romana.Aceste categorii pot fi accesate fie prin bara de navigatie fie prin butoanele de mai jos.</p>
 	
 	</div>
 	</div>
