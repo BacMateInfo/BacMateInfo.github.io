@@ -1,77 +1,117 @@
-function hideButtons()
+var a1;
+var n;
+var r;
+var sn;
+var an;
+var afisare;
+
+function init()
 {
-	$(".butoane").css("display" , "none");
+	 a1 = parseFloat($('.a1').val());
+	 n = parseFloat($('.n').val());
+	 r = parseFloat($('.r').val());
+	 sn = parseFloat($('.sn').val());
+	 an = parseFloat($('.an').val());
+	 afisare = $('.rezultat');
 }
 
-function ShowMediaAritmetica()
+function suma(x)
 {
-	$(".mediaAritmetica").css("display" , "block");
-	hideButtons();
+	return "<p>" + a1 + ' + ' + (a1 + r) + ' + ' + (a1 + 2*r) + ' + ... + ' + x + " = " + sn;
 }
 
-function ShowSuma()
+function p(x)
 {
-	$(".suma").css("display" , "block");
-	hideButtons();
+	return "<div class=\"alert alert-danger\">" + x + "</div>";
 }
 
-function inputCreate(clas , placeholder , functie)
+function calcan()
 {
-	var content1 = "";
-	content1 += "<div class=\" input-group NELEMENT\" style=\"display: inline-block; width: 60px;\">";
-	content1 += "<input class=\"form-control " + clas + "\" placeholder=\" " + placeholder + "\" onchange=\"" + functie + "\"></div>";
-	return content1;
-}
-
-var content;
-
-function CalculeazaRezultat(){
-		var an , a1 , r , s = 0;
-		an = parseFloat($('.nElement').val());
-		a1 = parseFloat($('.pElement').val());
-		r = parseFloat($('.RAZA').val());
-		
-		while(an > a1)
+	init();
+	if(isNaN(an))
+		if(!isNaN(n) && !isNaN(a1) && !isNaN(r)) 
 		{
-			s += an;
-			an -= r;
+			an = a1 + Math.pow(q , n-1);
+			$('.an').val(an);
+			console.log(an);
 		}
-		
-		s += a1;
-			$('.pAritmetica').html("<h2 class=\"text-center\">" + a1 + ' + ' + (a1 + r) + ' + ' + (a1 + r + r) + ' + ... + ' + $('.nElement').val() + " = " + s + "</h2>");
-	}
-	
-function CalculeazaNElement()
-{
-	var n , an , a1 , r , s;
-		a1 = parseFloat($('.pElement').val());
-		r = parseFloat($('.RAZA').val());
-		s = parseFloat($('.rezultat').val());
-		
-		n = (-1 * (2*a1 - r) + Math.sqrt(Math.pow((2*a1 - r) , 2) + 8 * r * s))/(2*r); //EPIC FORMULA
-		
-		an = a1 + (n-1)*r;
-		
-		$('.pAritmetica').html("<h2 class=\"text-center\">" + a1 + ' + ' + (a1 + r) + ' + ' + (a1 + r + r) + ' + ... + ' + an + " = " + s + "</h2>");
+		else if(!isNaN(sn) && !isNaN(a1) && !isNaN(r))
+		{
+			n = 0;
+			var s = a1 , s1 = sn;
+			while(s1 > 0)
+			{
+				n++;
+				s1 -= s;
+				s += r;
+			}
+			$('.n').val(n);
+			an = a1 + (n-1)*r;
+			$('.an').val(an);
+		}
+		else afisare.html(p("Date insuficiente"));
 }
 
+function calcn()
+{
+	init();
+	if(isNaN(n))
+		if(!isNaN(an) && !isNaN(r) && !isNaN(a1))
+		{
+			n = 1;
+			var a = a1;
+			while(an > a)
+			{
+				n++;
+				a += r;
+				$('.n').val(n);
+			}
+		}
+		else if(!isNaN(sn) && !isNaN(a1) && !isNaN(r))
+		{
+			n = 0;
+			var s = a1 , s1 = sn;
+			while(s1 > 0)
+			{
+				n++;
+				s1 -= s;
+				s += r;
+			}
+			$('.n').val(n);
+			an = a1 + (n-1)*r;
+			$('.an').val(an);
+		}
+		else afisare.html(p("Date insuficiente"));
+			
+}
 
-$(function(){
-	
-	$(".pElement3").change(function(){
-			var content = "a<sub>n</sub> = " + (parseFloat($('.pElement1').val()) + parseFloat($('.pElement3').val()))/2;
-			$('.pElement2').html(content);
-			console.log(content);
-		});
-	
-	$('.RAZA').change(function(){
-		content = "";
-		r = parseFloat($('.RAZA').val());
-		var a1 = parseFloat($('.pElement').val());
-		content += "<h2 class=\"text-center\">";
-		content += a1 + ' + ';
-		content += (a1 + r) + ' + ' + (a1 + r + r) + ' + ... + ' + inputCreate('nElement' ,'', 'CalculeazaRezultat()') + ' = ' + inputCreate('rezultat' , '','CalculeazaNElement()');
-		$('.pAritmetica').html(content + "</h2>");
-	});
-	
-});
+function calcr()
+{
+	init();
+	if(isNaN(r))
+		if(!isNaN(an) && !isNaN(a1) && !isNaN(n))
+		{
+			r = (an - a1)/(n-1);
+			$('.r').val(r);
+		}
+		else afisare.html(p("Date insuficiente"));
+}
+
+function calcsn()
+{
+	init();
+	if(isNaN(sn))
+		if(!isNaN(n) && !isNaN(a1) && !isNaN(r))
+		{
+			calcan();
+			sn = n*(a1 + an)/2;
+			$('.sn').val(sn);
+		}
+		else if(!isNaN(an) && !isNaN(a1) && !isNaN(r))
+		{
+			sn = n*(a1 + an)/2;
+			$('.sn').val(sn);
+		}
+		else afisare.html(p("Date insuficiente"));
+		
+}

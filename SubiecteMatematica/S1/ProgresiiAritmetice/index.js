@@ -109,7 +109,13 @@ function calcsn()
 		}
 		else if(!isNaN(an) && !isNaN(a1) && !isNaN(r))
 		{
-			sn = n*(a1 + an)/2;
+			sn = 0;
+			var a = a1;
+			while(a <= an)
+			{
+				sn += a;
+				a += r;
+			}
 			$('.sn').val(sn);
 		}
 		else afisare.html(p("Date insuficiente"));
