@@ -8,9 +8,12 @@
       <script src="index.js"></script>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-	  <!--<script type="text/javascript" id="MathJax-script" async src="../Tools/mathJax/tex-chtml"></script>-->
-	  
+	  <!--<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+	  <script type="text/javascript" id="MathJax-script" async src="../Tools/mathJax/tex-chtml"></script>-->
+	  <link rel="stylesheet" type ="text/css" href="../Tools/katex/katex.min.css" />
+	  <script defer src = "../Tools/katex/katex.min.js"></script>
+	  <script defer src = "../Tools/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+	   <script defer src="../Tools/katex/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
    </head>
    <body>
 	  <div class="loader">
@@ -515,7 +518,7 @@
                                  <div class="panel-body">
 								 
 									<h2>Definitia 1.</h2>
-									<p>Fie \(A = (a_{ij}) \in M_n(S)\). Numarul \(\underset{T \in S_n}\sum \varepsilon (T)a_{1T(1)}a_{2T(2)}...a_{nT(n)}\) se numeste determinantul matricei \(A\) si se noteaza cu \(det(A)\) sau : $$\begin{vmatrix}a_{11} & a_{12} & ... & a_{1n} \\ a_{21} & a_{22} & ... & a{2n} \\ ... & ... & ... & ... \\ a_{n1} & a_{n2} & ... & a_{nn} \\ \end{vmatrix}$$</p>
+									<p>Fie \(A = (a_{ij}) \in M_n(S)\). Numarul \( \underset \{T \in S_n} \sum \varepsilon (T)a_{1T(1)}a_{2T(2)}...a_{nT(n)} \) se numeste determinantul matricei \(A\) si se noteaza cu \(det(A)\) sau : $$\begin{vmatrix}a_{11} & a_{12} & ... & a_{1n} \\ a_{21} & a_{22} & ... & a{2n} \\ ... & ... & ... & ... \\ a_{n1} & a_{n2} & ... & a_{nn} \\ \end{vmatrix}$$</p>
 									<p>Un determinant de ordin \(n\) este determinntul unei matrice patratice de ordin \(n\)</p>
 									<p><b>Determinanti de ordin doi : </b> \(\begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \\ \end{vmatrix} = a_{11}a_{22} - a_{12}a_{21}\). </p>
 									<p><b>Determinanti de ordin trei : </b> \(\begin{vmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \\ \end{vmatrix} = a_{11}a_{22}a_{33} + a_{12}a_{23}a_{31} + a_{13}a_{21}a_{32} - a_{13}a_{22}a_{31} - a_{12}a_{21}a_{33} - a_{11}a_{23}a_{32}\)</p>

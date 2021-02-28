@@ -10,8 +10,8 @@
 	<script src="index.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="../../../Tools/algebra-0.2.6.min.js" type="text/javascript"></script>
-	<script src="../../../Tools/mathjs-develop/dist/math.js" type="text/javascript"></script>
+	<script src="../../../Tools/math.js" type="text/javascript"></script>
+	<script src="algebra-0.2.6.min.js" type="text/javascript"></script>
 
   </head>
 
@@ -47,10 +47,19 @@
       </nav>
 	
 	<div class="container" style="text-align: center;">
-		
+		<a href="algebra-0.2.6.min.js">a</a>
 	</div>
 	
-	<script>console.log(math.simplify('x^2 + 17/4x - 15/4'));</script>
+	<script>
+	
+		var quad = new Equation("x^2 + 17/4x - 15/4", 0);
+
+		var answers = quad.solveFor("x");
+
+		console.log("x = " + answers.toString());
+	
+	</script>
+	
 	
   </body>
 
