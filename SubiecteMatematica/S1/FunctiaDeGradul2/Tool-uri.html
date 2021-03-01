@@ -95,7 +95,7 @@
 		
 		function renderFunction()
 		{
-			
+			document.getElementById("grafic").innerHTML = "";
 			var elt = document.getElementById("grafic");
 			var calculator = Desmos.GraphingCalculator(elt);
 			calculator.setExpression({ id: 'graph1', latex: algebra.parse(math.simplify(a + "* x^2" +  " + " + b + "* x + " + c).toString()).toString() });
