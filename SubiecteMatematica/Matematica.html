@@ -25,6 +25,7 @@
 	 
 		var v = [1 ,5 ,9 ,2 ,6 ,5,3,5,8,9,7,9,3,2,3,8,4,6,2,6,4,3,3,8,3,2,7,9,5,0,2,8,8,4,1,9,7,1,6,9,3,9,9,3,7,5,1,0,5,8,2,0,9,7,4,9,4,4,5,9,2,3,0,7,8,1,6,4,0,6,2,8,6,2,0,8,9,9,8,6,2,8,0,3,4,8,2,5,3,4,2,1,1];
 		var p = 1;
+		var i = 0;
 		
 		function adauga()
 		{
@@ -34,16 +35,16 @@
 				console.log($('.pi').html());
 					$(".pi").append(v[i]);
 					i++;
-					p = 1;
 					
 					setTimeout(function() {
 					adauga();
-				}, 100);
+					}, 50);
 					
 					
 				}
 			else {
 			$('.pi').html('π = 3.14');
+			i = 0;
 			adauga();
 			}
 		}
@@ -72,8 +73,8 @@
 	  </style>
 	  <script>
 		
-		$(document).ready(function() {$('.loader').css("display" , "none");});
-		p = 1;
+		$(document).ready(function() {p = 0;$('.loader').css("display" , "none");});
+		
 	 </script>
       <nav class="navbar navbar-default navbar-fixed-top">
 	  
