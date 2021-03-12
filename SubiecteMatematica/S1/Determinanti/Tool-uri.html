@@ -59,6 +59,7 @@
 			<input type="text" class="form-control a11" placeholder="a11" >
 		</div>
 		<button class="btn btn-default calcul" onclick="calculeaza()">Calculeaza determinant</button>
+		<div style="margin: 50px;"><h1 class="Rezultat"></h1></div>
 	</div>
 	
 	<script>
@@ -116,7 +117,7 @@
 	{
 		initMatrix();
 		afisare(a);
-		console.log(determinant(n , a));
+		$('.Rezultat').html(determinant(n , a).toString());
 	}
 	
 	function determinant (m , v)
