@@ -106,3 +106,12 @@
 	width: auto;
 	height: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+		.titlu
+		{
+			width: 60vw;
+			height: auto !important;
+		}
+
+}
