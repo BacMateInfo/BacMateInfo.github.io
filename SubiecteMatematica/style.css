@@ -191,5 +191,14 @@ p
 			width: 60vw;
 			height: auto !important;
 		}
+		
+		p
+		{
+			font-size: 15px !important;
+		}
+		tr
+		{
+			font-size: 15px !important;
+		}
 
 }
