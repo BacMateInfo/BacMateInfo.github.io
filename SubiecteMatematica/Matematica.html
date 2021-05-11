@@ -8,6 +8,8 @@
       <script src="../Tools/bootstrap.js"></script>
       <script src="index.js"></script>
       <meta charset="UTF-8">
+	  <script src="../Tools/desmos.js" type="text/javascript"></script>
+	  <script src="../../Tools/algebra-0.2.6.min.js" type="text/javascript"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" type ="text/css" href="../Tools/katex/katex.min.css" />
       <script defer src = "../Tools/katex/katex.min.js"></script>
@@ -111,14 +113,14 @@
                         <a data-toggle="collapse" data-parent="#Subiectul2" href="#collapse1">Algebra</a>
                      </h4>
                   </div>
-                  <div id="collapse1" class="panel-collapse collapse">
+                  <div id="collapse1" class="panel-collapse collapse in">
                      <div class="panel-body">
                         <div class="panel-group" id="Algebra">
                            <div class="panel panel-default">
                               <!-- Multimi de numere -->
                               <div class="panel-heading text-center">
                                  <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#Algebra" href="#collapse1001">Multimi de numere</a>
+                                    <a data-toggle="collapse" data-parent="#Algebra" href="#collapse1001">Multimi</a>
                                  </h4>
                               </div>
                               <div id="collapse1001" class="panel-collapse collapse">
@@ -194,7 +196,7 @@
                               <!-- Functii -->
                               <div class="panel-heading text-center">
                                  <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#Algebra" href="#collapse1003">Functii. Proprietati generale. Lecturi grafice</a>
+                                    <a data-toggle="collapse" data-parent="#Algebra" href="#collapse1003">Functii</a>
                                  </h4>
                               </div>
                               <div id="collapse1003" class="panel-collapse collapse">
@@ -270,18 +272,40 @@
                                  </div>
                               </div>
                            </div>
-                          <!--  <div class="panel panel-default">
-                             
+                          <div class="panel panel-default">
+                             <!-- Functia de gradul 1 -->
                               <div class="panel-heading text-center">
                                  <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#Algebra" href="#collapse1001">cap 4</a>
+                                    <a data-toggle="collapse" data-parent="#Algebra" href="#collapse1004">Funcția de gradul 1</a>
                                  </h4>
                               </div>
-                              <div id="collapse1001" class="panel-collapse collapse">
+                              <div id="collapse1004" class="panel-collapse collapse">
                                  <div class="panel-body">
+									<p>Functia \(f : \Bbb R \rightarrow \Bbb R , f(x) = ax + b (a, b \in \Bbb R , a \not = 0)\) se numeste <i>functie de gradul 1</i></p>
+									<h2>Graficul</h2>
+									<p><b>Graficul</b> functiei \(f : \Bbb R \rightarrow \Bbb R , f(x) = ax + b\) este o dreapta de panta \(a\) </p>
+									<h2>Monotonia</h2>
+									<p>Daca \(a \gt 0\), atunci functia \(f\) este strict crescatoare.</p>
+									<p>Daca \(a \lt 0\), atunci functia \(f\) este strict descrescatoare</p>
+									<h2>Semnul</h2>
+									<table class="table">
+									  <tr>
+									    <td style="border-right: 1px solid grey;">\(x\)</td>
+										<td>\(- \infty \)</td>
+									    <td>\(\cfrac{-b}{a}\)</td>
+									    <td>\(+ \infty \)</td>
+									  </tr>
+									  <tr>
+										<td style="border-right: 1px solid grey;">\(f(x)\)</td>
+										<td>\(- sgn(a)\)</td>
+										<td>\(0\)</td>
+										<td>\(sgn(a)\)</td>
+									  </tr>
+									</table>
+									<p></p>
                                  </div>
                               </div>
-                           </div> -->
+                           </div> 
                            <div class="panel panel-default">
                               <!-- Functia de gradul 2 -->
                               <div class="panel-heading text-center">
@@ -291,86 +315,170 @@
                               </div>
                               <div id="collapse11" class="panel-collapse collapse">
                                  <div class="panel-body">
-                                    <p>Varful parabolei este: <span style="font-weight: bold;">\(V(\cfrac{-b}{2a} , \cfrac{-Δ}{4a})\)</span><br>
-                                       - daca <span style="font-weight: bold;">a > 0</span> varful este punct de minim:<br>
-                                       -\(\cfrac{Δ}{4a}\) este <b>valoare minima</b> iar \(\cfrac{-b}{2a}\) este <b>punct de minim</b><br>
-                                       - daca <b>a < 0 </b>este punct de maxim:<br>
-                                       -\(\cfrac{Δ}{4a}\) este <b>valoare maxima</b> iar \(\cfrac{-b}{2a}\) este <b>punct de maxim</b>
-                                    </p>
-                                    <p>Graficul functiei de gradul doi e tangent la axa Ox daca are <b>Δ = 0</b></p>
-                                    <p>Graficul functiei de gradul doi e situat deasupra axei Ox daca are:<br>
-                                       <b>Δ < 0<br>
-                                       a > 0</b>
-                                    </p>
-                                    <p><b>Relatiile lui Vi&egrave;te</b><br>
-                                       Pentru ecuatia de gradul doi cu radacini <b>\(x_1 , x_2\)</b> , au loc relatiile:<br>
-                                       <b>\(x_1 + x_2 = \frac{-b}{a}\)<br>
-                                       \(x_1 · x_2 = \frac{c}{a}\)</b>
-                                    </p>
-                                    <p><b>Observatie: \(x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1x_2 = (\frac{-b}{a})^2 - \frac{2c}{a}\)</b></p>
-                                    <p><b>Ecuatia cu radacini</b> \(x_1 , x_2\) este <b>\(x^2 - Sx + P = 0\)</b> unde <b>\(S = x_1 + x_2\)</b> iar <b>\(P = x_1 · x_2\)</b></p>
-                                    <p>Conditia ca <b>\(a^2 + bx + c >= 0\)</b> , x din R este <b>Δ <= 0 , a > 0</b><br>
-                                       Conditia ca <b>\(a^2 + bx + c <= 0\)</b> , x din R este <b>Δ <= 0 , a < 0</b><br>
-                                       Conditia ca <b>\(a^2 + bx + c > 0\)</b> , x din R este <b>Δ < 0 , a > 0</b><br>
-                                       Conditia ca <b>\(a^2 + bx + c < 0\)</b> , x din R este <b>Δ < 0 , a < 0</b><br>
-                                    </p>
-                                    <p>Conditia ca ecuatia <b>\(a^2 + bx + c = 0\)</b> sa aibe doua solutii reale este <b>Δ > 0</b><br>
-                                       Conditia ca ecuatia <b>\(a^2 + bx + c = 0\)</b> sa aibe doua solutii egale este <b>Δ = 0</b><br>
-                                       Conditia ca ecuatia <b>\(a^2 + bx + c = 0\)</b> sa nu aibe solutii reale este <b>Δ < 0</b><br>
-                                    </p>
-                                    <a class="btn btn-default" style="float: right;" href="S1/FunctiaDeGradul2/Tool-uri.html">Unelte</a>
-                                    <!--<a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>-->
+                                    <p>Functia \(f : \Bbb R \rightarrow \Bbb R, f(x) = ax^2 + bx + c \: (a , b , c \in \Bbb R , a \not = 0)\), se numeste functie de gradul 2.</p>
+									<h2>Forma canonica</h2>
+									<p>\(f(x) = ax^2 + bx + c = a\Biggl[\biggl( x + \cfrac{b}{2a} \biggr) ^2 - \cfrac{\Delta}{4a}\Biggl] , \Delta = b^2 - 4ac\)</p>
+									<h2>Semnul functiei de gradul 2</h2>
+									<p>1. \(\Delta < 0\)</p>
+									<table class="table">
+									  <tr>
+									    <td style="border-right: 1px solid grey;">\(x\)</td>
+										<td>\(- \infty \)</td>
+										<td></td>
+									    <td>\(+ \infty \)</td>
+									  </tr>
+									  <tr>
+										<td style="border-right: 1px solid grey;">\(f(x)\)</td>
+										<td></td>
+										<td>\(sgn(a)\)</td>
+									  </tr>
+									</table>
+									<p>2. \(\Delta = 0\)</p>
+									<table class="table">
+									  <tr>
+									    <td style="border-right: 1px solid grey;">\(x\)</td>
+										<td>\(- \infty \)</td>
+									    <td>\(\cfrac{-b}{2a}\)</td>
+									    <td>\(+ \infty \)</td>
+									  </tr>
+									  <tr>
+										<td style="border-right: 1px solid grey;">\(f(x)\)</td>
+										<td>\(sgn(a)\)</td>
+										<td>\(0\)</td>
+										<td>\(sgn(a)\)</td>
+									  </tr>
+									</table>
+									<p>3. \(\Delta > 0\)</p>
+									<table class="table">
+									  <tr>
+									    <td style="border-right: 1px solid grey;">\(x\)</td>
+										<td>\(- \infty \)</td>
+										<td>\(x_1\)</td>
+									    <td></td>
+										<td>\(x_2\)</td>
+									    <td>\(+ \infty \)</td>
+									  </tr>
+									  <tr>
+										<td style="border-right: 1px solid grey;">\(f(x)\)</td>
+										<td>\(sgn(a)\)</td>
+										<td>\(0\)</td>
+										<td>\(-sgn(a)\)</td>
+										<td>\(0\)</td>
+										<td>\(sgn(a)\)</td>
+									  </tr>
+									</table>
+								<h2>Observatii</h2>
+								<p>1. \(f(x) > 0 , \forall x \in \Bbb R \iff \begin{cases}a \gt 0 \\ \Delta \lt 0 \end{cases}\)</p>
+								<p>2. \(f(x) \ge 0 , \forall x \in \Bbb R \iff \begin{cases}a \gt 0 \\ \Delta \le 0 \end{cases}\)</p>
+								<p>3. \(f(x) \lt 0 , \forall x \in \Bbb R \iff \begin{cases}a \lt 0 \\ \Delta \lt 0 \end{cases}\)</p>
+								<p>4. \(f(x) \le 0 , \forall x \in \Bbb R \iff \begin{cases}a \lt 0 \\ \Delta \le 0 \end{cases}\)</p>
+								<h2>Graficul</h2>
+								<p>Graficul functiei \(f : \Bbb R \rightarrow \Bbb R, f(x) = ax^2 + bx + c\) este o parabola de varf \(V\biggl(-\cfrac{b}{2a} , -\cfrac{\Delta}{4a}\biggr)\) si axa de simetrie \(x = -\cfrac{b}{2a}\), care are ramurile orientate in sus, daca \(a > 0\) , si in jos, daca \(a < 0\).</p>
+								<h2>Monotonia si punctele de extrem</h2>
+								<p>1.\(a > 0\)</p>
+								<table class="table">
+									<tr>
+									  <td style="border-right: 1px solid grey;">\(x\)</td>
+								      <td>\(- \infty \)</td>
+									  <td>\(-\cfrac{b}{2a}\)</td>
+									  <td>\(+ \infty \)</td>
+									</tr>
+									<tr>
+									  <td style="border-right: 1px solid grey;">\(f(x)\)</td>
+									  <td>\(\searrow\)</td>
+									  <td>\(-\cfrac{\Delta}{4a}\)</td>
+									  <td>\(\nearrow\)</td>
+									</tr>
+							    </table>
+								<br>
+								<div id="grafic1" style="width: 100%; height: 400px;"></div>
+								<br>
+								<p>2.\(a \lt 0\)</p>
+								<table class="table">
+									<tr>
+									  <td style="border-right: 1px solid grey;">\(x\)</td>
+								      <td>\(- \infty \)</td>
+									  <td>\(-\cfrac{b}{2a}\)</td>
+									  <td>\(+ \infty \)</td>
+									</tr>
+									<tr>
+									  <td style="border-right: 1px solid grey;">\(f(x)\)</td>
+									  <td>\(\nearrow\)</td>
+									  <td>\(-\cfrac{\Delta}{4a}\)</td>
+									  <td>\(\searrow\)</td>
+									</tr>
+							    </table>
+								<br>
+								<div id="grafic2" style="width: 100%; height: 400px;"></div>
+								<br>
+								  <p>Daca \(a > 0, min f = -\cfrac{\Delta}{4a}\), care se atinge in punctul de minim \(x = -\cfrac{b}{2a}\)<br>
+								  Functia f este strict crescatoare pe \(\biggl[-\cfrac{b}{2a} , +\infty \biggr)\), si strict crescatoare pe \(\biggl(- \infty , -\cfrac{b}{2a} \biggr]\).</p>
+								  <p>Daca \(a < 0, max f = -\cfrac{\Delta}{4a}\), care se atinge in punctul de maxim \(x = -\cfrac{b}{2a}\)<br>
+								  Functia f este strict crescatoare pe \(\biggl[-\cfrac{b}{2a} , +\infty \biggr)\), si strict crescatoare pe \(\biggl(- \infty , -\cfrac{b}{2a} \biggr]\).</p>
+								<h2>Relatiile lui Viete</h2>
+								<p>Fie \(x_1, x_2\) solutiile ecuatiei \(ax^2 + bx + c = 0\). Atunci \(\begin{cases}x_1 + x_2 = -\cfrac{b}{a} \\ x_1x_2 = \cfrac{c}{a}\end{cases}\)</p>
+								<h2>Observatii</h2>
+								<p>1. \(x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1x_2\)</p>
+								<p>\(x_1^3 + x_2^3 = (x_1 + x_2)^3 - 3x_1x_2(x_1 + x_2)\)	</p>
+								<p>2. Ecuatia de gradul 2 cu solutiile \(x_1\) si \(x_2\) este \(x^2 - Sx + P = 0\) , unde \(S = x_1 + x_2\) si \(P = x_1x_2\) </p>
+								<p></p>
+								<p></p>
+                                 </div>
+                              </div>
+                           </div>
+						   <div class="panel panel-default">
+                              <!-- Ecuatii irationale --> 
+                              <div class="panel-heading text-center">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#Algebra" href="#collapse1005">Puteri si radicali</a>
+                                 </h4>
+                              </div>
+                              <div id="collapse1005" class="panel-collapse collapse">
+                                 <div class="panel-body">
+									<p>Functia \(f : \Bbb R \rightarrow R, f(x) = x^n\) , unde \(, \in \Bbb N , n \ge 2\) , se numeste functia putere.</p>
+									<p>Functi \(f : D \rightarrow \Bbb R , f(x) = \sqrt[n]{x}\), unde \(n \in \Bbb N , n \ge 2\) , si \(D = \Bbb R\), daca \(n\) este impar, respectiv \(D = [0 , + \infty]\) , daca n este par, se numeste functie radical de ordin n.</p>
+									<p>Functia radical de ordinul 2 este \(f : [0 , + \infty] \rightarrow \Bbb R , f(x) = \sqrt{x}\), iar functia radical de ordinul 3 este \(f : \Bbb R \rightarrow \Bbb R, f(x) = \sqrt[3]{x}\).</p>
+									<h2>Proprietati</h2>
+									<p>1. Functiile \(f , g : [0 , + \infty) \rightarrow [0 , + \infty), f(x) = x^{2n}\) si \(g(x) = \sqrt[2n]{x}\) , unde \(n \in \Bbb N^*\), sunt functii bijective, fiecare fiind inversa celeilalte.</p>
+									<p>2. Functiile \(f, g : \Bbb R \rightarrow \Bbb R, f(x) = x^{2n + 1}\) si \(g(x) = \sqrt[2n + 1]{x}\) , unde \(n \in \Bbb N^*\), sunt functii bijective, fiecare fiind inversa celeilalte.</p>
+									<p>3. Functia putere de exponent impar este strict crescatoare pe \(\Bbb R\). Functia putere de exponent par este strict descrescatoare pe \((- \infty , 0]\) si strict crescatoare pe \([0 , + \infty)\)</p>
+									<p>4. Functia radical de ordin impar este strict crescatoare pe \(\Bbb R\). Functia radical de ordin par este strict crescatoare pe \([0 , + \infty)\).</p>
+									<p>5. Functia radical de ordin impar este convexa pe \((- \infty , 0]\) si concava pe \([0 , + \infty)\). Functia radical de orin par este concava pe \([0 , + \infty)\).</p>
+									<h2>Proprietati ale puterilor</h2>
+									<p>Fie \(a , b \in \Bbb R^* , r,s \in \Bbb Q\).</p>
+									<p>1. \(a^0 = 1\) si \(1^s = 1\)</p>
+									<p>2. \(a^r \cdot a^s = a^{r + s}\)</p>
+									<p>3. \((a \cdot b)^s = a^s \cdot b^s\)</p>
+									<p>4. \((a^r)^s = a^{r \cdot s}\)</p>
+									<p>5. \(\cfrac{a^r}{a^s} = a^{r - s}\)</p>
+									<p>6. \(\biggr(\cfrac{a}{b}\biggl)^s = \cfrac{a^s}{b^s}\)</p>
+									<p>7. \(\begin{cases}a > 1,\: a^r \lt a^s \iff r \lt s \\ a \in (0 , 1), \: a^r \lt a^s \iff r \gt s\end{cases}\)</p>
+									<h2>Proprietate ale radicalilor</h2>
+									<p>Pentru \(a , b \in \Bbb R\) si \(n , k \in \Bbb N , n , k \ge 3\) impare sau pentru \(a \in [0 , + \infty) , b \in (0 , + \infty)\) si \(n , k \in \Bbb N^*\) numere pare, avem:</p>
+									<p>1. \(\sqrt[n]{x^n} = x\)</p>
+									<p>2. \(\sqrt[n]{a \cdot b} = \sqrt[n]{a} \cdot \sqrt[n]{b}\)</p>
+									<p>3. \(\sqrt[n]{\cfrac{a}{b}} = \cfrac{\sqrt[n]{a}}{\sqrt[n]{b}} , b \not = 0\)</p>
+									<p>4. \(\sqrt[n]{a} = \sqrt[n \cdot k]{a^k}\)</p>
+									<p>5. \(a^{\frac{n}{k}} = \sqrt[k]{a^n} , k \ge 2\)</p>
+									<p>6. \(\sqrt[n]{\sqrt[k]{a}} = \sqrt[n \cdot k]{a}\)</p>
+									<p>7. \(\sqrt[n]{a} \lt \sqrt[n]{b} \iff a \lt b\)</p>
                                  </div>
                               </div>
                            </div>
                            <div class="panel panel-default">
-                              <!-- Ecuatia de gradul 2 -->
+                              <!-- Exponentiala si logaritmica --> 
                               <div class="panel-heading text-center">
                                  <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#Algebra" href="#collapse12">Ecuatia de gradul 2</a>
+                                    <a data-toggle="collapse" data-parent="#Algebra" href="#collapse1006">Exponenti si logaritmi</a>
                                  </h4>
                               </div>
-                              <div id="collapse12" class="panel-collapse collapse">
+                              <div id="collapse1006" class="panel-collapse collapse in">
                                  <div class="panel-body">
-                                    <p>Ecuatia \(ax^{2} + bx + c = 0\). Se calculeaza <b>\(Δ = b^{2} - 4ac\)</b><br>
-                                       Daca <b>\(Δ > 0\)</b> atunci ecuatia de gradul 2 are doua radacini reale diferite date de formula <b>\(x_{1,2} = \cfrac{-b ± \sqrtΔ}{2a}\)</b><br>
-                                       Daca <b>\(Δ = 0\)</b> atunci ecuatia de gradul 2 are doua radacini reale egale date de formula <b>\(x_{1,2} = -\cfrac{b}{2a}\)</b><br>
-                                       Daca <b>\(Δ < 0\)</b> atunci ecuatia de gradul 2 are doua radacini complexe diferite date de formula <b>\(x_{1,2} = \cfrac{-b ± i\sqrt{-Δ}}{2a}\)</b><br>
-                                    </p>
-                                    <p><b>$$ax^{2} + bx + c = a(x - x_{1})(x - x_{2})$$</b></p>
-                                    <p>Relatiile lui Vi&egrave;te pentru ecuatia de gradul 2<br>
-                                       <b>\(S = x_{1} + x_{2} = \cfrac{-b}{a}\)<br> <br>
-                                       \(P = x_{1} · x_{2} = \cfrac{c}{a} \) <br> <br>
-                                       \(x_{1}^{2} + x_{2}^{2} = S^{2} - 2P \)<br> <br>
-                                       \(x_{1}^{3} + x_{2}^{3} = S^{3} - 2SP\)</b>
-                                    </p>
-                                    <a class="btn btn-default" style="float: right;" href="S1/EcuatiaDeGradul2/Tool-uri.html">Unelte</a>
-                                    <!--<a class="btn btn-default" style="float: left;" href="S1/EcuatiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>-->
+									<h2>1. Logaritmi</h2>
                                  </div>
                               </div>
                            </div>
-                           <div class="panel panel-default">
-                              <!-- Numere complexe --> 
-                              <div class="panel-heading text-center">
-                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#Algebra" href="#collapse15">Numere complexe</a>
-                                 </h4>
-                              </div>
-                              <div id="collapse15" class="panel-collapse collapse">
-                                 <div class="panel-body">
-                                    <p><b>\(Z = a + bi\)</b> este forma algebrica a unui numar complex</p>
-                                    <p><b>\(Z = r(\cos x + i\sin x)\)</b> este forma trigonometrica a unui numar complex unde: <br>
-                                       <b>\(r = \sqrt{a^{2} + b^{2}}\)</b><br>
-                                       <b>\(x &#x220A; [0 , 2π)\)</b> este argumentul redus al numarului complex si se scoate din relatia <b>\(tgx = \cfrac{b}{a}\)</b>
-                                    </p>
-                                    <p><b>\(i^{2} = -1\)<br>
-                                       \(|a + bi| = \sqrt{a^{2} + b^{2}}\)<br>
-                                       </b>
-                                    </p>
-                                    <!--<a class="btn btn-default" style="float: left;" href="S1/FunctiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>-->
-                                 </div>
-                              </div>
-                           </div>
+						   
                            <div class="panel panel-default">
                               <!-- Combinatorica -->
                               <div class="panel-heading text-center">
@@ -1238,5 +1346,27 @@
             </div>
          </div>
       </div>
+	  <script>
+								function renderFunction1()
+									{
+										
+										document.getElementById("grafic1").innerHTML = "";
+										var elt = document.getElementById("grafic1");
+										var calculator = Desmos.GraphingCalculator(elt);
+										calculator.setExpression({ id: 'graph1', latex: "3x^2 + 2x - 3"});
+									}
+								function renderFunction2()
+									{
+										
+										document.getElementById("grafic2").innerHTML = "";
+										var elt = document.getElementById("grafic2");
+										var calculator = Desmos.GraphingCalculator(elt);
+										calculator.setExpression({ id: 'graph1', latex: "-3x^2 + 2x + 3"});
+									}
+								(function(){
+									renderFunction1();
+									renderFunction2();
+								})();
+		</script>
    </body>
 </html>
