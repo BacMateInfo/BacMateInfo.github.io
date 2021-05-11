@@ -8,3 +8,4 @@ F7::Send , {\}{e}{n}{d}{{}{}}
 F8::Send , {\}{s}{q}{r}{t}
 F9::Send , {\}{o}{v}{e}{r}{r}{i}{g}{h}{t}{a}{r}{r}{o}{w}
 F10::Send , {\}{c}{d}{o}{t}
+

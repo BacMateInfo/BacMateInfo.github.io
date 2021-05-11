@@ -6,8 +6,10 @@
 	list-style: none;
 }
 
-
-
+.background-default
+{
+	background: #EEEEEE !important;
+}
 
 @keyframes Fade
 {
