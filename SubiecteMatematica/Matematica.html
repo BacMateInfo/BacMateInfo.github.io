@@ -4,6 +4,7 @@
       <title>Matematica</title>
       <link rel="stylesheet" type="text/css" href="style.css" />
       <link rel="stylesheet" href="../Tools/bootstrap.css">
+      <link rel="stylesheet" href="../Tools/design.css">
       <script src="../Tools/jQuery.js"></script>
       <script src="../Tools/bootstrap.js"></script>
       <script src="index.js"></script>
@@ -113,7 +114,7 @@
                         <a data-toggle="collapse" data-parent="#Subiectul2" href="#collapse1">Algebra</a>
                      </h4>
                   </div>
-                  <div id="collapse1" class="panel-collapse collapse in">
+                  <div id="collapse1" class="panel-collapse collapse">
                      <div class="panel-body">
                         <div class="panel-group" id="Algebra">
                            <div class="panel panel-default">
@@ -129,22 +130,22 @@
                                     <h2>Definitie</h2>
                                     <p>Modulul numarului real x este numarul \(|x| = \begin{cases} x, daca \: x \ge 0 \\ -x, daca \: x &#60; 0 \end{cases}\)</p>
                                     <h2>Proprietati</h2>
-                                    <p> 1. \(|x| \ge 0, &#8704; x &#8714; &#8477; ; &#xa0;  |x| = 0 &#8660; x = 0;\)</p>
-                                    <p>2.\(|x \cdot y| = |x| \cdot |y|, &#8704; x,y &#8714; &#8477; ;\) </p>
-                                    <p>3.\(|x + y| \le |x| + |y|, &#8704; x,y &#8714; &#8477; .\)</p>
+                                    <p><b>1.</b> \(|x| \ge 0, &#8704; x &#8714; &#8477; ; &#xa0;  |x| = 0 &#8660; x = 0;\)</p>
+                                    <p><b>2.</b>\(|x \cdot y| = |x| \cdot |y|, &#8704; x,y &#8714; &#8477; ;\) </p>
+                                    <p><b>3.</b>\(|x + y| \le |x| + |y|, &#8704; x,y &#8714; &#8477; .\)</p>
                                     <h1>Partea intreaga si partea fractionara a unui numar real</h1>
                                     <h2>Definitie</h2>
                                     <p>Fie \(x &#8714; &#8477;\). Cel mai mare numar intreg mai mic sau egal cu x se numeste partea intreaga a lui x. Se noteaza: \([x]= max\)  &#123; \(p &#8714; &#x2124;  | p \le x\) &#125;.</p>
                                     <p>Numarul real &#123; \(x\) &#125; = \(x-[x]\) se numeste partea fractionara a lui x.</p>
                                     <h2>Proprietati</h2>
-                                    <p>1a. \([x] \le x\) \(&#60; [x] +1 , &#8704; x &#8714; &#8477; ;\)</p>
-                                    <p>1b. \(\{x\}\) \(&#8714;[0,1),&#8704; x &#8714; &#8477; ;\)</p>
-                                    <p>2a. \(x-1 &#60; [x] \le x, &#8704; x &#8714; &#8477; ;\)</p>
-                                    <p>2b. \(\{x\}\) = 0 &#8660; \(x &#8714; &#x2124; ;\)</p>
-                                    <p>3a. \([x]=x &#8660; x &#8714; &#x2124; ;\)</p>
-                                    <p>3b. \(\{x\}\) = \(\{y\}\) &#8660; \(x-y\) &#8714; &#x2124; ;</p>
-                                    <p>4a. \([x+n]=[x]+n &#8660; n &#8714; &#x2124; ;\)</p>
-                                    <p>4b. &#123;\(x+n\)&#125; = \(\{x\}\) &#8660; n &#8714; &#x2124; .</p>
+                                    <p><b>1a.</b> \([x] \le x\) \(&#60; [x] +1 , &#8704; x &#8714; &#8477; ;\)</p>
+                                    <p><b>1b.</b> \(\{x\}\) \(&#8714;[0,1),&#8704; x &#8714; &#8477; ;\)</p>
+                                    <p><b>2a.</b> \(x-1 &#60; [x] \le x, &#8704; x &#8714; &#8477; ;\)</p>
+                                    <p><b>2b.</b> \(\{x\}\) = 0 &#8660; \(x &#8714; &#x2124; ;\)</p>
+                                    <p><b>3a.</b> \([x]=x &#8660; x &#8714; &#x2124; ;\)</p>
+                                    <p><b>3b.</b> \(\{x\}\) = \(\{y\}\) &#8660; \(x-y\) &#8714; &#x2124; ;</p>
+                                    <p><b>4a.</b> \([x+n]=[x]+n &#8660; n &#8714; &#x2124; ;\)</p>
+                                    <p><b>4b.</b> &#123;\(x+n\)&#125; = \(\{x\}\) &#8660; n &#8714; &#x2124; .</p>
                                     <h2>Identitatea lui Hermite</h2>
                                     <p> \([x] + [x+\cfrac{1}{n}] + [x+\cfrac{2}{n}] + ... + [x+\cfrac{n-1}{n}] = [n-x], &#8704; x &#8714; &#8477; , &#8704; x &#8714; &#8469;\)*\&#123;1&#125;.</p>
                                  </div>
@@ -177,18 +178,18 @@
                                     <h2>Definitie</h2>
                                     <p>Sirul de numere reale \( (a_{n})_{n \ge 1}\) este o progresie aritmetica de ratie r, daca \(a_{n+1} - a_{n} = r\), &#8704; \(n \ge 1\) (adica diferenta oricaror doi termeni consecutivi este constanta).</p>
                                     <h2>Proprietati ale progresiilor aritmetice</h2>
-                                    <p>1. \( a_{n}=a_{1}+(n-1)\cdot r\), &#8704; \(n \ge 1\)</p>
-                                    <p>2. \(a_{n} = \cfrac {a_{n-1} + a_{n+1}}{2} , &#8704; n \ge 2\)</p>
-                                    <p>3. \(S_{n}= \cfrac{n(a_{1}+a_{n})}{2}=na_{1} + r\cfrac{n(n-1)}{2}\),&#8704; \(n \ge 1\), unde \(S_{n} = a_{1} + a_{2} + ... + (a_{n})\)</p>
-                                    <p>4. \(n = \cfrac{a_{n} - a_{1}}{r} + 1\), &#8704; \(n \ge 1\) , r &#8800; 0</p>
+                                    <p><b>1.</b> \( a_{n}=a_{1}+(n-1)\cdot r\), &#8704; \(n \ge 1\)</p>
+                                    <p><b>2.</b> \(a_{n} = \cfrac {a_{n-1} + a_{n+1}}{2} , &#8704; n \ge 2\)</p>
+                                    <p><b>3.</b> \(S_{n}= \cfrac{n(a_{1}+a_{n})}{2}=na_{1} + r\cfrac{n(n-1)}{2}\),&#8704; \(n \ge 1\), unde \(S_{n} = a_{1} + a_{2} + ... + (a_{n})\)</p>
+                                    <p><b>4.</b> \(n = \cfrac{a_{n} - a_{1}}{r} + 1\), &#8704; \(n \ge 1\) , r &#8800; 0</p>
                                     <!--Progresii geometrice-->
                                     <h1>3. Progresii geometrice</h1>
                                     <h2>Definitie</h2>
                                     <p>Sirul de numere reale nenule \( (x_{n})_{n \ge 1}\) este o progresie geometrica de ratie q daca \(b_{n+1}=b_{n} \cdot q\) (adica raportul oricaror doi termeni consecutivi este constant).</p>
                                     <h2>Proprietati ale progresiilor geometrice</h2>
-                                    <p>1. \(b_{n}=b_{1} \cdot q_{n-1}\), &#8704; \(n \ge 1\).</p>
-                                    <p>2. \(b^2_{n}=b_{n-1} \cdot b_{n+1}\), &#8704; \(n \ge 2\)</p>
-                                    <p>3. \(S_{n}= \begin{cases} b_{1}\cfrac{q^n-1}{q-1}, q &#8800; 1 \\ nb_{1}, q &#61; 1 \end{cases}\) ,unde \(S_{n} = b_{1} + b_{2} + ... + b_{n}\).</p>
+                                    <p><b>1.</b> \(b_{n}=b_{1} \cdot q_{n-1}\), &#8704; \(n \ge 1\).</p>
+                                    <p><b>2.</b> \(b^2_{n}=b_{n-1} \cdot b_{n+1}\), &#8704; \(n \ge 2\)</p>
+                                    <p><b>3.</b> \(S_{n}= \begin{cases} b_{1}\cfrac{q^n-1}{q-1}, q &#8800; 1 \\ nb_{1}, q &#61; 1 \end{cases}\) ,unde \(S_{n} = b_{1} + b_{2} + ... + b_{n}\).</p>
                                  </div>
                               </div>
                            </div>
@@ -206,8 +207,8 @@
                                     <p>Graficul functiei \(f:A->B\) este multimea \(G_{f}=\{(x,f(x))|x &#8714; A\} &#8834; A &#215; B.\)</p>
                                     <p>Imaginea functiei \(f:A->B\) sau multimea valorilor functiei f este multimea \(Im f = \{y &#8714; B| &#8707; x &#8714; A, f(x)=y\} = \{f(x)|x &#8714; A\}\).</p>
                                     <h2>Observatii</h2>
-                                    <p>1. \(M(u,v)&#8714;G_{f} &#8660; f(u)=v\).</p>
-                                    <p>2. Functia identica a multimii A este \(l_{A}:A->A, l_{A}(x)=x, &#8704; x &#8714; A\).</p>
+                                    <p><b>1.</b> \(M(u,v)&#8714;G_{f} &#8660; f(u)=v\).</p>
+                                    <p><b>2.</b> Functia identica a multimii A este \(l_{A}:A->A, l_{A}(x)=x, &#8704; x &#8714; A\).</p>
                                     <!--Operatii cu functii-->
                                     <h1>1. Operatii cu functii</h1>
                                     <h2>Definitie</h2>
@@ -227,8 +228,8 @@
                                     <p>Fie D &#8838; &#8477; o multime nevida. Functia \(f:D->&#8477;\) este monoton (strict) crescatoare daca pentru oricare \(x,y &#8712; D, x &#60; y\) avem \(f(x) \le f(y) (f(x) \lt f(y))\).</p>
 									<p>Functia \(f:D-> \Bbb R \) este monoton (strict) descrescatoare daca pentru orice \(x,y &#8712; D, x \lt y\), avem \(f(x) \ge f(y) (f(x) \gt f(y))\).</p>
 									<h2>Observatii</h2>
-									<p>1. Daca raportul de variatie \(R_{f}(x,y)= \cfrac{f(x)-f(y)}{x-y} \gt 0, \forall x,y \in D, x\not= y\), atunci functia \(f\) este strict crescatoare, iar daca \(R_{f}(x,y) \lt 0, \forall x \not= y\), atunci \(f\) este strict descrescatoare.</p>
-									<p>2. Compunerea a doua functii monotone, de aceeasi monotonie, este o functie crescatoare; compunerea a doua functii monotone, de monotonii diferite, este o functie descrescatoare.</p>
+									<p><b>1.</b> Daca raportul de variatie \(R_{f}(x,y)= \cfrac{f(x)-f(y)}{x-y} \gt 0, \forall x,y \in D, x\not= y\), atunci functia \(f\) este strict crescatoare, iar daca \(R_{f}(x,y) \lt 0, \forall x \not= y\), atunci \(f\) este strict descrescatoare.</p>
+									<p><b>2.</b> Compunerea a doua functii monotone, de aceeasi monotonie, este o functie crescatoare; compunerea a doua functii monotone, de monotonii diferite, este o functie descrescatoare.</p>
 									<!--Functii pare, impare, periodice-->
 									<h1>3. Functii pare, impare, periodice</h1>
 									<h2>Definitie</h2>
@@ -236,10 +237,10 @@
 									<p>a. Functia \(f:D-> \Bbb R\) este functie para daca \(f(-x)=f(x), \forall x \in D\).</p>
 									<p>a. Functia \(f:D-> \Bbb R\) este functie impara daca \(f(-x)=-f(x), \forall x \in D\).</p>
 									<h2>Proprietati</h2>
-									<p>1. Daca \(f:D->\Bbb R\) este o functie impara si 0 \in D, atunci \(f(0)=0 &#8660; O(0,0) \in G_{f}.\)</p>
-									<p>2. Suma \(f+g:D-> \Bbb R\) a doua functii pare (respectiv impare) \(f,g:D-> \Bbb R\) este tot o functie para(respectiv impara).</p>
-									<p>3. Produsul/catul a doua functii pare/impare este o functie para. Produsul/catul dintre o functie para si una impara este o functie impara.</p>
-									<p>4. Compunerea a doua functii pare/impare este o functie para. Compunerea dintre o functie para si una impara este o functie impara.</p>
+									<p><b>1.</b> Daca \(f:D->\Bbb R\) este o functie impara si 0 \in D, atunci \(f(0)=0 &#8660; O(0,0) \in G_{f}.\)</p>
+									<p><b>2.</b> Suma \(f+g:D-> \Bbb R\) a doua functii pare (respectiv impare) \(f,g:D-> \Bbb R\) este tot o functie para(respectiv impara).</p>
+									<p><b>3.</b> Produsul/catul a doua functii pare/impare este o functie para. Produsul/catul dintre o functie para si una impara este o functie impara.</p>
+									<p><b>4.</b> Compunerea a doua functii pare/impare este o functie para. Compunerea dintre o functie para si una impara este o functie impara.</p>
 									<h2>Definitie</h2>
 									<p>Functia \(f:D-> \Bbb R\) este periodica cu perioada T daca \(f(x+T)=f(x)\), pentru orice x \in D pentru care x+T \in D. Cea mai mica perioada pozitiva (daca exista) se numeste perioada principala.</p>
 									<!--Simetrii ale graficului unei functii-->
@@ -248,8 +249,8 @@
 									<p>Dreapta \(x=a\) este axa de simetrie pentru graficul functiei \(f:D-> \Bbb R\) daca \(f(a-x)=f(a+x)\), pentru orice \(x \in D\) astfel incat \(a-x, a+x \in D\).</p>
 									<p>Punctul \(M(a,b) \in xOy\) este centru de simetrie pentru graficul functiei \(f:D-> \Bbb R\), daca \(f(a-x)+f(a+x)=2b\), pentru orice \(x \in D\), astfel incat \(a-x, a+x \in D\).</p>
 									<h2>Observatii</h2>
-									<p>1. Graficul unei functii pare este simetric fata de axa Oy.</p>
-									<p>2. Graficul unei functii impare este simetric fata de origine.</p>
+									<p><b>1.</b> Graficul unei functii pare este simetric fata de axa Oy.</p>
+									<p><b>2.</b> Graficul unei functii impare este simetric fata de origine.</p>
 									<!--Functii injective, surjective, bijective, inversabile-->
 									<h1>5. Functii injective, surjective, bijective, inversabile</h1>
 									<h2>Definitie</h2>
@@ -260,15 +261,15 @@
 									<h2>Definitie</h2>
 									<p>Functia \(f:A->B\) este inversabila daca exista o functie \(g:B->A\) astfel incat \(g &#8728; f = l_{A}\) si \(f &#8728; g = l_{B}\). Notam \(g=f^-1\) si spunem ca \(f^-1\) este inversa functiei f.</p>
 									<h2>Observatii</h2>
-									<p>1. Functia \(f:A->B\) este injectiva daca si numai daca este indeplinita una dintre conditiile:</p>
-									<p>a. Pnetru orice \(x_{1}, x_{2} \in A\), astfel incat \(f(x_{1})=f(x_{2})\), rezolva x_{1}=x_{2}.</p>
-									<p>b. Pentru orice \(y \in B\), ecuatia \(f(x)=y\) are cel putin o solutie \(x \in A\).</p>
-									<p>2. Functia \(f:A->B\) este surjectiva daca si numai daca este indeplinita una dintre conditiile:</p>
-									<p>a. \(Im f=B\)</p>
-									<p>b. Pentru orice \(y \in B\), ecuatia f(x)=y are cel putin o solutie \(x \in A\)</p>
-									<p>3. Functia \(f:A->B\) este bijectiva daca oricarui element \(y \in B\) ii corespunde un unic element \(x \in A\), astfel incat \(f(x)=y\).</p>
-									<p>4. Functia \(f:A->B\) este inversabila daca exista o functie \(g:B->A\) astfel incat \(g &#8728; f = l_{A}\) si \(f &#8728; g = l_{B}\). Se noteaza \(g=f_{-1}\) si se spune ca g este inversa functiei f. Are loc echivalenta \(f(x)=y &#8660; x=f_{-1}(y)\), unde \(x \in A\) si \(y \in B\).</p>
-									<p>5. O functie este inversabila daca si numai daca este bijectiva.</p>
+									<p><b>1.</b> Functia \(f:A->B\) este injectiva daca si numai daca este indeplinita una dintre conditiile:</p>
+									<p><b>a.</b> Pnetru orice \(x_{1}, x_{2} \in A\), astfel incat \(f(x_{1})=f(x_{2})\), rezolva x_{1}=x_{2}.</p>
+									<p><b>b.</b> Pentru orice \(y \in B\), ecuatia \(f(x)=y\) are cel putin o solutie \(x \in A\).</p>
+									<p><b>2.</b> Functia \(f:A->B\) este surjectiva daca si numai daca este indeplinita una dintre conditiile:</p>
+									<p><b>a.</b> \(Im f=B\)</p>
+									<p><b>b.</b> Pentru orice \(y \in B\), ecuatia f(x)=y are cel putin o solutie \(x \in A\)</p>
+									<p><b>3.</b> Functia \(f:A->B\) este bijectiva daca oricarui element \(y \in B\) ii corespunde un unic element \(x \in A\), astfel incat \(f(x)=y\).</p>
+									<p><b>4.</b> Functia \(f:A->B\) este inversabila daca exista o functie \(g:B->A\) astfel incat \(g &#8728; f = l_{A}\) si \(f &#8728; g = l_{B}\). Se noteaza \(g=f_{-1}\) si se spune ca g este inversa functiei f. Are loc echivalenta \(f(x)=y &#8660; x=f_{-1}(y)\), unde \(x \in A\) si \(y \in B\).</p>
+									<p><b>5.</b> O functie este inversabila daca si numai daca este bijectiva.</p>
                                  </div>
                               </div>
                            </div>
@@ -319,7 +320,7 @@
 									<h2>Forma canonica</h2>
 									<p>\(f(x) = ax^2 + bx + c = a\Biggl[\biggl( x + \cfrac{b}{2a} \biggr) ^2 - \cfrac{\Delta}{4a}\Biggl] , \Delta = b^2 - 4ac\)</p>
 									<h2>Semnul functiei de gradul 2</h2>
-									<p>1. \(\Delta < 0\)</p>
+									<p><b>1. \(\Delta \lt 0\)</b></p>
 									<table class="table">
 									  <tr>
 									    <td style="border-right: 1px solid grey;">\(x\)</td>
@@ -333,7 +334,7 @@
 										<td>\(sgn(a)\)</td>
 									  </tr>
 									</table>
-									<p>2. \(\Delta = 0\)</p>
+									<p><b>2. \(\Delta = 0\)</b></p>
 									<table class="table">
 									  <tr>
 									    <td style="border-right: 1px solid grey;">\(x\)</td>
@@ -348,7 +349,7 @@
 										<td>\(sgn(a)\)</td>
 									  </tr>
 									</table>
-									<p>3. \(\Delta > 0\)</p>
+									<p><b>3. \(\Delta > 0\)</b></p>
 									<table class="table">
 									  <tr>
 									    <td style="border-right: 1px solid grey;">\(x\)</td>
@@ -368,14 +369,14 @@
 									  </tr>
 									</table>
 								<h2>Observatii</h2>
-								<p>1. \(f(x) > 0 , \forall x \in \Bbb R \iff \begin{cases}a \gt 0 \\ \Delta \lt 0 \end{cases}\)</p>
-								<p>2. \(f(x) \ge 0 , \forall x \in \Bbb R \iff \begin{cases}a \gt 0 \\ \Delta \le 0 \end{cases}\)</p>
-								<p>3. \(f(x) \lt 0 , \forall x \in \Bbb R \iff \begin{cases}a \lt 0 \\ \Delta \lt 0 \end{cases}\)</p>
-								<p>4. \(f(x) \le 0 , \forall x \in \Bbb R \iff \begin{cases}a \lt 0 \\ \Delta \le 0 \end{cases}\)</p>
+								<p><b>1.</b> \(f(x) > 0 , \forall x \in \Bbb R \iff \begin{cases}a \gt 0 \\ \Delta \lt 0 \end{cases}\)</p>
+								<p><b>2.</b> \(f(x) \ge 0 , \forall x \in \Bbb R \iff \begin{cases}a \gt 0 \\ \Delta \le 0 \end{cases}\)</p>
+								<p><b>3.</b> \(f(x) \lt 0 , \forall x \in \Bbb R \iff \begin{cases}a \lt 0 \\ \Delta \lt 0 \end{cases}\)</p>
+								<p><b>4.</b> \(f(x) \le 0 , \forall x \in \Bbb R \iff \begin{cases}a \lt 0 \\ \Delta \le 0 \end{cases}\)</p>
 								<h2>Graficul</h2>
 								<p>Graficul functiei \(f : \Bbb R \rightarrow \Bbb R, f(x) = ax^2 + bx + c\) este o parabola de varf \(V\biggl(-\cfrac{b}{2a} , -\cfrac{\Delta}{4a}\biggr)\) si axa de simetrie \(x = -\cfrac{b}{2a}\), care are ramurile orientate in sus, daca \(a > 0\) , si in jos, daca \(a < 0\).</p>
 								<h2>Monotonia si punctele de extrem</h2>
-								<p>1.\(a > 0\)</p>
+								<p><b>1.\(a > 0\)</b></p>
 								<table class="table">
 									<tr>
 									  <td style="border-right: 1px solid grey;">\(x\)</td>
@@ -393,7 +394,7 @@
 								<br>
 								<div id="grafic1" style="width: 100%; height: 400px;"></div>
 								<br>
-								<p>2.\(a \lt 0\)</p>
+								<p><b>2.\(a \lt 0\)</b></p>
 								<table class="table">
 									<tr>
 									  <td style="border-right: 1px solid grey;">\(x\)</td>
@@ -418,16 +419,16 @@
 								<h2>Relatiile lui Viete</h2>
 								<p>Fie \(x_1, x_2\) solutiile ecuatiei \(ax^2 + bx + c = 0\). Atunci \(\begin{cases}x_1 + x_2 = -\cfrac{b}{a} \\ x_1x_2 = \cfrac{c}{a}\end{cases}\)</p>
 								<h2>Observatii</h2>
-								<p>1. \(x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1x_2\)</p>
+								<p><b>1.</b> \(x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2x_1x_2\)</p>
 								<p>\(x_1^3 + x_2^3 = (x_1 + x_2)^3 - 3x_1x_2(x_1 + x_2)\)	</p>
-								<p>2. Ecuatia de gradul 2 cu solutiile \(x_1\) si \(x_2\) este \(x^2 - Sx + P = 0\) , unde \(S = x_1 + x_2\) si \(P = x_1x_2\) </p>
+								<p><b>2.</b> Ecuatia de gradul 2 cu solutiile \(x_1\) si \(x_2\) este \(x^2 - Sx + P = 0\) , unde \(S = x_1 + x_2\) si \(P = x_1x_2\) </p>
 								<p></p>
 								<p></p>
                                  </div>
                               </div>
                            </div>
 						   <div class="panel panel-default">
-                              <!-- Ecuatii irationale --> 
+                              <!-- Puteri si radicali --> 
                               <div class="panel-heading text-center">
                                  <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#Algebra" href="#collapse1005">Puteri si radicali</a>
@@ -439,43 +440,73 @@
 									<p>Functi \(f : D \rightarrow \Bbb R , f(x) = \sqrt[n]{x}\), unde \(n \in \Bbb N , n \ge 2\) , si \(D = \Bbb R\), daca \(n\) este impar, respectiv \(D = [0 , + \infty]\) , daca n este par, se numeste functie radical de ordin n.</p>
 									<p>Functia radical de ordinul 2 este \(f : [0 , + \infty] \rightarrow \Bbb R , f(x) = \sqrt{x}\), iar functia radical de ordinul 3 este \(f : \Bbb R \rightarrow \Bbb R, f(x) = \sqrt[3]{x}\).</p>
 									<h2>Proprietati</h2>
-									<p>1. Functiile \(f , g : [0 , + \infty) \rightarrow [0 , + \infty), f(x) = x^{2n}\) si \(g(x) = \sqrt[2n]{x}\) , unde \(n \in \Bbb N^*\), sunt functii bijective, fiecare fiind inversa celeilalte.</p>
-									<p>2. Functiile \(f, g : \Bbb R \rightarrow \Bbb R, f(x) = x^{2n + 1}\) si \(g(x) = \sqrt[2n + 1]{x}\) , unde \(n \in \Bbb N^*\), sunt functii bijective, fiecare fiind inversa celeilalte.</p>
-									<p>3. Functia putere de exponent impar este strict crescatoare pe \(\Bbb R\). Functia putere de exponent par este strict descrescatoare pe \((- \infty , 0]\) si strict crescatoare pe \([0 , + \infty)\)</p>
-									<p>4. Functia radical de ordin impar este strict crescatoare pe \(\Bbb R\). Functia radical de ordin par este strict crescatoare pe \([0 , + \infty)\).</p>
-									<p>5. Functia radical de ordin impar este convexa pe \((- \infty , 0]\) si concava pe \([0 , + \infty)\). Functia radical de orin par este concava pe \([0 , + \infty)\).</p>
+									<p><b>1.</b> Functiile \(f , g : [0 , + \infty) \rightarrow [0 , + \infty), f(x) = x^{2n}\) si \(g(x) = \sqrt[2n]{x}\) , unde \(n \in \Bbb N^*\), sunt functii bijective, fiecare fiind inversa celeilalte.</p>
+									<p><b>2.</b> Functiile \(f, g : \Bbb R \rightarrow \Bbb R, f(x) = x^{2n + 1}\) si \(g(x) = \sqrt[2n + 1]{x}\) , unde \(n \in \Bbb N^*\), sunt functii bijective, fiecare fiind inversa celeilalte.</p>
+									<p><b>3.</b> Functia putere de exponent impar este strict crescatoare pe \(\Bbb R\). Functia putere de exponent par este strict descrescatoare pe \((- \infty , 0]\) si strict crescatoare pe \([0 , + \infty)\)</p>
+									<p><b>4.</b> Functia radical de ordin impar este strict crescatoare pe \(\Bbb R\). Functia radical de ordin par este strict crescatoare pe \([0 , + \infty)\).</p>
+									<p><b>5.</b> Functia radical de ordin impar este convexa pe \((- \infty , 0]\) si concava pe \([0 , + \infty)\). Functia radical de orin par este concava pe \([0 , + \infty)\).</p>
 									<h2>Proprietati ale puterilor</h2>
 									<p>Fie \(a , b \in \Bbb R^* , r,s \in \Bbb Q\).</p>
-									<p>1. \(a^0 = 1\) si \(1^s = 1\)</p>
-									<p>2. \(a^r \cdot a^s = a^{r + s}\)</p>
-									<p>3. \((a \cdot b)^s = a^s \cdot b^s\)</p>
-									<p>4. \((a^r)^s = a^{r \cdot s}\)</p>
-									<p>5. \(\cfrac{a^r}{a^s} = a^{r - s}\)</p>
-									<p>6. \(\biggr(\cfrac{a}{b}\biggl)^s = \cfrac{a^s}{b^s}\)</p>
-									<p>7. \(\begin{cases}a > 1,\: a^r \lt a^s \iff r \lt s \\ a \in (0 , 1), \: a^r \lt a^s \iff r \gt s\end{cases}\)</p>
+									<p><b>1.</b> \(a^0 = 1\) si \(1^s = 1\)</p>
+									<p><b>2.</b> \(a^r \cdot a^s = a^{r + s}\)</p>
+									<p><b>3.</b> \((a \cdot b)^s = a^s \cdot b^s\)</p>
+									<p><b>4.</b> \((a^r)^s = a^{r \cdot s}\)</p>
+									<p><b>5.</b> \(\cfrac{a^r}{a^s} = a^{r - s}\)</p>
+									<p><b>6.</b> \(\biggr(\cfrac{a}{b}\biggl)^s = \cfrac{a^s}{b^s}\)</p>
+									<p><b>7.</b> \(\begin{cases}a > 1,\: a^r \lt a^s \iff r \lt s \\ a \in (0 , 1), \: a^r \lt a^s \iff r \gt s\end{cases}\)</p>
 									<h2>Proprietate ale radicalilor</h2>
 									<p>Pentru \(a , b \in \Bbb R\) si \(n , k \in \Bbb N , n , k \ge 3\) impare sau pentru \(a \in [0 , + \infty) , b \in (0 , + \infty)\) si \(n , k \in \Bbb N^*\) numere pare, avem:</p>
-									<p>1. \(\sqrt[n]{x^n} = x\)</p>
-									<p>2. \(\sqrt[n]{a \cdot b} = \sqrt[n]{a} \cdot \sqrt[n]{b}\)</p>
-									<p>3. \(\sqrt[n]{\cfrac{a}{b}} = \cfrac{\sqrt[n]{a}}{\sqrt[n]{b}} , b \not = 0\)</p>
-									<p>4. \(\sqrt[n]{a} = \sqrt[n \cdot k]{a^k}\)</p>
-									<p>5. \(a^{\frac{n}{k}} = \sqrt[k]{a^n} , k \ge 2\)</p>
-									<p>6. \(\sqrt[n]{\sqrt[k]{a}} = \sqrt[n \cdot k]{a}\)</p>
-									<p>7. \(\sqrt[n]{a} \lt \sqrt[n]{b} \iff a \lt b\)</p>
+									<p><b>1.</b> \(\sqrt[n]{x^n} = x\)</p>
+									<p><b>2.</b> \(\sqrt[n]{a \cdot b} = \sqrt[n]{a} \cdot \sqrt[n]{b}\)</p>
+									<p><b>3.</b> \(\sqrt[n]{\cfrac{a}{b}} = \cfrac{\sqrt[n]{a}}{\sqrt[n]{b}} , b \not = 0\)</p>
+									<p><b>4.</b> \(\sqrt[n]{a} = \sqrt[n \cdot k]{a^k}\)</p>
+									<p><b>5.</b> \(a^{\frac{n}{k}} = \sqrt[k]{a^n} , k \ge 2\)</p>
+									<p><b>6.</b> \(\sqrt[n]{\sqrt[k]{a}} = \sqrt[n \cdot k]{a}\)</p>
+									<p><b>7.</b> \(\sqrt[n]{a} \lt \sqrt[n]{b} \iff a \lt b\)</p>
                                  </div>
                               </div>
                            </div>
                            <div class="panel panel-default">
-                              <!-- Exponentiala si logaritmica --> 
+                              <!-- Exponenti si logaritmi --> 
                               <div class="panel-heading text-center">
                                  <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#Algebra" href="#collapse1006">Exponenti si logaritmi</a>
                                  </h4>
                               </div>
-                              <div id="collapse1006" class="panel-collapse collapse in">
+                              <div id="collapse1006" class="panel-collapse collapse">
                                  <div class="panel-body">
-									<h2>1. Logaritmi</h2>
-                                 </div>
+									<h1>1. Logaritmi</h1>
+									<h2>Definitie</h2>
+									<p>Fie \(a > 0 , a \not = 1\) si \(x > 0\). Unicul numar real \(y\) cu proprietatea \(a^y = x\) se numeste logaritmul numarului \(x\) in baza \(a\) si se noteaza \(\log_a^x\)</p>
+									<p>Cu alte cuvinte, \(\log_a^x = y\) daca si numai daca \(a^y = x\)</p>
+									<h2>Observatii</h2>
+									<p><b>1.</b> Dca \(a = 10\), numarul \(\log_{10}^x = \lg x\) se numeste logaritmul zecimal al lui \(x\).</p>
+									<p><b>2.</b> Daca \(a = e\), numarul \(\log_e^x = \ln x\) se numeste logaritmul natural al lui \(x\)</p>
+									<h2>Proprietatile logaritmilor</h2>
+									<p><b>1.</b> \(a^{\log_a^x} = x , \forall x > 0\)</p>
+									<p><b>2.</b> \(\log_a^{a^x} = x , \forall x \in \Bbb R\)</p>
+									<p><b>3.</b> \(\log_a^a = 1 , \forall a \gt 0 , a \not = 1\)</p>
+									<p><b>4.</b> \(\log_a^1 = 0 , \forall a \gt 0, a \not = 1\)</p>
+									<p><b>5.</b> \(x^{\log_a^y} = y^{\log_a^x}\)</p>
+									<h2>Operatii cu logaritmi</h2>
+									<p><b>1.</b> \(\log_a^x + \log_a^y = \log_a(xy), \forall x , y \gt 0\)</p>
+									<p><b>2.</b> \(\log_a^x - \log_a^y = \log_a\biggl(\cfrac{x}{y}\biggr) , \forall x,y \gt 0\)</p>
+									<p><b>3.</b> \(\log_a^{x^p} = p \log_a^x , \forall x \gt 0 , \forall p \in \Bbb R\)</p>
+									<p><b>4.</b> \(\log_{a^p}x = \cfrac{1}{p}\log_ax, \forall x \gt 0 , \forall p \in \Bbb R^*\)</p>
+									<h2>Schimbarea bazei unui logaritm</h2>
+									<p><b>1.</b> \(\log_ax = \cfrac{\log_bx}{\log_ba} , \forall a,b,x \gt 0 , a,b \not = 1\)</p>
+									<p>Consecinta: \(\log_ax = \cfrac{\lg x}{\lg a} = \cfrac{\ln x}{\ln a}\)</p>
+									<p><b>2.</b> \(\log_ab \cdot \log_bc = \log_ac , \forall a,b,c \gt 0 , a,b \not = 1\)</p>
+									<p><b>3.</b> \(\log_ab = \cfrac{1}{\log_ba} , \forall a,b \gt 0 , a,b \not = 1\)</p>
+									<h1><b>2.</b> Functia exponentiala si functia logaritmica</h1>
+									<p>Functia exponentiala de baza \(a (a \gt 0 , a \not = 1)\) , este functia \(f : \Bbb R \rightarrow (0 , + \infty) , f(x) = a^x\)</p>
+									<p>Functia logaritmica de baza \(a (a \gt 0 , a \not = 1)\), este functia \(g : (0 , + \infty) \rightarrow \Bbb R , g(x) = \log_ax\)</p>
+									<h2>Proprietati</h2>
+									<p><b>1.</b> Functiile exponentiala de baza \(a\) si logaritmica de baza \(a\) sunt functii bijective, fiecare fiind inversa celeilalte.</p>
+									<p><b>2.</b> Functiile exponentiala de baza \(a\) si logaritmica de baza \(a\) sunt functii strict crescatoare, daca \(a \gt 1\), si strict descrescatoare, daca \(a \in (0 , 1)\) </p>
+									<p><b>3.</b> Functia exponentiala de baza \(a\) este convexa pentru orice \(a \in (0 , 1)\cup(1 , + \infty)\)</p>
+									<p>Functia logaritmica de baza \(a\) este concava, daca \(a \gt 1\) si convexa daca \(a \in (0 , 1)\).</p>
+								</div>
                               </div>
                            </div>
 						   

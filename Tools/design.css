@@ -1,0 +1,25 @@
+.panel-body > h1
+{
+	font-weight: bold;
+}
+
+.panel-body > h2
+{
+	color: #3477eb;
+	font-weight: bold;
+}
+
+.panel-body > p > b
+{
+	color: #3477eb;
+}
+
+*
+{
+	text-shadow: 1px 1px 1px #AAA;
+}
+
+.jumbotron h1
+{
+	font-weight: bold;
+}
