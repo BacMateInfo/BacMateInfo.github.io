@@ -130,24 +130,24 @@
                                     <h2>Definitie</h2>
                                     <p>Modulul numarului real x este numarul \(|x| = \begin{cases} x, daca \: x \ge 0 \\ -x, daca \: x &#60; 0 \end{cases}\)</p>
                                     <h2>Proprietati</h2>
-                                    <p><b>1.</b> \(|x| \ge 0, &#8704; x &#8714; &#8477; ; &#xa0;  |x| = 0 &#8660; x = 0;\)</p>
-                                    <p><b>2.</b>\(|x \cdot y| = |x| \cdot |y|, &#8704; x,y &#8714; &#8477; ;\) </p>
-                                    <p><b>3.</b>\(|x + y| \le |x| + |y|, &#8704; x,y &#8714; &#8477; .\)</p>
+                                    <p><b>1.</b> \(|x| \ge 0, \forall x \in \Bbb R , &#xa0;  |x| = 0 \iff x = 0;\)</p>
+                                    <p><b>2.</b>\(|x \cdot y| = |x| \cdot |y|, \forall x,y \in \Bbb R ;\) </p>
+                                    <p><b>3.</b>\(|x + y| \le |x| + |y|, \forall x,y \in \Bbb R .\)</p>
                                     <h1>Partea intreaga si partea fractionara a unui numar real</h1>
                                     <h2>Definitie</h2>
-                                    <p>Fie \(x &#8714; &#8477;\). Cel mai mare numar intreg mai mic sau egal cu x se numeste partea intreaga a lui x. Se noteaza: \([x]= max\)  &#123; \(p &#8714; &#x2124;  | p \le x\) &#125;.</p>
+                                    <p>Fie \(x \in \Bbb R\). Cel mai mare numar intreg mai mic sau egal cu x se numeste partea intreaga a lui x. Se noteaza: \([x]= max\)  &#123; \(p \in \Bbb Z  | p \le x\) &#125;.</p>
                                     <p>Numarul real &#123; \(x\) &#125; = \(x-[x]\) se numeste partea fractionara a lui x.</p>
                                     <h2>Proprietati</h2>
-                                    <p><b>1a.</b> \([x] \le x\) \(&#60; [x] +1 , &#8704; x &#8714; &#8477; ;\)</p>
-                                    <p><b>1b.</b> \(\{x\}\) \(&#8714;[0,1),&#8704; x &#8714; &#8477; ;\)</p>
-                                    <p><b>2a.</b> \(x-1 &#60; [x] \le x, &#8704; x &#8714; &#8477; ;\)</p>
-                                    <p><b>2b.</b> \(\{x\}\) = 0 &#8660; \(x &#8714; &#x2124; ;\)</p>
-                                    <p><b>3a.</b> \([x]=x &#8660; x &#8714; &#x2124; ;\)</p>
-                                    <p><b>3b.</b> \(\{x\}\) = \(\{y\}\) &#8660; \(x-y\) &#8714; &#x2124; ;</p>
-                                    <p><b>4a.</b> \([x+n]=[x]+n &#8660; n &#8714; &#x2124; ;\)</p>
-                                    <p><b>4b.</b> &#123;\(x+n\)&#125; = \(\{x\}\) &#8660; n &#8714; &#x2124; .</p>
+                                    <p><b>1a.</b> \([x] \le x\) \(&#60; [x] +1 , \forall x \in \Bbb R ;\)</p>
+                                    <p><b>1b.</b> \(\{x\}\) \(\in[0,1),\forall x \in \Bbb R ;\)</p>
+                                    <p><b>2a.</b> \(x-1 &#60; [x] \le x, \forall x \in \Bbb R ;\)</p>
+                                    <p><b>2b.</b> \(\{x\}\) = 0 \(\iff\) \(x \in \Bbb Z ;\)</p>
+                                    <p><b>3a.</b> \([x]=x \iff x \in \Bbb Z ;\)</p>
+                                    <p><b>3b.</b> \(\{x\}\) = \(\{y\}\) \(\iff\) \(x-y\) \(\in \Bbb Z\)</p>
+                                    <p><b>4a.</b> \([x+n]=[x]+n \iff n \in \Bbb Z ;\)</p>
+                                    <p><b>4b.</b> &#123;\(x+n\)&#125; = \(\{x\}\) \(\iff n \in \Bbb Z\) .</p>
                                     <h2>Identitatea lui Hermite</h2>
-                                    <p> \([x] + [x+\cfrac{1}{n}] + [x+\cfrac{2}{n}] + ... + [x+\cfrac{n-1}{n}] = [n-x], &#8704; x &#8714; &#8477; , &#8704; x &#8714; &#8469;\)*\&#123;1&#125;.</p>
+                                    <p> \([x] + \biggl[x+\cfrac{1}{n}\biggr] + \biggl[x+\cfrac{2}{n}\biggr] + ... + \biggl[x+\cfrac{n-1}{n}\biggr] = [n-x], \forall x \in \Bbb R , \forall x \in \Bbb N^* \setminus \{1\}\).</p>
                                  </div>
                               </div>
                            </div>
@@ -170,25 +170,25 @@
                                     <p>strict descrescator, daca \( x_{n} &#62; x_{n+1}\) pentru orice \(n \ge 1\).</p>
                                     <h2>Definitie</h2>
                                     <p>Sirul de numere reale \( (x_{n})_{n \ge 1}\) este:</p>
-                                    <p>marginit inferior, daca exista un numar real m astfel incat \( (x_{n}) \ge m\) , &#8704; \(n \ge 1\),</p>
-                                    <p>marginit superior, daca exista un numar real M astfel incat \( (x_{n}) \le M\) , &#8704; \(n \ge 1\).</p>
+                                    <p>marginit inferior, daca exista un numar real m astfel incat \( (x_{n}) \ge m\) , \forall \(n \ge 1\),</p>
+                                    <p>marginit superior, daca exista un numar real M astfel incat \( (x_{n}) \le M\) , \forall \(n \ge 1\).</p>
                                     <p>Un sir \( (x_{n})_{n \ge 1}\) marginit atat inferior cat si superior se numeste sir marginit.</p>
                                     <!--Progresii aritmetice-->
                                     <h1>2. Progresii aritmetice</h1>
                                     <h2>Definitie</h2>
-                                    <p>Sirul de numere reale \( (a_{n})_{n \ge 1}\) este o progresie aritmetica de ratie r, daca \(a_{n+1} - a_{n} = r\), &#8704; \(n \ge 1\) (adica diferenta oricaror doi termeni consecutivi este constanta).</p>
+                                    <p>Sirul de numere reale \( (a_{n})_{n \ge 1}\) este o progresie aritmetica de ratie r, daca \(a_{n+1} - a_{n} = r\), \forall \(n \ge 1\) (adica diferenta oricaror doi termeni consecutivi este constanta).</p>
                                     <h2>Proprietati ale progresiilor aritmetice</h2>
-                                    <p><b>1.</b> \( a_{n}=a_{1}+(n-1)\cdot r\), &#8704; \(n \ge 1\)</p>
-                                    <p><b>2.</b> \(a_{n} = \cfrac {a_{n-1} + a_{n+1}}{2} , &#8704; n \ge 2\)</p>
-                                    <p><b>3.</b> \(S_{n}= \cfrac{n(a_{1}+a_{n})}{2}=na_{1} + r\cfrac{n(n-1)}{2}\),&#8704; \(n \ge 1\), unde \(S_{n} = a_{1} + a_{2} + ... + (a_{n})\)</p>
-                                    <p><b>4.</b> \(n = \cfrac{a_{n} - a_{1}}{r} + 1\), &#8704; \(n \ge 1\) , r &#8800; 0</p>
+                                    <p><b>1.</b> \( a_{n}=a_{1}+(n-1)\cdot r\), \forall \(n \ge 1\)</p>
+                                    <p><b>2.</b> \(a_{n} = \cfrac {a_{n-1} + a_{n+1}}{2} , \forall n \ge 2\)</p>
+                                    <p><b>3.</b> \(S_{n}= \cfrac{n(a_{1}+a_{n})}{2}=na_{1} + r\cfrac{n(n-1)}{2}\),\forall \(n \ge 1\), unde \(S_{n} = a_{1} + a_{2} + ... + (a_{n})\)</p>
+                                    <p><b>4.</b> \(n = \cfrac{a_{n} - a_{1}}{r} + 1\), \forall \(n \ge 1\) , r &#8800; 0</p>
                                     <!--Progresii geometrice-->
                                     <h1>3. Progresii geometrice</h1>
                                     <h2>Definitie</h2>
                                     <p>Sirul de numere reale nenule \( (x_{n})_{n \ge 1}\) este o progresie geometrica de ratie q daca \(b_{n+1}=b_{n} \cdot q\) (adica raportul oricaror doi termeni consecutivi este constant).</p>
                                     <h2>Proprietati ale progresiilor geometrice</h2>
-                                    <p><b>1.</b> \(b_{n}=b_{1} \cdot q_{n-1}\), &#8704; \(n \ge 1\).</p>
-                                    <p><b>2.</b> \(b^2_{n}=b_{n-1} \cdot b_{n+1}\), &#8704; \(n \ge 2\)</p>
+                                    <p><b>1.</b> \(b_{n}=b_{1} \cdot q_{n-1}\), \forall \(n \ge 1\).</p>
+                                    <p><b>2.</b> \(b^2_{n}=b_{n-1} \cdot b_{n+1}\), \forall \(n \ge 2\)</p>
                                     <p><b>3.</b> \(S_{n}= \begin{cases} b_{1}\cfrac{q^n-1}{q-1}, q &#8800; 1 \\ nb_{1}, q &#61; 1 \end{cases}\) ,unde \(S_{n} = b_{1} + b_{2} + ... + b_{n}\).</p>
                                  </div>
                               </div>
@@ -202,30 +202,30 @@
                               </div>
                               <div id="collapse1003" class="panel-collapse collapse">
                                  <div class="panel-body">
-                                    <p>Fie A si B doua multimi nevide. Spunem ca \(f:A->B\) este daca fiecarui element \(x &#8714; A\)  ii corespunde un element \(f(x) &#8714; B\).</p>
+                                    <p>Fie A si B doua multimi nevide. Spunem ca \(f:A->B\) este daca fiecarui element \(x \in A\)  ii corespunde un element \(f(x) \in B\).</p>
                                     <p>A se numeste domeniul functiei f, iar B se numeste codomeniul functiei f. Doua functii sunt egale daca au acelasi domeniu, acelasi codomeniu si aceiasi lege de definitie.</p>
-                                    <p>Graficul functiei \(f:A->B\) este multimea \(G_{f}=\{(x,f(x))|x &#8714; A\} &#8834; A &#215; B.\)</p>
-                                    <p>Imaginea functiei \(f:A->B\) sau multimea valorilor functiei f este multimea \(Im f = \{y &#8714; B| &#8707; x &#8714; A, f(x)=y\} = \{f(x)|x &#8714; A\}\).</p>
+                                    <p>Graficul functiei \(f:A->B\) este multimea \(G_{f}=\{(x,f(x))|x \in A\} &#8834; A &#215; B.\)</p>
+                                    <p>Imaginea functiei \(f:A->B\) sau multimea valorilor functiei f este multimea \(Im f = \{y \in B| &#8707; x \in A, f(x)=y\} = \{f(x)|x \in A\}\).</p>
                                     <h2>Observatii</h2>
-                                    <p><b>1.</b> \(M(u,v)&#8714;G_{f} &#8660; f(u)=v\).</p>
-                                    <p><b>2.</b> Functia identica a multimii A este \(l_{A}:A->A, l_{A}(x)=x, &#8704; x &#8714; A\).</p>
+                                    <p><b>1.</b> \(M(u,v)\inG_{f} \iff f(u)=v\).</p>
+                                    <p><b>2.</b> Functia identica a multimii A este \(l_{A}:A->A, l_{A}(x)=x, \forall x \in A\).</p>
                                     <!--Operatii cu functii-->
                                     <h1>1. Operatii cu functii</h1>
                                     <h2>Definitie</h2>
-                                    <p>Fie \(D &#8838; &#8477;\) o multime nevida si functiile \(f,g:D-> &#8477; \). Atunci: </p>
-                                    <p>suma functiilor f si g este functia \(f+g:D->&#8477; , (f+g)(x)=f(x)+g(x);\)</p>
-                                    <p>produsul functiilor f si g este functia \(f \cdot g:D->&#8477; , (f \cdot g)(x)=f(x) \cdot g(x)\);</p>
-                                    <p>daca \(g(x) &#8800; 0, &#8704; x &#8714; D\), catul functiilor f si g este functia \(\cfrac{f}{g}:D->&#8477; , (\cfrac{f}{g})(x)=\cfrac{f(x)}{g(x)}\).</p>
+                                    <p>Fie \(D &#8838; \Bbb R\) o multime nevida si functiile \(f,g:D-> \Bbb R \). Atunci: </p>
+                                    <p>suma functiilor f si g este functia \(f+g:D->\Bbb R , (f+g)(x)=f(x)+g(x);\)</p>
+                                    <p>produsul functiilor f si g este functia \(f \cdot g:D->\Bbb R , (f \cdot g)(x)=f(x) \cdot g(x)\);</p>
+                                    <p>daca \(g(x) &#8800; 0, \forall x \in D\), catul functiilor f si g este functia \(\cfrac{f}{g}:D->\Bbb R , (\cfrac{f}{g})(x)=\cfrac{f(x)}{g(x)}\).</p>
                                     <!--Compunerea functiilor-->
                                     <h2>Compunerea functiilor</h2>
                                     <p>Fie \(f:A->B\) si \(g:B->C\) doua functii.</p>
-                                    <p>Functia \(g &#8728; f:A->C, (g &#8728; f)(x)=g(f(x)), &#8704; x &#8712; A\), se numeste compunerea functiilor g si f.</p>
+                                    <p>Functia \(g &#8728; f:A->C, (g &#8728; f)(x)=g(f(x)), \forall x &#8712; A\), se numeste compunerea functiilor g si f.</p>
                                     <h2>Observatie</h2>
                                     <p>Compunerea functiilor este asociativa, dar nu este comutativa.</p>
 									<!--Monotonia functiilor-->
                                     <h1>2. Monotonia functiilor</h1>
                                     <h2>Definitie</h2>
-                                    <p>Fie D &#8838; &#8477; o multime nevida. Functia \(f:D->&#8477;\) este monoton (strict) crescatoare daca pentru oricare \(x,y &#8712; D, x &#60; y\) avem \(f(x) \le f(y) (f(x) \lt f(y))\).</p>
+                                    <p>Fie D &#8838; \Bbb R o multime nevida. Functia \(f:D->\Bbb R\) este monoton (strict) crescatoare daca pentru oricare \(x,y &#8712; D, x &#60; y\) avem \(f(x) \le f(y) (f(x) \lt f(y))\).</p>
 									<p>Functia \(f:D-> \Bbb R \) este monoton (strict) descrescatoare daca pentru orice \(x,y &#8712; D, x \lt y\), avem \(f(x) \ge f(y) (f(x) \gt f(y))\).</p>
 									<h2>Observatii</h2>
 									<p><b>1.</b> Daca raportul de variatie \(R_{f}(x,y)= \cfrac{f(x)-f(y)}{x-y} \gt 0, \forall x,y \in D, x\not= y\), atunci functia \(f\) este strict crescatoare, iar daca \(R_{f}(x,y) \lt 0, \forall x \not= y\), atunci \(f\) este strict descrescatoare.</p>
@@ -233,11 +233,11 @@
 									<!--Functii pare, impare, periodice-->
 									<h1>3. Functii pare, impare, periodice</h1>
 									<h2>Definitie</h2>
-									<p>Fie D &#8838; &#8477; o multime nevida centrata in origine \((\forall x \in D &#8660; -x \in D)\).</p>
+									<p>Fie D &#8838; \Bbb R o multime nevida centrata in origine \((\forall x \in D \iff -x \in D)\).</p>
 									<p>a. Functia \(f:D-> \Bbb R\) este functie para daca \(f(-x)=f(x), \forall x \in D\).</p>
 									<p>a. Functia \(f:D-> \Bbb R\) este functie impara daca \(f(-x)=-f(x), \forall x \in D\).</p>
 									<h2>Proprietati</h2>
-									<p><b>1.</b> Daca \(f:D->\Bbb R\) este o functie impara si 0 \in D, atunci \(f(0)=0 &#8660; O(0,0) \in G_{f}.\)</p>
+									<p><b>1.</b> Daca \(f:D->\Bbb R\) este o functie impara si 0 \in D, atunci \(f(0)=0 \iff O(0,0) \in G_{f}.\)</p>
 									<p><b>2.</b> Suma \(f+g:D-> \Bbb R\) a doua functii pare (respectiv impare) \(f,g:D-> \Bbb R\) este tot o functie para(respectiv impara).</p>
 									<p><b>3.</b> Produsul/catul a doua functii pare/impare este o functie para. Produsul/catul dintre o functie para si una impara este o functie impara.</p>
 									<p><b>4.</b> Compunerea a doua functii pare/impare este o functie para. Compunerea dintre o functie para si una impara este o functie impara.</p>
@@ -268,7 +268,7 @@
 									<p><b>a.</b> \(Im f=B\)</p>
 									<p><b>b.</b> Pentru orice \(y \in B\), ecuatia f(x)=y are cel putin o solutie \(x \in A\)</p>
 									<p><b>3.</b> Functia \(f:A->B\) este bijectiva daca oricarui element \(y \in B\) ii corespunde un unic element \(x \in A\), astfel incat \(f(x)=y\).</p>
-									<p><b>4.</b> Functia \(f:A->B\) este inversabila daca exista o functie \(g:B->A\) astfel incat \(g &#8728; f = l_{A}\) si \(f &#8728; g = l_{B}\). Se noteaza \(g=f_{-1}\) si se spune ca g este inversa functiei f. Are loc echivalenta \(f(x)=y &#8660; x=f_{-1}(y)\), unde \(x \in A\) si \(y \in B\).</p>
+									<p><b>4.</b> Functia \(f:A->B\) este inversabila daca exista o functie \(g:B->A\) astfel incat \(g &#8728; f = l_{A}\) si \(f &#8728; g = l_{B}\). Se noteaza \(g=f_{-1}\) si se spune ca g este inversa functiei f. Are loc echivalenta \(f(x)=y \iff x=f_{-1}(y)\), unde \(x \in A\) si \(y \in B\).</p>
 									<p><b>5.</b> O functie este inversabila daca si numai daca este bijectiva.</p>
                                  </div>
                               </div>
