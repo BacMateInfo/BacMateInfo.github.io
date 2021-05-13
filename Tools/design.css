@@ -1,12 +1,19 @@
 .panel-body > h1
 {
+	font-size: 25px !important;
 	font-weight: bold;
 }
 
 .panel-body > h2
 {
+	font-size: 20px !important;
 	color: #3477eb;
 	font-weight: bold;
+}
+
+.panel-body > p
+{
+	font-size: 17px !important;
 }
 
 .panel-body > p > b
@@ -24,14 +31,14 @@
 	font-weight: bold;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 	.panel-body > h1
 	{
-		font-size: 25px !important;
+		font-size: 20px !important;
 	}
 	.panel-body > h2
 	{
-		font-size: 20px !important;
+		font-size: 17px !important;
 	}
 	.panel-body > p
 	{
