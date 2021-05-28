@@ -1016,7 +1016,7 @@
                                     <a data-toggle="collapse" data-parent="#Analiza" href="#collapse31">Limite</a>
                                  </h4>
                               </div>
-                              <div id="collapse31" class="panel-collapse collapse in">
+                              <div id="collapse31" class="panel-collapse collapse">
                                  <div class="panel-body">
 								    <h1>1. Siruri de numere reale</h1>
 									<h2>Siruri marginite</h2>
@@ -1153,11 +1153,52 @@
                                     <a data-toggle="collapse" data-parent="#Analiza" href="#collapse32">Primitive</a>
                                  </h4>
                               </div>
-                              <div id="collapse32" class="panel-collapse collapse">
+                              <div id="collapse32" class="panel-collapse collapse in">
                                  <div class="panel-body">
-                                    <p><b></b></p>
-									<p><b></b></p>
-									<p><b></b></p>
+                                    <h1>Primitive</h1>
+									<p><b>Definitie. </b>Fie \(I \subset \Bbb R\) un interval. Spunem ca functia \(f : I \rightarrow \Bbb R\) admite primitive daca exista o functie derivabila \(F : I \rightarrow \Bbb R\) astfel incat \({F' = f}\).</p>
+									<h2>Observatii</h2>
+									<p><b>1. </b>Daca functia \(f : I \rightarrow \Bbb R\) admite o primitiva, atunci exista o infinitate de primitive ale sale. Multimea acestor primitive se noteaza cu \(\int f(x) dx\)</p>
+									<p><b>2. </b>Daca \(F : I \rightarrow \Bbb R\) este o primitiva a functiei \(f : i \rightarrow \Bbb R\), atunci \(\int f(x)dx = F(x) + C\), unde \(C\) este multimea functiilor reale constante.</p>
+									<p><b>3. </b>Orice functie continua \(f : I \ rightarrow \Bbb R\) admite primitive.</p>
+									<p><b>4. </b>Orice functie \(f : I \rightarrow \Bbb R\) care admite primitive are proprietatea lui Darboux. Daca \(f\) nu are proprietatea lui Darboux pe intervalul \(I\), atunci nu admite primitive pe \(I\).</p>
+									<p><b>5. </b>Daca o functie \(f : I \rightarrow \Bbb R\) are un punct de discontinuitate de speta I, atunci \(f\) nu admite primitive.</p>
+									<h2>Proprietati</h2>
+									<p>Fie \(f , g : I \rightarrow \Bbb R\) doua functii care admit primitive.</p>
+									<p><b>1. </b>Daca functia \(f : I \rightarrow \Bbb R\) este derivabila pe \(I\), atunci \(\int f'(x)dx = f(x) + C\)</p>
+									<p><b>2. </b>\(\int (\alpha f(x) + \beta g(x))dx = \alpha \int f(x)dx + \beta \int g(x)dx\).</p>
+									<p><b>3.Formula de integrare prin parti: </b>\(\int f'(x)g(x)dx = f(x)g(x) - \int f(x)g'(x)dx\).</p>
+									<h1>Formule utile</h1>
+									<p><b>1. </b>\(\int a d x=a x+C, a \in \mathbb{R}, D=\mathbb{R}\)</p>
+									<p><b>2. </b>\(\int x^{a} d x=\cfrac{x^{a+1}}{a+1}+C, a \in \mathbb{R} \backslash\{-1\}, D=(0,+\infty) .\)</p>
+									<p><b>2.1. </b>\(\int x d x=\cfrac{x^{2}}{2}+C, D=\mathbb{R}\)</p>
+									<p><b>2.2. </b>\(\int \sqrt{x} d x=\frac{2}{3} x \sqrt{x}+C, D=[0,+\infty) .\)</p>
+									<p><b>2.3. </b>\(\int \sqrt[3]{x} d x=\cfrac{3}{4} x \sqrt[3]{x}+C, D=\mathbb{R}\)</p>
+									<p><b>2.4. </b>\(\int \cfrac{1}{\sqrt{x}} d x=2 \sqrt{x}+C, D=(0,+\infty)\)</p>
+									<p><b>2.5. </b>\(\int \cfrac{1}{\sqrt{x+a}} d x=2 \sqrt{x+a}+C, a \in \mathbb{R}, D=(-a,+\infty) \text { . }\)</p>
+									<p><b>3. </b>\(\int a^{x} d x=\cfrac{a^{x}}{\ln a}+C, a \in(0,+\infty) \backslash\{1\}, D=\mathbb{R} .\)</p>
+									<p><b>3.1. </b>\(\int e^{x} d x=e^{x}+C, D=\mathbb{R}\)</p>
+									<p><b>3.2. </b>\(\int e^{a x} d x=\cfrac{1}{a} e^{a x}+C, a \in \mathbb{R}^{*}, D=\mathbb{R} .\)</p>
+									<p><b>4. </b>\(\int \cfrac{1}{x+a} d x=\ln |x+a|+C, a \in \mathbb{R}, D=\mathbb{R} \backslash\{-a\} .\)</p>
+									<p><b>4.1. </b>\(\int \cfrac{1}{x} d x=\ln |x|+C, D=\mathbb{R}^{\bullet} .\)</p>
+									<p><b>4.2. </b>\(\int \cfrac{1}{a x+b} d x=\cfrac{1}{a} \ln |a x+b|+C, a \in \mathbb{R}^{*}, b \in \mathbb{R}\)</p>
+									<p><b>5. </b>\(\int \cfrac{1}{x^{2}-a^{2}} d x=\cfrac{1}{2 a} \ln \left|\cfrac{x-a}{x+a}\right|+C, a \in \mathbb{R}^{*}, D=\mathbb{R} \backslash\{\pm a\} .\)</p>
+									<p><b>5.1. </b>\(\int \cfrac{x}{x^{2}-a^{2}} d x=\cfrac{1}{2} \ln \left|x^{2}-a^{2}\right|+C, a \in \mathbb{R}^{*}, D=\mathbb{R} \backslash\{\pm a\} .\)</p>
+									<p><b>6. </b>\(\int \cfrac{1}{x^{2}+a^{2}} d x=\cfrac{1}{a} \operatorname{arctg} \cfrac{x}{a}+C a \in \mathbb{R}^{*}, D=\mathbb{R}\)</p>
+									<p><b>6.1. </b>\(\int \cfrac{1}{x^{2}+1c} d x=\operatorname{arctg} x+C, D=\mathbb{R}\)</p>
+									<p><b>6.2. </b>\(\int \cfrac{x}{x^{2}+a^{2}} d x=\cfrac{1}{2} \ln \left(x^{2}+a^{2}\right)+C, a \in \mathbb{R}^{*}\)</p>
+									<p><b>7. </b>\(\int \cfrac{1}{\sqrt{x^{2}+a^{2}}} d x=\ln \left(x+\sqrt{x^{2}+a^{2}}\right)+C a \in \mathbb{R}, D=\mathbb{R}\)</p>
+									<p><b>7.1. </b>\(\int \cfrac{x}{\sqrt{x^{2}+a^{2}}} d x=\sqrt{x^{2}+a^{2}}+C, a \in \mathbb{R}^{*}, D=\mathbb{R}\)</p>
+									<p><b>8. </b>\(\int \cfrac{1}{\sqrt{x^{2}-a^{2}}} d x=\ln \left|x+\sqrt{x^{2}-a^{2}}\right|+C, a \in(0,+\infty), D=(-\infty,-a) \cup(a,+\infty) .\)</p>
+									<p><b>8.1. </b>\(\int \cfrac{x}{\sqrt{x^{2}-a^{2}}} d x=\sqrt{x^{2}-a^{2}}+C, a \in \mathbb{R}^{*}, D=(-\infty,-a) \cup(a,+\infty) .\)</p>
+									<p><b>9. </b>\(\int \cfrac{1}{\sqrt{a^{2}-x^{2}}} d x=\arcsin \cfrac{x}{a}+C, a \in(0,+\infty), D=(-a, a)\)</p>
+									<p><b>9.1. </b>\(\int \cfrac{x}{\sqrt{a^{2}-x^{2}}} d x=-\sqrt{a^{2}-x^{2}}+C, a \in \mathbb{R}^{*}, D=(-a, a) .\)</p>
+									<p><b>10. </b>\(\int \sin x d x=-\cos x+C, D=\mathbb{R}\)</p>
+									<p><b>11. </b>\(\int \cos x d x=\sin x+C, D=\mathbb{R}\)</p>
+									<p><b>12. </b>\(\int \operatorname{tg} x d x=-\ln |\cos x|+C, D=\mathbb{R} \backslash\left\{\cfrac{(2 k+1) \pi}{2} \mid k \in \mathbb{Z}\right\}\)</p>
+									<p><b>13. </b>\(\int \operatorname{ctg} x d x=\ln |\sin x|+C, D=\mathbb{R} \backslash\{k \pi \mid k \in \mathbb{Z}\} .\)</p>
+									<p><b>14. </b>\(\int \cfrac{1}{\sin ^{2} x} d x=-\operatorname{ctg} x+C, D=\mathbb{R} \backslash\{k \pi \mid k \in \mathbb{Z}\}\)</p>
+									<p><b>15. </b>\(\int \cfrac{1}{\cos ^{2} x} d x=\operatorname{tg} x+C, D=\mathbb{R} \backslash\left\{\cfrac{(2 k+1) \pi}{2} \mid k \in \mathbb{Z}\right\}\)</p>
 									<!--<a class="btn btn-default" style="float: left;" href="S1/EcuatiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>-->
                                  </div>
                               </div>
@@ -1171,7 +1212,8 @@
                               </div>
                               <div id="collapse33" class="panel-collapse collapse">
                                  <div class="panel-body">
-                                    <p><b></b></p>
+                                    <h1>Functii integrabile</h1>
+									<p>Fie \(a , b \in \Bbb R , a \lt b , \Delta = (a = x_0 \lt x_1 \lt x_2 \lt ... \lt x_n = b)\) o diviziune a intervalului \([a , b]\) si </p>
 									<p><b></b></p>
 									<p><b></b></p>
 									<!--<a class="btn btn-default" style="float: left;" href="S1/EcuatiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>-->
