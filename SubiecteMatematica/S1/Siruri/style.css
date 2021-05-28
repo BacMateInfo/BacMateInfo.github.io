@@ -109,6 +109,14 @@
 	background: grey;
 }
 
+.determinant
+{
+	margin: 2vh 2vw;
+	font-size: 2vw;
+	border: 1px solid black;
+	background: grey;
+}
+
 .container
 {
 	position: absolute;
