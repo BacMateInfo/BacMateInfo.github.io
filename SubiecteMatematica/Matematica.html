@@ -189,8 +189,10 @@
                                     <h2>Proprietati ale progresiilor geometrice</h2>
                                     <p><b>1.</b> \(b_{n}=b_{1} \cdot q_{n-1}\), \forall \(n \ge 1\).</p>
                                     <p><b>2.</b> \(b^2_{n}=b_{n-1} \cdot b_{n+1}\), \forall \(n \ge 2\)</p>
-                                    <p><b>3.</b> \(S_{n}= \begin{cases} b_{1}\cfrac{q^n-1}{q-1}, q &#8800; 1 \\ nb_{1}, q &#61; 1 \end{cases}\) ,unde \(S_{n} = b_{1} + b_{2} + ... + b_{n}\).</p>
-                                 </div>
+									<p><b>3.</b> \(S_{n}= \begin{cases} b_{1}\cfrac{q^n-1}{q-1}, q &#8800; 1 \\ nb_{1}, q &#61; 1 \end{cases}\) ,unde \(S_{n} = b_{1} + b_{2} + ... + b_{n}\).</p>
+                                 	<a class="btn btn-default" style="float: right;" href="S1/Progresiiaritmetice/Tool-uri.html">Unelte</a>
+
+								 </div>
                               </div>
                            </div>
                            <div class="panel panel-default">
@@ -207,7 +209,7 @@
                                     <p>Graficul functiei \(f:A->B\) este multimea \(G_{f}=\{(x,f(x))|x \in A\} &#8834; A &#215; B.\)</p>
                                     <p>Imaginea functiei \(f:A->B\) sau multimea valorilor functiei f este multimea \(Im f = \{y \in B| &#8707; x \in A, f(x)=y\} = \{f(x)|x \in A\}\).</p>
                                     <h2>Observatii</h2>
-                                    <p><b>1.</b> \(M(u,v)\inG_{f} \iff f(u)=v\).</p>
+                                    <p><b>1.</b> \( M(u,v)\in G_{f} \iff f(u) = v \).</p>
                                     <p><b>2.</b> Functia identica a multimii A este \(l_{A}:A->A, l_{A}(x)=x, \forall x \in A\).</p>
                                     <!--Operatii cu functii-->
                                     <h1>1. Operatii cu functii</h1>
@@ -1006,7 +1008,7 @@
                         <a data-toggle="collapse" data-parent="#Subiectul2" href="#Analiza1">Analiza matematica (clasele XI - XII)</a>
                      </h4>
                   </div>
-                  <div id="Analiza1" class="panel-collapse collapse in">
+                  <div id="Analiza1" class="panel-collapse collapse">
                      <div class="panel-body">
 					   <div class="panel-group" id="Analiza">
 					     <div class="panel panel-default">
@@ -1032,7 +1034,7 @@
 									<p>Daca un sir are limita, atunci orice subsir al sau are aceeasi limita. Un sir care contine doua subsiruri cu limite diferite este divergent.</p>
 									<p><b>1. </b>Daca \((x_n)_{n \ge 1}\) este un sir strict crescator si nemarginit, atunci \(\lim_{n \rightarrow \infty}\cfrac{1}{x_n} = 0\)</p>
 									<p><b>2.Criteriul majorarii. </b>Fie \((a_n)_{n \ge 1}\) un sir cu termeni pozitivi, convergent la zero, si \((x_n)_{n \ge 1}\) un sir cu proprietatea ca exista \(\lambda \in \Bbb R\) astfel incat \(|x_n - \lambda| \le a_n\), pentru orice \(n \ge 1\). Atunci \((x_n)_{n \ge 1}\) este convergent si \(\lim_{n \rightarrow \infty}x_n = \lambda\).</p>
-									<p><b>Consecinta. </b>Fie \((a_n)_{n \ge 1}\) un sir convergent la zero si \((x_n)_{n \ge 1}\) un sir marginit. Atunci \(\lim_{n \righarrow \infty}a_nx_n = 0\).</p>
+									<p><b>Consecinta. </b>Fie \((a_n)_{n \ge 1}\) un sir convergent la zero si \((x_n)_{n \ge 1}\) un sir marginit. Atunci \(\lim_{n \rightarrow \infty}a_n x_n = 0\).</p>
 									<p><b>3.Criteriul clestelui. </b>Fie \((a_n)_{n \ge 1} , (x_n)_{n \ge 1}\) si \((b_n)_{n \ge 1}\) trei siruri astfl incat \(a_n \le x_n \le b_n\), pentru orice \(n \ge 1\) si \(\lim_{n \rightarrow \infty}a_n = \lim_{n \rightarrow \infty}b_n\). Atunci \(\lim_{n \rightarrow \infty}x_n = \lambda\).</p>
 									<p><b>4.Teorema lui Weierstrass. </b>Orice sir monoton si marginit este convergent.</p>
 									<p><b>5.Criteriul raportului. </b>Fie \((x_n)_{n \ge 1}\) un sir cu termeni strict pozitivi astfel incat exista limita \(\lim_{n \rightarrow \infty}\cfrac{x_{n + 1}}{x_n} = \lambda\). Daca \(0 \le \lambda \lt 1\), atunci \(\lim_{n \rightarrow \infty}x_n = 0\), iar daca \(\lambda \gt 1\), atunci \(\lim_{n \rightarrow \infty}x_n = +\infty\).</p>
@@ -1076,7 +1078,7 @@
 									<p><b>5. </b>Daca \(f : I \rightarrow J\) este o functie continua si bijectiva, atunci \(f^{-1} : J \rightarrow I\) este continua.</p>
 									<h1>4. Functii derivabile</h1>
 									<p>Functia \(f : D \rightarrow \Bbb R\) are derivata in punctul \(a \in D\cap D'\) daca exista limita \(f'(a) = \lim_{x \rightarrow a}\cfrac{f(x) - f(a)}{x - a} \in \overline \Bbb R\) (numita derivata functiei f in punctul \(x = a\)).</p>
-									<p>Daca \(f'(a) \in \Bbb R\), se spune ca \(f\) este derivabila in puinctul \(x = a\). O functie \(f : D \rightarow \Bbb R\) este derivabila pe \(D\) daca este derivabila in orice punct \(a \in D\). In acest caz, functia \(x \rightarrow f'(x), x\in D\), se numeste derivata functiei \(f\).</p>
+									<p>Daca \(f'(a) \in \Bbb R\), se spune ca \(f\) este derivabila in puinctul \(x = a\). O functie \(f : D \rightarrow \Bbb R\) este derivabila pe \(D\) daca este derivabila in orice punct \(a \in D\). In acest caz, functia \(x \rightarrow f'(x), x\in D\), se numeste derivata functiei \(f\).</p>
 									<p><b>Teorema. </b>Orice functie derivabila intr-un punct este continua in acel punct.</p>
 									<p><b>Derivate laterale. </b>Daca \(a \in D\) este punct de acumulare pentru \((-\infty , a) \cap D\), se spune ca \(f\) are derivata la stanga in \(a\) daca exista limita \(lim_{x \nearrow a}\cfrac{f(x) - f(a)}{x - a} = f'_s(a) \in \Bbb R\)</p>
 									<p>Daca \(a \in D\) este punct de acumulare pentru \((a , +\infty) \cap D\), se spune ca \(f\) are derivata la dreapta in \(a\) daca exista limita \(lim_{x \searrow a}\cfrac{f(x) - f(a)}{x - a} = f'_d(a) \in \Bbb R\)</p>
@@ -1159,8 +1161,8 @@
 									<p><b>Definitie. </b>Fie \(I \subset \Bbb R\) un interval. Spunem ca functia \(f : I \rightarrow \Bbb R\) admite primitive daca exista o functie derivabila \(F : I \rightarrow \Bbb R\) astfel incat \({F' = f}\).</p>
 									<h2>Observatii</h2>
 									<p><b>1. </b>Daca functia \(f : I \rightarrow \Bbb R\) admite o primitiva, atunci exista o infinitate de primitive ale sale. Multimea acestor primitive se noteaza cu \(\int f(x) dx\)</p>
-									<p><b>2. </b>Daca \(F : I \rightarrow \Bbb R\) este o primitiva a functiei \(f : i \rightarrow \Bbb R\), atunci \(\int f(x)dx = F(x) + C\), unde \(C\) este multimea functiilor reale constante.</p>
-									<p><b>3. </b>Orice functie continua \(f : I \ rightarrow \Bbb R\) admite primitive.</p>
+									<p><b>2. </b>Daca \(F : I \rightarrow \Bbb R\) este o primitiva a functiei \(f : I \rightarrow \Bbb R\), atunci \(\int f(x)dx = F(x) + C\), unde \(C\) este multimea functiilor reale constante.</p>
+									<p><b>3. </b>Orice functie continua \(f : I \rightarrow \Bbb R\) admite primitive.</p>
 									<p><b>4. </b>Orice functie \(f : I \rightarrow \Bbb R\) care admite primitive are proprietatea lui Darboux. Daca \(f\) nu are proprietatea lui Darboux pe intervalul \(I\), atunci nu admite primitive pe \(I\).</p>
 									<p><b>5. </b>Daca o functie \(f : I \rightarrow \Bbb R\) are un punct de discontinuitate de speta I, atunci \(f\) nu admite primitive.</p>
 									<h2>Proprietati</h2>
