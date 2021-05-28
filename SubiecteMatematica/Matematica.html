@@ -170,8 +170,8 @@
                                     <p>strict descrescator, daca \( x_{n} &#62; x_{n+1}\) pentru orice \(n \ge 1\).</p>
                                     <h2>Definitie</h2>
                                     <p>Sirul de numere reale \( (x_{n})_{n \ge 1}\) este:</p>
-                                    <p>marginit inferior, daca exista un numar real m astfel incat \( (x_{n}) \ge m\) , \forall \(n \ge 1\),</p>
-                                    <p>marginit superior, daca exista un numar real M astfel incat \( (x_{n}) \le M\) , \forall \(n \ge 1\).</p>
+                                    <p>marginit inferior, daca exista un numar real m astfel incat \( (x_{n}) \ge m\) , \(\forall n \ge 1\),</p>
+                                    <p>marginit superior, daca exista un numar real M astfel incat \( (x_{n}) \le M\) , \(\forall n \ge 1\).</p>
                                     <p>Un sir \( (x_{n})_{n \ge 1}\) marginit atat inferior cat si superior se numeste sir marginit.</p>
                                     <!--Progresii aritmetice-->
                                     <h1>2. Progresii aritmetice</h1>
@@ -181,7 +181,7 @@
                                     <p><b>1.</b> \( a_{n}=a_{1}+(n-1)\cdot r\), \forall \(n \ge 1\)</p>
                                     <p><b>2.</b> \(a_{n} = \cfrac {a_{n-1} + a_{n+1}}{2} , \forall n \ge 2\)</p>
                                     <p><b>3.</b> \(S_{n}= \cfrac{n(a_{1}+a_{n})}{2}=na_{1} + r\cfrac{n(n-1)}{2}\),\forall \(n \ge 1\), unde \(S_{n} = a_{1} + a_{2} + ... + (a_{n})\)</p>
-                                    <p><b>4.</b> \(n = \cfrac{a_{n} - a_{1}}{r} + 1\), \forall \(n \ge 1\) , r &#8800; 0</p>
+                                    <p><b>4.</b> \(n = \cfrac{a_{n} - a_{1}}{r} + 1\), \(\forall n \ge 1\) , r &#8800; 0</p>
                                     <!--Progresii geometrice-->
                                     <h1>3. Progresii geometrice</h1>
                                     <h2>Definitie</h2>
@@ -763,7 +763,7 @@
                         <a data-toggle="collapse" data-parent="#Subiectul2" href="#collapse2">Algebra (clasele XI - XII)</a>
                      </h4>
                   </div>
-                  <div id="collapse2" class="panel-collapse collapse in">
+                  <div id="collapse2" class="panel-collapse collapse">
                      <div class="panel-body">
                         <div class="panel-group" id="Algebra2">
                            <div class="panel panel-default">
@@ -930,7 +930,7 @@
                                     <a data-toggle="collapse" data-parent="#Algebra2" href="#collapse25">Structuri algebrice</a>
                                  </h4>
                               </div>
-                              <div id="collapse25" class="panel-collapse collapse in">
+                              <div id="collapse25" class="panel-collapse collapse">
                                  <div class="panel-body">
                                     <h1>1. Grupuri</h1>
 									<p>In cele ce urmeaza, \(G\) reprzinta o multime nevida.</p>
@@ -960,7 +960,34 @@
 									<p><b>4. </b>Daca \(H\) este multime finita, atunci \(H\) este subgrup al grupului \((G , *)\) daca si numai daca \(H\) este parte stabila a lui \(G\) in raport cu legea \("*"\).</p>
 									<p>In cele ce urmeaza, \((G , \cdot)\) este grup finit, adica \(G\) este multime finita.</p>
 									<p><b>Teorema lui Lagrange. </b>Daca \(H\) este subgrup a lui \(G\), atunci numarul elementelor lui \(H\) divide numarul elementelor lui \(G\).</p>
-									<p><b>Proprietatea 5. </b>Fie \(x \in (G , \cdot)\). Exista un numar natural nenul \(n\) astfel incat \(x^n = e\), unde \(e\) este elementul neutru al grupului \(G\), si \(\underbrace{x \cdot x \ cdot ... \cdot x}_{n \text{ ori}}\)</p>
+									<p><b>Proprietatea 5. </b>Fie \(x \in (G , \cdot)\). Exista un numar natural nenul \(n\) astfel incat \(x^n = e\), unde \(e\) este elementul neutru al grupului \(G\), si \(x^n = \underbrace{x \cdot x \cdot ... \cdot x}_{n \text{ ori}}\)</p>
+									<p><b>Definitia 6. </b>Fie \(x \in G\). Cel mai mic numar natural nenul \(k\) cu proprietatea ca \(x^k = e\) se numeste ordinul lui \(x\) in \(G\) si se noteaza \(ord(x)\).</p>
+									<h2>Proprietati.</h2>
+									<p>Fie \((G , \cdot)\), un grup finit cu \(n\) elemente, \(x \in G\), si \(k = ord(x)\).</p>
+									<p><b>6. </b>\(x^p = e , \: p \in \Bbb Z \Leftrightarrow k|p\)</p>
+									<p><b>7. </b>\(H(x) = \{e , x , x^2 , ... , x^{k - 1}\}\) este subgrup al lui \(G\), cu \(k\) elemente.</p>
+									<p><b>8. </b>\(k | n\)</p>
+									<p><b>9. </b>\(x^n = e\)</p>
+									<h1>2. Inele si corpuri</h1>
+									<p>In cele ce urmeaza, \(A\) reprezinta o multime nevida, iar \("*"\) si \("\circ "\) sunt doua legi de compozitie interne pe \(A\).</p>
+									<p><b>Definitia 7. </b>Tripletul \((A , * , \circ)\) se numeste inel daca sunt indeplinite urmatoarele conditii:</p>
+									<p><b>1. </b>\((A , *)\) este grup comutativ.</p>
+									<p><b>2.1 </b>Legea \("\circ "\) este asociativa.</p>
+									<p><b>2.2 </b>Legea \("\circ "\) are element neutru.</p>
+									<p><b>3. </b>Legea \("\circ "\) este distributiva fata de legea \("*"\), adica \(x \circ (y * z) = (x \circ y)*(x \circ z)\) si \((x * y) \circ z = (x \circ z) * (y \circ z)\), oricare ar fi \(x , y , z \in A\).</p>
+									<p>Inelul \((A , * , \circ)\) se numeste inel comutativ daca legea \("\circ "\) este comutativa.</p>
+									<p><b>Definitia 8. </b>Inelul \((A , + , \cdot)\) se numeste corp, daca \(0_A \not = 1_A\) si orice \(x \in A , \: x\not = 0_A\) este simetrizabil in raport cu inmultirea.</p>
+									<p>Simetricul elementului \(x \in A - \{0_A\}\) in raport cu inmultirea se noteaza \(x^{-1}\) si se numeste inversul lui \(x\).</p>
+									<p><b>Definitia 9. </b>Fie inelele \((A_1 , + , \cdot)\) si \((A_2 , + , \cdot)\). O functie \(f : A_1 \rightarrow A_2\) se numeste morfism de inele daca: </p>
+									<p><b>a. </b>\(f(x + y) = f(x) + f(y)\), oricare ar fi \(x , y \in A_1\).</p>
+									<p><b>b. </b>\(f(x \cdot y) = f(x) \cdot f(y)\), oricare ar fi \(x , y \in A_1\).</p>
+									<p><b>c. </b>\(f(1_{A_1}) = 1_{A_2}\)</p>
+									<p>In conditiile de mai sus, daca \(A_1\) si \(A_2\) sunt corpuri, atunci \(f\) se numeste morfism de corpuri.</p>
+									<p>Un morfism de inele \(f\) se numeste izomorfism daca \(f\) este functie bijectiva.</p>
+									<h2>Inelul claselor de resturi modulo n</h2>
+									<p>Pentru un numar natural \(n , n \le 2\), si un numar intreg \(a\), se noteaza cu a (mod n) restul impartirii lui a la n.</p>
+									<p>Pentru fiecare \(k \in \{0 , 1 , 2 , ... , n - 1\}\), multimea \(\{a \in \Bbb Z | a(v) = k\}\) se noteaza \(\widehat k\),iar multimea \(\{\widehat 0 , \widehat 1 , \widehat 2 , ... , \widehat{n - 1}\}\) se noteaza cu \(\Bbb Z_n\). Inelul \((\Bbb Z_n , + , \cdot)\), unde \(\widehat a + \widehat b = \widehat{a +  b}\) si \(\widehat a + \widehat b = \widehat{ab}\) oricare ar fi \(a , b \in \Bbb Z\), se numeste inelul claselor de resturi modulo n.</p>
+									<p>Fie \(x \in \Bbb N , n \le 2\) si \(a \in \Bbb Z\). Atunci elementul \(\widehat a\) este inversabil in \(\Bbb Z_n\) daca si numai daca \((a , n) = 1\). Multimea elementelor inversabile ale inelului \((\Bbb Z , + , \cdot)\) se noteaza \(U(\Bbb Z_n)\). Cum \(U(\Bbb Z_n) = \Bbb Z_n - \{\widehat 0\}\) daca si numai daca \(n\) este numar prim, rezulta ca \((\Bbb Z , + , \cdot)\) este corp daca si numai daca \(n\) este numar prim.</p>
 									<p><b></b></p>
 									<p><b></b></p>
 									<p><b></b></p>
@@ -976,12 +1003,182 @@
                   <!-- Analiza matematica -->
                   <div class="panel-heading text-center">
                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#Subiectul2" href="#collapse25">Analiza matematica (clasele XI - XII)</a>
+                        <a data-toggle="collapse" data-parent="#Subiectul2" href="#Analiza1">Analiza matematica (clasele XI - XII)</a>
                      </h4>
                   </div>
-                  <div id="collapse25" class="panel-collapse collapse">
+                  <div id="Analiza1" class="panel-collapse collapse in">
                      <div class="panel-body">
-                     </div>
+					   <div class="panel-group" id="Analiza">
+					     <div class="panel panel-default">
+                              <!-- Limite -->
+                              <div class="panel-heading text-center">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#Analiza" href="#collapse31">Limite</a>
+                                 </h4>
+                              </div>
+                              <div id="collapse31" class="panel-collapse collapse in">
+                                 <div class="panel-body">
+								    <h1>1. Siruri de numere reale</h1>
+									<h2>Siruri marginite</h2>
+                                    <p>Sirul \((x_n)_{n \ge 1}\) este marginit superior daca exista \(M \in \Bbb R\) astfel incat \(x_n \le M , \: \forall n \ge 1\).</p>
+                                    <p>Sirul \((x_n)_{n \ge 1}\) este marginit inferior daca exista \(m \in \Bbb R\) astfel incat \(x_n \ge m , \: \forall n \ge 1\).</p>
+                                    <p>Sirul \((x_n)_{n \ge 1}\) este marginit daca este marginit inferior si superior.</p>
+                                    <p><b>Observatie. </b>Sirul \((x_n)_{n \ge 1}\) este marginit daca exista \(M \gt 0\) astfel incat \(|x_n| \le M , \: \forall n \ge 1\).</p>
+									<h2>Siruri monotone</h2>
+									<p>Sirul \((x_n)_{n \ge 1}\) este crescator (strict crescator) daca \(x_n \le x_{n + 1}\) (respectiv \(x_n \le x_{n + 1}\)), \(\forall n \ge 1\).</p>
+									<p>Sirul \((x_n)_{n \ge 1}\) este descrescator (strict descrescator) daca \(x_n \gt x_{n + 1}\) (respectiv \(x_n \gt x_{n + 1}\)), \(\forall x \ge 1\).</p>
+									<h2>Limite de siruri</h2>
+									<p>Sirul \((x_n)_{n \ge 1}\) are limita \(\lambda \in \overline \Bbb R\) (scriem \(\lim_{n \rightarrow \infty}\lambda\)) daca orice vecinatate a lui \(\lambda\) contine toti termenii sirului incepand de la un anumit rang. Un sir estee convergent daca are limita finita; in caz contrar sirul este divergent.</p>	
+									<p>Daca un sir are limita, atunci orice subsir al sau are aceeasi limita. Un sir care contine doua subsiruri cu limite diferite este divergent.</p>
+									<p><b>1. </b>Daca \((x_n)_{n \ge 1}\) este un sir strict crescator si nemarginit, atunci \(\lim_{n \rightarrow \infty}\cfrac{1}{x_n} = 0\)</p>
+									<p><b>2.Criteriul majorarii. </b>Fie \((a_n)_{n \ge 1}\) un sir cu termeni pozitivi, convergent la zero, si \((x_n)_{n \ge 1}\) un sir cu proprietatea ca exista \(\lambda \in \Bbb R\) astfel incat \(|x_n - \lambda| \le a_n\), pentru orice \(n \ge 1\). Atunci \((x_n)_{n \ge 1}\) este convergent si \(\lim_{n \rightarrow \infty}x_n = \lambda\).</p>
+									<p><b>Consecinta. </b>Fie \((a_n)_{n \ge 1}\) un sir convergent la zero si \((x_n)_{n \ge 1}\) un sir marginit. Atunci \(\lim_{n \righarrow \infty}a_nx_n = 0\).</p>
+									<p><b>3.Criteriul clestelui. </b>Fie \((a_n)_{n \ge 1} , (x_n)_{n \ge 1}\) si \((b_n)_{n \ge 1}\) trei siruri astfl incat \(a_n \le x_n \le b_n\), pentru orice \(n \ge 1\) si \(\lim_{n \rightarrow \infty}a_n = \lim_{n \rightarrow \infty}b_n\). Atunci \(\lim_{n \rightarrow \infty}x_n = \lambda\).</p>
+									<p><b>4.Teorema lui Weierstrass. </b>Orice sir monoton si marginit este convergent.</p>
+									<p><b>5.Criteriul raportului. </b>Fie \((x_n)_{n \ge 1}\) un sir cu termeni strict pozitivi astfel incat exista limita \(\lim_{n \rightarrow \infty}\cfrac{x_{n + 1}}{x_n} = \lambda\). Daca \(0 \le \lambda \lt 1\), atunci \(\lim_{n \rightarrow \infty}x_n = 0\), iar daca \(\lambda \gt 1\), atunci \(\lim_{n \rightarrow \infty}x_n = +\infty\).</p>
+									<p><b>6.Lema Cesaro-Stolz</b> Fie sirurile \((a_n)_{n \ge 1}\) si \((b_n)_{n \ge 1}\) astfel incat \((b_n)_{n \ge 1}\) este strict crescator si marginit. Daca exista limita \(\lim_{n \rightarrow \infty}\cfrac{a_{n + 1} - a_n}{b_{n + 1} - b_n} = \lambda \in \overline \Bbb R\), atunci \(\lim_{n \rightarrow \infty}\cfrac{a_n}{b_n} = \lambda\)</p>
+									<h2>Limite remarcabile</h2>
+									<p>$$\lim_{n \rightarrow \infty}\cfrac{a_pn^p + a_{p - 1}n^{p - 1} + ... + a_1n + a_0}{b_qn^q + b_{q - 1}n^{q - 1} + ... + b_1n + b_0} = \begin{cases}\infty \cdot sgn\biggl(\cfrac{a_p}{b_q}\biggr),& p \gt q \\ \cfrac{a_p}{b_q},& p = q \\ 0, & p \lt q\end{cases}$$</p>
+									<p>$$\lim_{n \rightarrow \infty}q^n = \begin{cases}+\infty, & q \gt 1 \\ q, & q = 1 \\ 0, & q \in (-1 , 1) \\ \text{nu exista}, & q \le -1\end{cases}$$</p>
+									<p>$$\lim_{n \rightarrow \infty}\biggl(1 + \cfrac{1}{n}\biggr)^n = lim_{n \rightarrow \infty}\biggl(1 + \cfrac{1}{1!} + \cfrac{1}{2!} + ... + \cfrac{1}{n!}\biggr) = e$$</p>
+									<h1>2. Limite de functii</h1>
+									<p>Multimea punctelor de acumulare a unei multime nevide \(D \subset \Bbb R\) se noteaza \(D'\).</p>
+									<p>Functia \(f : D \rightarrow \Bbb R\) are limita \(\lambda \in \overline \Bbb R\) in punctul \(a \in D'\) (scriem \(\lim_{x \rightarrow a}f(x) = \lambda\)) daca pentru orice sir \((x_n)_{b \ge 1} \subset D \ \{a\}\) astfel incat \(\lim_{n \rightarrow \infty}x_n = a\), atunci \(lim_{n \rightarrow \infty}x_n = \lambda\).</p>
+									<p><b>Teorema. </b>Fie \(f : D \rightarrow Bbb R\) o functie elementara si \(a \in D\). Atunci \(\lim_{x \rightarrow a}f(x) = f(a)\).</p>
+									<p><b>Criteriul cu limite laterale. </b>Daca \(a \in \Bbb R\) est punct de acumulare al multimilor \(D \cap (-\infty , a)\) si \(D \cap (a , +\infty)\), functia \(f : D \rightarrow \Bbb R\) are limita \(\lambda \in \overline \Bbb R\) in punctul \(a\) daca si numai daca \(f\) are limita la stanga si la dreapta in \(a\) si \(\lim_{x \nearrow a}f(x) = \lim_{x \searrow a}f(x) = \lambda\)</p>
+									<h2>Limite fundamentale</h2>
+									<p>\(\lim_{x \rightarrow \infty}\biggl(1 + \cfrac{1}{x}\biggr)^x = e; \: \lim_{x \rightarrow 0}(1 + x)^\cfrac{1}{x} = e; \: \lim_{x \rightarrow 0}\cfrac{\sin x}{x} = 1\)</p>
+									<p>\(\lim_{x \rightarrow 0}\cfrac{tg x}{x} = 1; \: \lim_{x \rightarrow 0}\cfrac{\arcsin x}{x} = 1; \: \lim_{x \rightarrow 0}\cfrac{arctg x}{x} = 1\)</p>
+									<p>\(\lim_{x \rightarrow 0}\cfrac{ln (1 + x)}{x} = 1; \: \lim_{x \rightarrow 0}\cfrac{e^x - 1}{x} = 1; \: \lim_{x \rightarrow 0}\cfrac{a^x - 1}{x} = ln a\)</p>
+									<p>\(\lim_{x \rightarrow 0}\cfrac{(1 + x)^r - 1}{x} = r\)</p>
+									<p><b>Asimptote orizontale. </b>Fie \(f : D \rightarrow \Bbb R\) astfel incat \(+\infty\) (respectiv \(-\infty\)) este punct de acumulare a lui \(D\). Dreapta de ecuatie \(y = a\), unde \(a \in \Bbb R\), este asimptota orizontala la graficul functiei spre \(+\infty\) (respectiv \(-\infty\)), daca \(\lim_{x \rightarrow \infty}f(x) = a\) (respectiv \(\lim_{x \rightarrow -\infty}f(x) = a\))</p>
+									<p><b>Asimptot oblice. </b>Fie \(f : D \rightarrow \Bbb R\) astfel incat \(+\infty\), respectiv \(-\infty\), este punct de acumulare a lui \(D\). Dreapta de ecuatie \(y = mx + n\), unde \(m , n \in \Bbb R, m\not = 0\), este asimptota oblica la graficul functii spre \(+\infty\) (respectiv spre \(-\infty\)) daca:</p>
+									<p style="text-align: center;">$$\begin{cases}\lim_{x \rightarrow \infty}\cfrac{f(x)}{x} = m \\ \lim_{x \rightarrow \infty}(f(x) - mx) = n\end{cases}$$ si respectiv $$\begin{cases}\lim_{x \rightarrow -\infty}\cfrac{f(x)}{x} = m \\ \lim_{x \rightarrow -\infty}(f(x) - mx) = n\end{cases}$$</p>
+									<p><b>Asimptote verticale. </b>Fie \(f : D \rightarrow \Bbb R\) si \(a\) un punct de acumulare a lui \(D\). Dreapta de ecuatie \(x = a\) este asimptota verticala la stanga (respectiv dreapta) pentru graficul functiei \(f\), daca \(\lim_{x \nearrow a}f(x) = \pm \infty\) (respectiv \(\lim_{x \searrow a}f(x) = \pm \infty\)).</p>
+									<h1>3. Functii continue</h1>
+									<p>Functia \(f : D \rightarrow \Bbb R\) este continua in punctul \(a \in D\) daca pentru orice sir \((x_n)_{n \ge 1}\ subset D\) astfel incat \(\lim_{n \rightarrow \infty}x_n = a , \lim_{n \rightarrow \infty}f(x_n) = f(a)\)</p>
+									<p>Daca \(a \in D \cap D'\), atunci \(f\) este continua in \(a\) daca si numai dac \(\lim_{x \rightarrow a}f(x) = f(a)\).</p>
+									<p>O functie \(f : D \rightarrow \Bbb R\) este continua pe \(D\) daca este continua in fiecare punct \(a \in D\).</p>
+									<p><b>Continuitate laterala. </b>Daca \(a \in D\) este punt de acumulare pentru \((-\infty , a)\cap D\), se spune ca \(f\) este continua la stanga in \(a\) daca \(\lim_{x \nearrow a}f(x) = f(a)\).</p>
+									<p>Daca \(a \in D\) este punct de acumulare pentru \((a , + \infty)\cap D\), se spune ca \(f\) este continua la dreapta in \(a\) daca \(\lim_{x \searrow a}f(x) = f(a)\).</p>
+									<p>Functia \(f : D \rightarrow \Bbb R\) este continua in punctul \(a \in D \cap D'\) daca si numai daca \(f\) este continua la stanga si la dreapta in \(a\), adica daca si numai daca \(f(a - 0) = f(a + 0) = f(a)\)</p>
+									<p><b>Puncte de discontinuitate. </b>\(a \in D\) este punct de discontinuitate de speta I al functiei \(f : D \rightarrow \Bbb R\) daca \(f\) are limite laterale finite in \(a\) si nu este continua in \(a\). Daca cel putin una dintre limitele laterale nu exista sau este \(+\infty\), \(a\) este punct de discontinuitate de speta a II-a.</p>
+									<p><b>Operatii cu functii continue. </b>Daca functiile \(f , g : D \rightarrow \Bbb R\) sunt continue in punctul \(a \in D\), atunci \({\alpha f + \beta g} , {(\alpha , \beta \in \Bbb R)}, {f\cdot g}, |f|, max(f, g) , min(f , g)\) sunt functii continue in \(a\), iar daca \(g(a) \not = 0\), atunci \(\cfrac{f}{g}\) este continua in \(a\).</p>
+									<p>Fie functiile \(f : D \rightarrow \Bbb E\) si \(g : E \rightarrow \Bbb R\). Daca \(f\) este continua in \(a \in D\), iar \(g\) este continua in \(b = f(a) \in E\), atunci functia \(g \circ f : D \rightarrow \Bbb R\) este continua in \(a\). Avem \(\lim_{x \rightarrow a}g(f(x)) = g\biggl(\lim_{x \rightarrow a}f(x)\biggr)\).</p>
+									<p><b>Proprietatea lui Darboux</b> O functie \(f : I \rightarrow \Bbb R\) are proprietatea lui Darboux pe intervalul \(I\) daca pentru orice \(x_1 , x_2 \in I\) si orice \(\lambda\) cuprins intre \(f(x_1)\) si \(f(x_2)\), exista \(c \in (x_1 , x_2)\) astfel incat \(f(c) = \lambda\).</p>
+									<p>O functie \(f : I \rightarrow \Bbb R\) are proprietatea lui Darboux daca si numai dac imaginea oricarei interval prin functia \(f\) este tot un interval.</p>
+									<p><b>Teorema. </b>Orice functie continua \(f : I \rightarrow \Bbb R\) are proprietatea lui Darboux.</p>
+									<h2>Proprietati ale functiilor continue</h2>
+									<p><b>1. </b>Fie \(f : [a , b] \rightarrow \Bbb R\) o functie continua astfel incat \(f(a) \cdot f(b) \lt 0\). Atunci exista \(c \in (a , b)\) astfel incat \(f(c) = 0\).</p>
+									<p><b>2. </b>O functie continua, care nu se anuleaza pe un interval \(I\), are semn constant pe \(I\).</p>
+									<p><b>3.Teorema lui Weierstrass </b>O functie continua \(f: [a , b] \rightarrow \Bbb R\) este marginita si isi atinge marginile (adica exista \(u , v \in [a , b]\) astfel incat \(f(u) = min f(x)\) si \(f(v) = max f(x)\)).</p>
+									<p><b>4. </b>O functie continua \(f : I \rightarrow \Bbb R\) este injectiva daca si numai daca este strict monotona.</p>
+									<p><b>5. </b>Daca \(f : I \rightarrow J\) este o functie continua si bijectiva, atunci \(f^{-1} : J \rightarrow I\) este continua.</p>
+									<h1>4. Functii derivabile</h1>
+									<p>Functia \(f : D \rightarrow \Bbb R\) are derivata in punctul \(a \in D\cap D'\) daca exista limita \(f'(a) = \lim_{x \rightarrow a}\cfrac{f(x) - f(a)}{x - a} \in \overline \Bbb R\) (numita derivata functiei f in punctul \(x = a\)).</p>
+									<p>Daca \(f'(a) \in \Bbb R\), se spune ca \(f\) este derivabila in puinctul \(x = a\). O functie \(f : D \rightarow \Bbb R\) este derivabila pe \(D\) daca este derivabila in orice punct \(a \in D\). In acest caz, functia \(x \rightarrow f'(x), x\in D\), se numeste derivata functiei \(f\).</p>
+									<p><b>Teorema. </b>Orice functie derivabila intr-un punct este continua in acel punct.</p>
+									<p><b>Derivate laterale. </b>Daca \(a \in D\) este punct de acumulare pentru \((-\infty , a) \cap D\), se spune ca \(f\) are derivata la stanga in \(a\) daca exista limita \(lim_{x \nearrow a}\cfrac{f(x) - f(a)}{x - a} = f'_s(a) \in \Bbb R\)</p>
+									<p>Daca \(a \in D\) este punct de acumulare pentru \((a , +\infty) \cap D\), se spune ca \(f\) are derivata la dreapta in \(a\) daca exista limita \(lim_{x \searrow a}\cfrac{f(x) - f(a)}{x - a} = f'_d(a) \in \Bbb R\)</p>
+									<p>Functia \(f : D \rightarrow \Bbb R\) are derivata in \(a \in D\cap D'\) daca si numai daca \(f\) are derivate laterale egale in \(a\). In aces caz, \(f'_s(a) = f'_d(a) = f'(a)\).</p>
+									<p><b>Interpretarea geometrica a derivatei. </b>Derivata unei functii (derivabile) intr-un punct este egala cu panta tangentei la graficul functiei in acel punct.</p>
+									<p>Daca \(f : D \rightarrow \Bbb R\) este o functie derivabila, atunci ecuatia tangentei la graficul functiei \(f\) in punctul de abscisa \(x = a\) este \(y - f(a) = f'(a)(x - a)\).</p>
+									<p><b>Puncte unghiulare, de intoarcere, de inflexiune. </b>Fie \(f : D \rightarrow \Bbb R\) o functie continua, dar care nu este derivabila in punctul \(x = a\), insa are derivate laterale in \(a\). Atunci:</p>
+									<p>\(a\) este punct de intoarcere al graficului lui \(f\) daca \(f'_s(a) = -\infty\) si \(f'_d(a) = +\infty\).</p>
+									<p>\(a\) este punct unghiular al graficului lui \(f\) daca cel putin o derivata laterala este finita.</p>
+									<p>\(a\) este punct de inflexiune al graficului lui \(f\) daca \(f'_s(a) = f'_d(a) = \pm \infty\).</p>
+									<p><b>Observatie. </b>Fie \(f : I \rightarrow R\). Un punct \(a \in I\) pentru care exista \(r \gt 0\) astfel incat \((a - r , a + r) \subset I\) se numeste punct de inflexiune al functiei \(f\) daca \(f\) are derivata in \(a\) si este convexa pe \((a - r , a)\) si concava pe \((a , a + r)\) sau invers.</p>
+									<p><b>Reguli de derivare. </b>Daca \(u : D \rightarrow E\) si \(f , g : E \rightarrow \Bbb R\) sunt functii derivabile, atunci:</p>
+									<p><b>1. </b>\((f + g)' = f' + g'\)</p>
+									<p><b>2. </b>\((\alpha f)' = \alpha f' , \forall \alpha \in \Bbb R\)</p>
+									<p><b>3. </b>\((fg)' = f'g + fg'\)</p>
+									<p><b>4. </b>\(\biggl(\cfrac{1}{f}\biggr)' = -\cfrac{f'}{f^2}\)</p>
+									<p><b>5. </b>\(\biggl(\cfrac{f}{g}\biggr) = \cfrac{f'g - fg'}{g^2}\)</p>
+									<p><b>6. </b>\((f \circ u)' = f'(u) \cdot u'\)</p>
+									<p><b>Observatie. </b>Daca \(u\) si \(v\) sunt functii derivabile si \(u \gt 0\) , atunci functia \(u^v = e^{v ln u}\) este derivabila si \((u^v)' = e^{v ln u}\biggl(v'lnu + v\cdot \cfrac{u'}{u}\biggr) = u^v\biggl(v'lnu + v\cfrac{u'}{u}\biggr)\)</p>
+									<p><b>Derivarea functiei inverse. </b>Daca \(f : D \rightarrow E\) este derivabila, bijectiva si \(f'(a) \not = 0\), unde \(a \in D\), atunci \(f^{-1}\) este derivabila in punctul \(b = f(a)\) si \((f^{-1})'(b) = \cfrac{1}{f'(a)}\)</p>
+									<h2>Formule de derivare a functiilor compuse</h2>
+									<p><b>1. </b>\((u^a)' = au^{a - 1} \cdot u' , a\in \Bbb R\)</p>
+									<p><b>2. </b>\((a^u)' = a^ulna\cdot u', a\gt 0\)</p>
+									<p><b>3. </b>\((e^u)' = e^u \cdot u'\)</p>
+									<p><b>4. </b>\((\sqrt{u})' = \cfrac{u'}{2\sqrt{u}}\)</p>
+									<p><b>5. </b>\((lnu)' = \cfrac{u'}{u}\)</p>
+									<p><b>6. </b>\((\log_au)' = \cfrac{u'}{ulna}\)</p>
+									<p><b>7. </b>\((\sin u)' = \cos u \cdot u'\)</p>
+									<p><b>8. </b>\((\cos u)' = -\sin u \cdot u'\)</p>
+									<p><b>9. </b>\((tg u)' = \cfrac{u^2}{\cos^2 u}\)</p>
+									<p><b>10. </b>\((ctg u)' = -\cfrac{u'}{\sin^2 u}\)</p>
+									<p><b>11. </b>\((\arcsin u)' = \cfrac{u'}{\sqrt{1 - u^2}}\)</p>
+									<p><b>12. </b>\((arctg u)' = \cfrac{u'}{1 + u^2}\) = </p>
+									<p><b>13. </b>\((\arccos u)' = -\cfrac{u'}{\sqrt{1 - u^2}}\)</p>
+									<p><b>14. </b>\((arctg u)' = -\cfrac{u'}{1 + u^2}\)</p>
+									<h1>5. Proprietatile functiilor derivabile</h1>
+									<p><b>Puncte de extrem. </b>Fiind data o functie \(f : D \rightarrow \Bbb R\), un punct \(a \in D\) se numeste:</p>
+									<p><b>a. </b>Punct de maxim local , daca exista \(U \in \nu (a)\) astfel incat \(f(x) \le f(a), \forall x \in U \cap D\)</p>
+									<p><b>b. </b>Punct de minim local , daca exista \(U \in \nu (a)\) astfel incat \(f(x) \ge f(a), \forall x \in U \cap D\)</p>
+									<p>Un punct de minim sau maxim local se numeste punct de extrem local al functiei \(f\). Daca \(a\) este un punct de extrem local al lui \(f\) , valoarea \(f(a)\) se numeste extrem local al functiei \(f\).</p>
+									<p><b>Teorema lui Fermat. </b>Fie \(I\) un interval deschis si \(a \in I\) un punct de extrem local al functiei \(f : I \rightarrow \Bbb R\). Daca \(f\) este derivabila in punctul \(a\), atunci \(f'(a) = 0\).</p>
+									<p><b>Consecinta. </b>Daca \(f : I \rightarrow \Bbb R\) este o functie derivabila pe un interval deschis \(I\), atunci punctele de extrem local ale functiei \(f\) se gasesc printre zerourile derviatei (punctele critice).</p>
+									<p><b>Teorema lui Rolle. </b>Fie \(f : [a , b] \rightarrow \Bbb R\) o functie continua pe \([a , b]\), derivabila pe \((a , b)\), astfel incat \(f(a) = f(b)\). Atunci exista \(c \in (a , b)\) astfel incat \(f'(c) = 0\).</p>
+									<p><b>Consecinte. </b>Fie \(f : I \rightarrow R\) o functie derviabila pe un interval \(I\). Atunci: </p>
+									<p><b>C1. </b>Intre doua zrouri conmsecutive ale functiei \(f\) se afla cel putin un zro al derivatei \(f'\).</p>
+									<p><b>C2. </b>Intre doua zerouri consecutive ale derivatei \(f'\) se afla cel putin un zero al functiei \(f\).</p>
+									<p><b>Teorema lul Lagrange. </b>Fie \(f : [a , b] \rightarrow \Bbb R\) o functie continua pe \([a , b]\) si derivabila pe \((a , b)\). Atunci exista \(c \in (a , b)\) astfel incat \(f'(c) = \cfrac{f(b) - f(a)}{b - a}\)</p>
+									<h2>Consecinte ale teoremei lui Lagrange</h2>
+									<p><b>1. </b>O functie derivabila cu derivata nula pe un interval \(I\) este constanta pe \(I\).</p>
+									<p><b>2. </b>Doua functii derivabile cu derviatele egale pe un intrval \(I\), difera printr-o constanta pe \(I\).</p>
+									<p><b>3. </b>Fie \(f : I \rightarrow \Bbb R\) o functie derivabila.</p>
+									<p><b>a. </b>Daca \(f'(x) \ge 0\) , pentru orice \(x \in I\) , atunci \(f\) este crescatoare pe \(I\)</p>
+									<p><b>b. </b>Daca \(f'(x) \le 0\) , pentru orice \(x \in I\) , atunci \(f\) este descrescatoare pe \(I\)</p>
+									<p><b>4. </b>Fie \(f : I \rightarrow \Bbb R\) o functie continua pe \(I\) si \(a \in I\). Daca \(f\) este drivabila pe \(I \ \{a\}\) si exista limita \(\lim_{x \rightarrow a}f'(x) = \lambda \in \overline \Bbb R\), atunci \(f\) are derivata in \(x = a\) si \(f'(a) = \lambda\) </p>
+									<p><b>Teorema lui Cauchy. </b>Daca \(f , g : [a , b] \rightarrow \Bbb R\) sunt continue pe \([a , b]\) si derivabile pe \((a , b)\) astfel incat \(g(a) \not = g(b)\), atunci exista \(c \in (a , b)\) astfel incat \(\cfrac{f'(c)}{g'(c)} = \cfrac{f(b) - f(a)}{g(b) - g(a)}\).</p>
+									<p><b>Teorema lui Darboux. </b>Daca \(f : I \rightarrow \Bbb R\) este derivabil pe un interval \(I\), atunci derivata sa \(f'\) are proprietatea lui Darboux pe \(I\).</p>
+									<p><b>Rolul derivatei a doua in studiul functiilor. </b>Fie \(f : I \rightarrow \Bbb R\) o functie de doua ori derivabila pe un interval \(I\). Atunci:</p>
+									<p><b>a. </b>Daca \(f''(x) \ge 0\), pentru orice \(x \in I\), atunci \(f\) este convexa pe \(I\)</p>
+									<p><b>b. </b>Daca \(f''(x) \le 0\), pentru orice \(x \in I\), atunci \(f\) este concava pe \(I\)</p>
+									<p><b>c. </b>Daca \(a \in Int(I)\) este un punct de inflexiune al functiei \(f\), atunci \(f''(a) = 0\)</p>
+									<p><b>Regula lui L'Hospital. </b>Fie \(a , b \in \overline \Bbb R , a \lt b\) si \(I \subset \Bbb R\) un interval, cu \((a , b) \subset I \subset [a , b]\). Daca \(x _0 \in [a , b]\) si \(f , g : I \setminus \{x_0\} \rightarrow \Bbb R\) sunt doua functii cu proprietatile: </p>
+									<p><b>a. </b>\(\lim_{x \rightarrow x_0}f(x) = \lim_{x \rightarrow x_0}g(x) = 0\)</p>
+									<p><b>b. </b>\(f\) si \(g\) sunt derivabile si \(g'(x) \not = 0 , \forall x \in I \setminus \{x_0\}\)</p>
+									<p><b>c. </b>exista limita \(\lim_{x \rightarrow x_0}\cfrac{f'(x)}{g'(x)} = \lambda \in \overline \Bbb R\)</p>
+									<p>atunci exista \(U \in \nu (x_0)\) astfel ca \(g(x) \not = 0, \forall x \in U \cap I \setminus \{x_0\}\) si limita \(\lim_{x \rightarrow x_0}\cfrac{f(x)}{g(x)} = \lambda \in \overline \Bbb R\)</p>
+									<!--<a class="btn btn-default" style="float: left;" href="S1/EcuatiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>-->
+                                 </div>
+                              </div>
+                           </div>
+						   <div class="panel panel-default">
+                              <!-- Primitive -->
+                              <div class="panel-heading text-center">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#Analiza" href="#collapse32">Primitive</a>
+                                 </h4>
+                              </div>
+                              <div id="collapse32" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    <p><b></b></p>
+									<p><b></b></p>
+									<p><b></b></p>
+									<!--<a class="btn btn-default" style="float: left;" href="S1/EcuatiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>-->
+                                 </div>
+                              </div>
+                           </div>
+						   <div class="panel panel-default">
+                              <!-- Functii integrabile -->
+                              <div class="panel-heading text-center">
+                                 <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#Analiza" href="#collapse33">Functii integrabile</a>
+                                 </h4>
+                              </div>
+                              <div id="collapse33" class="panel-collapse collapse">
+                                 <div class="panel-body">
+                                    <p><b></b></p>
+									<p><b></b></p>
+									<p><b></b></p>
+									<!--<a class="btn btn-default" style="float: left;" href="S1/EcuatiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>-->
+                                 </div>
+                              </div>
+                           </div>
+					   </div>
                   </div>
                </div>
             </div>

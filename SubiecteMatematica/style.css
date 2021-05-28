@@ -6,6 +6,11 @@
 	list-style: none;
 }
 
+* p
+{
+	line-height: 50px;
+}
+
 .romana
 {
 	width: 50vw;
