@@ -1153,7 +1153,7 @@
                                     <a data-toggle="collapse" data-parent="#Analiza" href="#collapse32">Primitive</a>
                                  </h4>
                               </div>
-                              <div id="collapse32" class="panel-collapse collapse in">
+                              <div id="collapse32" class="panel-collapse collapse">
                                  <div class="panel-body">
                                     <h1>Primitive</h1>
 									<p><b>Definitie. </b>Fie \(I \subset \Bbb R\) un interval. Spunem ca functia \(f : I \rightarrow \Bbb R\) admite primitive daca exista o functie derivabila \(F : I \rightarrow \Bbb R\) astfel incat \({F' = f}\).</p>
@@ -1213,7 +1213,35 @@
                               <div id="collapse33" class="panel-collapse collapse">
                                  <div class="panel-body">
                                     <h1>Functii integrabile</h1>
-									<p>Fie \(a , b \in \Bbb R , a \lt b , \Delta = (a = x_0 \lt x_1 \lt x_2 \lt ... \lt x_n = b)\) o diviziune a intervalului \([a , b]\) si </p>
+									<p>Fie \(a , b \in \Bbb R , a \lt b , \Delta = (a = x_0 \lt x_1 \lt x_2 \lt ... \lt x_n = b)\) o diviziune a intervalului \([a , b]\) si \(\xi = (\xi_1 , \xi_2 , ... , \xi_n)\) cu \(\xi_i \in [x_{i - 1} , x_i] , i \in \{1 , 2 , ... , n\}\), un sistem de puncte intermediare asociat diviziunii \(\Delta\). Numarul \(||\Delta|| = max\{|x_i - x_{i - 1}| | i = \overline{1 , n}\}\) se numestee norma diviziunii \(\Delta\).</p>
+									<p>Pentru functia \(f : [a , b] \rightarrow \Bbb R\) notam \(\sigma(f , \Delta , \xi) = \sum_{i = 1}^nf(\xi_i)(x_i - x_{i - 1})\), numita si suma Riemann asociata functiei \(f\), diviziunii \(\Delta\) si sistemului de puncte intermediare \(\xi\).</p>
+									<p><b>Definitie. </b>Functia \(f : [a , b] \rightarrow \Bbb R\) st integrabila pe intrvalul \([a ,b]\), daca limita \(\lim_{||\Delta || \rightarrow 0}\sigma(f , \Delta , \xi) = \lim_{||\Delta || \rightarrow 0}\sum_{i = 1}^nf(\xi_i)(x_i - x_{i - 1})\) este finita. Aceasta se noteaza cu \(\int_a^bf(x)dx\).</p>
+									<h2>Observatii</h2>
+									<p><b>1. </b>De cele mai multe ori in exercitii intalnim urmatorul caz particular: \(f : [0 , 1] \rightarrow \Bbb R , \Delta = \biggl(0 \lt \cfrac{1}{n} \lt \cfrac{2}{n} \lt ... \lt \cfrac{n}{n} = 1\biggr)\) - diviziunea echidistanta a intrvalului \([0 , 1]\), si sistemul de puncte intermediare \(\xi = (\xi_1 , \xi_2 , ... , \xi_n)\), cu \(\xi_i = \cfrac{i}{n} \in \biggl[\cfrac{i - 1}{n} , \cfrac{i}{n}\biggr] , i = \overline{1 , n}\). Daca functia \(f : [0 , 1] \rightarrow \Bbb R\) este integrabila pe intervalul \([0 , 1]\), atunci \(\int_0^1f(x)dx = \lim_{n \rightarrow \infty}\cfrac{1}{n}\sum_{i = 1}^nf\biggl(\cfrac{i}{n}\biggr)\)</p>
+									<p><b>2. </b>Daca \(f : [a , b] \rightarrow \Bbb R\) este functie monotona, atunci \(f\) este integrabila pe intervalul \([a, b]\)</p>
+									<p><b>3. </b>Daca \(f : [a , b] \rightarrow \Bbb R\) este functie continua, atunci \(f\) este integrabila pe intervalul \([a, b]\)</p>
+									<p><b>4. </b>Daca \(f : [a , b] \rightarrow \Bbb R\) este functie continuape intervalul \([a , b]\),cu exceptia unui numar finit de puncte de discontinuitate de speta I, atunci \(f\) este integrabila pe intervalul \([a, b]\)</p>
+									<h2>Proprietati importante</h2>
+									<p><b>1. Formula Leibniz-Newton </b>Daca \(f : [a , b] \rightarrow \Bbb R\) este o functie integrabila car are primitive si \(F\) este o primitiva oarecare a lui \(f\), atunci \(\int_a^bf(x)dx = F(b) - F(a)\).</p>
+									<p><b>2. </b>\(\int_{a}^{b}(f(x)+g(x)) d x=\int_{a}^{b} f(x) d x+\int_{a}^{b} g(x) d x\)</p>
+									<p><b>3. </b>\(\int_{a}^{b} \lambda f(x) d x=\lambda \int_{a}^{b} f(x) d x, \forall \lambda \in \mathbb{R}\)</p>
+									<p><b>4.Aditivitatea in raport cu un interval. </b>\(\int_{a}^{b} f(x) d x=\int_{a}^{c} f(x) d x+\int_{e}^{b} f(x) d x, \forall c \in[a, b]\)</p>
+									<p><b>5.Formula de integrare prin parti. </b>Daca in plus functiile \(f\) si \(g\) sunt derivabile, cu derivatele functii continue, atunci \(\int_{a}^{b} f^{\prime}(x) g(x) d x=\left.f(x) g(x)\right|_{a} ^{b}-\int_{a}^b f(x) g^{\prime}(x) d x .\)</p>
+									<p><b>6.Teorema de medie pentru integrale. </b>Daca functia \(f : [a , b] \rightarrow \Bbb R\) este continua, atunci exista \(c \in (a , b)\) astfel incat \(\int_{a}^{b} f(x) d x=(b-a) f(c) .\)</p>
+									<p><b>7.Prima formula de schimbare de variabila. </b>Fie functia \(f : J \rightarrow \Bbb R\) continua si functia \(u : [a , b] \rightarrow J\) continua, cu derivata continua; atunci \(\int_{a}^{b} u^{\prime}(x) f(u(x)) d x=\int_{u(a)}^{u(b)} f(t) d t\)</p>
+									<p><b>8.A doua formula de schimbare de variabila. </b>Fie \(\varphi : [c , d] \rightarrow [a , b]\) o functie bijectiva, \(\varphi , \varphi^{-1}\) derivabile, \(\varphi '\) continua si \(\varphi '(t) \not = 0, \forall t \in [c , d]\). Daca functia \(f : [a , b] \rightarrow \Bbb R\) este continua pe \([a , b]\), atunci \(\int_{a}^{b} f(x) d x=\int_{\varphi^{-1}(a)}^{\varphi^{-1}(b)} f(\varphi(t)) \varphi^{\prime}(t) d t .\)</p>
+									<p><b>9.Derivata unei intgrale. </b>Fie functia continua \(f : [a , b] \rightarrow \Bbb R\) si \(F : [a , b] \rightarrow \Bbb R\), \(F(x) = \int_a^xf(t)dt\). Atunci functia \(F\) este o primitiva a functiei \(f\), adica \(F'(x) = f(x)\).</p>
+									<p><b>9.1 </b>Fie \(f : [a , b] \rightarrow \Bbb R\) continua si functia \(u : I \rightarrow [a , b]\) este derivabila cu derivata continua; atunci functia \(F : [a , b] \rightarrow \Bbb R , F(x) = \int_a^xf(t)dt\) este derivabila si \(F'(x) = f(u(x)) \cdot u'(x)\).</p>
+									<p><b>10. </b>Proprietati de monotonie si marginire:</p>
+									<p>Daca functia \(f : [a , b] \rightarrow [0 , + \infty)\) ste intgrabila, atunci \(\int_a^bf(x)dx \ge 0\)</p>
+									<p>Daca functiile \(f, g : [a , b] \rightarrow \Bbb R\) sunt integrabile si \(f(x) \le g(x), \forall x \in [a , b]\), atunci \(\int_a^bf(x)dx \le \int_a^bg(x)dx\)</p>
+									<h2>Aplicatii ale integralei definite</h2>
+									<p>Fie \(f : [a , b] \rightarrow \Bbb R\) o functie continua.</p>
+									<p><b>11. </b>Aria supraftei plane cuprinsa intre graficul functiei \(f\) , axa \(Ox\) si dreptele de ecuatie \(x = a\) si \(x = b\) este egala cu \(\int_a^b|f(x)|dx\)</p>
+									<p><b>12. </b>Volumul corpului obtinut prin rotatia graficului functiei \(f\) in jurul axei \(Ox\) este egal cu \(V_f = \int_a^bf^2(x)dx\)</p>
+									<p><b></b></p>
+									<p><b></b></p>
+									<p><b></b></p>
 									<p><b></b></p>
 									<p><b></b></p>
 									<!--<a class="btn btn-default" style="float: left;" href="S1/EcuatiaDeGradul2/ExercitiiRezolvate.html">Exercitii rezolvate</a>-->
