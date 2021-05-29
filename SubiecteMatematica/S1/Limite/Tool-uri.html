@@ -2,7 +2,7 @@
 <html>
   
   <head>
-	<title>Siruri</title>
+	<title>Limite</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="../../../Tools/bootstrap.css">
     <script src="../../../Tools/jQuery.js"></script>
@@ -61,11 +61,43 @@
             </div>
          </div>
       </nav>
-	
+	<style>.input-group{margin-top: 20px;}</style>
 	<div class="container" style="text-align: center;">
-		<style>.btn-default{display: block; margin-bottom: 30px;}</style>
-		<a class="btn btn-default" href="../ProgresiiAritmetice/Tool-uri.html">Unelte progresii aritmetice</a>
-		<a class="btn btn-default" href="../ProgresiiGeometrice/Tool-uri.html">Unelte progresii geometrice</a>
+		<!-- <button class="btn btn-default optiune" onclick="normala()">Limita</button>
+		<button class="btn btn-default optiune" onclick="stanga()">Limita la stanga</button>
+		<button class="btn btn-default optiune" onclick="dreapta()">Limita la dreapta</button>
+		
+		<div class="input-group Norm" style="display: none;">
+			<span class="input-group-addon">\(x \rightarrow \)</span>
+			<input type="text" class="form-control panou Z" placeholder="Introduceti capatul limitei">
+			
+		</div>
+		
+		<div class="input-group Stanga" style="display: none;">
+			<span class="input-group-addon">\(x \nearrow \)</span>
+			<input type="text" class="form-control panou Z" placeholder="Introduceti capatul limitei">
+			
+		</div>
+		
+		<div class="input-group Dreapta" style="display: none;">
+			<span class="input-group-addon">\(x \searrow \)</span>
+			<input type="text" class="form-control panou Z" placeholder="Introduceti capatul limitei">
+			
+		</div>
+		
+		<div class="input-group">
+			<span class="input-group-addon">\(f(x)\)</span>
+			<input type="text" class="form-control panou l" placeholder="Introduceti functia">
+		</div> -->
+		<button class="btn btn-default optiune" onclick="calculeazaDerivata()">Derivata</button>
+		<div class="input-group">
+			<span class="input-group-addon">\(f(x)\)</span>
+			<input type="text" class="form-control panou l" placeholder="Introduceti functia">
+		</div>
+		<br>
+		<div class="rezultat" style="font-size: 25px;">
+		</div>
+		
 	</div>
 	
   </body>
