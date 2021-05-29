@@ -21,8 +21,13 @@ function dreapta()
 function calculeazaDerivata()
 {
 	var rezultat = math.derivative($('.l').val() , 'x').toString();
-	rezultat = rezultat.replace("*" , "\\cdot");
-	rezultat = "\\(" + rezultat + "\\)";
+	/*rezultat = rezultat.replace("*" , "\\cdot");
+	rezultat = rezultat.replace("(" , "{");
+	rezultat = rezultat.replace(")" , "}");
+	rezultat = "\\(" + rezultat + "\\)";*/
+	rezultat = math.parse(rezultat).toTex();
+	rezultat = "\\(" + rezultat + "\\)"
 	$('.rezultat').html(rezultat);
+	console.log(rezultat);
 	renderMathInElement(document.body);
 }
