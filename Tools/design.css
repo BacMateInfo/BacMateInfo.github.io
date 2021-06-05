@@ -1,36 +1,82 @@
+*
+{
+	transition: 0.3s !important;
+}
+
+.panel
+{
+	width: 100%;
+}
+
+.navbar
+{
+	border: 0;
+}
+
+.nav > li:hover
+{
+	background: #333;
+}
+
+.nav > li:hover > a
+{
+	color: #f8f8f8 !important;
+}
+
+.container
+{
+	width: 90vw;
+}
+
 .panel-body > h1
 {
-	font-size: 25px !important;
+	font-size: 30px !important;
 	font-weight: bold;
+	border-bottom: 1px solid #333333;
+	padding-bottom: 10px;
+	text-align: center;
+	margin-top: 10px;
 }
 
 .panel-body > h2
 {
-	font-size: 20px !important;
-	color: #3477eb;
+	font-size: 23px !important;
+	color: #333333;
 	font-weight: bold;
 }
 
 .panel-body > p
 {
 	font-size: 17px !important;
+	overflow-X: auto;
+	overflow-Y: hidden;
 }
 
 .panel-body > p > b
 {
 	font-size: 20px !important;
-	color: #3477eb;
+	color: #333333;
 	font-weight: bold;
 }
-
-
 
 .jumbotron h1
 {
 	font-weight: bold;
 }
 
+::-moz-selection , ::selection 
+{
+	color: white;
+	background: #333333;
+}
+
 @media only screen and (max-width: 800px) {
+	
+	.container
+	{
+		width: 100vw;
+	}
+	
 	.panel-body > h1
 	{
 		font-size: 20px !important;
