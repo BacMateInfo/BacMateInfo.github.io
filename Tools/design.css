@@ -92,6 +92,7 @@
 	text-align: center;
 	padding: 0;
 	margin: 0;
+	line-height: 1.5em;
 }
 
 @media only screen and (max-width: 800px) {
