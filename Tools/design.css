@@ -23,6 +23,30 @@
 	color: #f8f8f8 !important;
 }
 
+.bg-static
+{
+	backgroud-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.fpanel
+{
+	width: 100%;
+	height: 100%;
+}
+
+.panel-heading:hover
+{
+	background: #333;
+	color: #f8f8f8;
+}
+
+.panel-heading:hover
+{
+	cursor: pointer;
+}
+
 .container
 {
 	width: 90vw;
