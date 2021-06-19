@@ -54,26 +54,6 @@
           
           
       </script>
-      <style>
-         .fullyCentered
-         {
-         position: absolute;
-         z-index: 10001;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50% , -50%);
-         width: 80vw;
-         }
-         .loader
-         {
-         width: 100vw;
-         height: 100vh;
-         overflow: hidden;
-         background-color: white;
-         position: fixed;
-         z-index: 1000000;
-         }
-      </style>
       <script>
          $(document).ready(function() {p = 0;$('.loader').css("display" , "none");});
          
@@ -102,6 +82,9 @@
 			   <ul class="nav navbar-nav navbar-right">
 				<li>
 					<a onclick="Invert()">Inverseaza</a>
+				</li>
+				<li>
+					<a onclick="ModulLecturare()">Modul lecturare</a>
 				</li>
 				</ul>
             </div>
@@ -780,7 +763,7 @@
                         <div class="panel-group" id="Algebra2">
                            <div class="panel panel-default">
                               <!-- Permutari -->
-                              <div class="panel-heading text-center">
+                              <div class="panel-heading text-center" data-toggle="collapse" data-parent="#Algebra2" href="#collapse21">
                                  <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#Algebra2" href="#collapse21">Permutari</a>
                                  </h4>
