@@ -35,6 +35,7 @@ function sleep(ms) {
 
 async function ModulLecturare()
 {
+	$('.navbar').css("display" , "none");
 	for(var i = 0 ; i < (document.getElementsByClassName('panel-collapse')).length ; i++)
 	{
 		document.getElementsByClassName('panel-collapse')[i].classList.add('in');
