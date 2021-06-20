@@ -15,6 +15,17 @@
 body
 {
 	background: var(--colorbg);
+	overflow-x: hidden;
+}
+
+.col-sm-8
+{
+	min-width: 150px;
+}
+
+.vw-100
+{
+	width: 100vw;
 }
 
 .panel {
@@ -51,10 +62,6 @@ body
 
 .panel-heading:hover {
     cursor: pointer;
-}
-
-.container {
-    width: 90vw;
 }
 
 .panel-body > h1 {
@@ -359,7 +366,12 @@ p {
     word-wrap: break-word;
 }
 
-@media only screen and (max-width: 800px) {
+.ad-wrapper
+{
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
     #Variante p {
         font-size: 14px !important;
     }
@@ -379,4 +391,11 @@ p {
         width: 60vw;
         height: auto !important;
     }
+	.aw-1
+	{
+		display: none;
+	}
+	.row {
+		margin: 0 auto;
+	}
 }
